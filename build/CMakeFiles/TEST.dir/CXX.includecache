@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+E:/ACM/LeetCodeSource/Solution.cpp
+Solution.h
+E:/ACM/LeetCodeSource/Solution.h
+
 E:/ACM/LeetCodeSource/Solution.h
 lib_head.h
 E:/ACM/LeetCodeSource/lib_head.h
@@ -15,8 +19,6 @@ vector
 -
 iostream
 -
-
-E:/ACM/LeetCodeSource/test.cpp
-Solution.h
-E:/ACM/LeetCodeSource/Solution.h
+algorithm
+-
 
