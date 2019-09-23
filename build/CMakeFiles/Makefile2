@@ -52,7 +52,6 @@ CMAKE_BINARY_DIR = E:\ACM\LeetCodeSource\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/LeetCodeSolution.dir/all
 all: CMakeFiles/TEST.dir/all
 
 .PHONY : all
@@ -86,7 +85,6 @@ clean: CMakeFiles/ContinuousConfigure.dir/clean
 clean: CMakeFiles/ContinuousBuild.dir/clean
 clean: CMakeFiles/ContinuousTest.dir/clean
 clean: CMakeFiles/ContinuousCoverage.dir/clean
-clean: CMakeFiles/LeetCodeSolution.dir/clean
 clean: CMakeFiles/TEST.dir/clean
 
 .PHONY : clean
@@ -853,40 +851,13 @@ CMakeFiles/ContinuousCoverage.dir/clean:
 .PHONY : CMakeFiles/ContinuousCoverage.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/LeetCodeSolution.dir
-
-# All Build rule for target.
-CMakeFiles/LeetCodeSolution.dir/all:
-	$(MAKE) -f CMakeFiles\LeetCodeSolution.dir\build.make CMakeFiles/LeetCodeSolution.dir/depend
-	$(MAKE) -f CMakeFiles\LeetCodeSolution.dir\build.make CMakeFiles/LeetCodeSolution.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=1,2 "Built target LeetCodeSolution"
-.PHONY : CMakeFiles/LeetCodeSolution.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/LeetCodeSolution.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/LeetCodeSolution.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
-.PHONY : CMakeFiles/LeetCodeSolution.dir/rule
-
-# Convenience name for target.
-LeetCodeSolution: CMakeFiles/LeetCodeSolution.dir/rule
-
-.PHONY : LeetCodeSolution
-
-# clean rule for target.
-CMakeFiles/LeetCodeSolution.dir/clean:
-	$(MAKE) -f CMakeFiles\LeetCodeSolution.dir\build.make CMakeFiles/LeetCodeSolution.dir/clean
-.PHONY : CMakeFiles/LeetCodeSolution.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/TEST.dir
 
 # All Build rule for target.
 CMakeFiles/TEST.dir/all:
 	$(MAKE) -f CMakeFiles\TEST.dir\build.make CMakeFiles/TEST.dir/depend
 	$(MAKE) -f CMakeFiles\TEST.dir\build.make CMakeFiles/TEST.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=3,4,5 "Built target TEST"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=1,2,3 "Built target TEST"
 .PHONY : CMakeFiles/TEST.dir/all
 
 # Build rule for subdir invocation for target.

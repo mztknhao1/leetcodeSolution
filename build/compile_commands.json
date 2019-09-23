@@ -1,11 +1,6 @@
 [
 {
   "directory": "E:/ACM/LeetCodeSource/build",
-  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\LeetCodeSolution.dir\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\Solution.cpp",
-  "file": "E:/ACM/LeetCodeSource/Solution.cpp"
-},
-{
-  "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST.dir\\test.cpp.obj -c E:\\ACM\\LeetCodeSource\\test.cpp",
   "file": "E:/ACM/LeetCodeSource/test.cpp"
 },

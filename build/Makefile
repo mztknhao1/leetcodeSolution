@@ -507,19 +507,6 @@ ContinuousCoverage/fast:
 .PHONY : ContinuousCoverage/fast
 
 #=============================================================================
-# Target rules for targets named LeetCodeSolution
-
-# Build rule for target.
-LeetCodeSolution: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 LeetCodeSolution
-.PHONY : LeetCodeSolution
-
-# fast build rule for target.
-LeetCodeSolution/fast:
-	$(MAKE) -f CMakeFiles\LeetCodeSolution.dir\build.make CMakeFiles/LeetCodeSolution.dir/build
-.PHONY : LeetCodeSolution/fast
-
-#=============================================================================
 # Target rules for targets named TEST
 
 # Build rule for target.
@@ -538,7 +525,6 @@ Solution.obj: Solution.cpp.obj
 
 # target to build an object file
 Solution.cpp.obj:
-	$(MAKE) -f CMakeFiles\LeetCodeSolution.dir\build.make CMakeFiles/LeetCodeSolution.dir/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST.dir\build.make CMakeFiles/TEST.dir/Solution.cpp.obj
 .PHONY : Solution.cpp.obj
 
@@ -548,7 +534,6 @@ Solution.i: Solution.cpp.i
 
 # target to preprocess a source file
 Solution.cpp.i:
-	$(MAKE) -f CMakeFiles\LeetCodeSolution.dir\build.make CMakeFiles/LeetCodeSolution.dir/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST.dir\build.make CMakeFiles/TEST.dir/Solution.cpp.i
 .PHONY : Solution.cpp.i
 
@@ -558,7 +543,6 @@ Solution.s: Solution.cpp.s
 
 # target to generate assembly for a file
 Solution.cpp.s:
-	$(MAKE) -f CMakeFiles\LeetCodeSolution.dir\build.make CMakeFiles/LeetCodeSolution.dir/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST.dir\build.make CMakeFiles/TEST.dir/Solution.cpp.s
 .PHONY : Solution.cpp.s
 
@@ -624,7 +608,6 @@ help:
 	@echo ... ContinuousBuild
 	@echo ... ContinuousTest
 	@echo ... ContinuousCoverage
-	@echo ... LeetCodeSolution
 	@echo ... test
 	@echo ... TEST
 	@echo ... package
