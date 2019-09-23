@@ -54,3 +54,50 @@ vector<vector<int>> Solution::generate_q118(int numRows) {
         return result;
 
     }
+
+bool Solution::isOneBitCharacter_q717(vector<int>& bits) {
+    int bits_len = bits.size();
+    int count = 0;
+    for(vector<int>::iterator it=bits.end()-2;it >= bits.begin();it--){
+        if(*it == 1) count++;
+        else break;
+    }
+    return count%2==0?true:false;
+}
+
+vector<int> Solution::addToArrayForm_q989(vector<int>& A, int K) {
+    vector<int> result;
+    int num = 0;
+    int sum;
+    int flag=0;
+    for(vector<int>::iterator it = A.end()-1;it>=A.begin();it--){
+        if(K != 0){
+            num = K%10;
+            K = (K - num)/10;
+        }else{
+            num = 0;
+        }
+        sum = num + *it + flag;
+        if(sum>9){
+            result.push_back(sum%10);
+            flag = 1;
+        }else{
+            result.push_back(sum);
+            flag = 0;
+        }
+    }
+    while(K!=0 | flag ==1){
+        num = K%10;
+        K = (K-num)/10;
+        sum = num + flag;
+        if(sum > 9){
+            result.push_back(sum%10);
+            flag = 1;
+        }else{
+            result.push_back(sum);
+            flag = 0;
+        }
+    }
+    reverse(result.begin(),result.end());
+    return result;
+}
