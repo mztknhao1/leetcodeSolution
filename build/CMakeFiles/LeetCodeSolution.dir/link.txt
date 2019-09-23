@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libLeetCodeSolution.a  CMakeFiles/LeetCodeSolution.dir/Solution.cpp.obj
+C:\MinGW\bin\ranlib.exe libLeetCodeSolution.a
