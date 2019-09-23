@@ -28,3 +28,29 @@ ListNode* Solution::addTwoNumbers_q2(ListNode* l1, ListNode* l2) {
         }
         return result;
 }
+
+vector<vector<int>> Solution::generate_q118(int numRows) {
+        vector<vector<int>> result;
+        if(numRows==0) return result;
+
+        vector<int> now;
+        now.push_back(1);
+        result.push_back(now);
+
+        int pre_j=1,pre_j_=1; 
+        for(int i=1;i<numRows;i++)
+        {
+            //根据上一行的数据计算下一行的数据,仍然存在now中
+            now.at(0) = 1;
+            for(int j=1;j<i;j++){
+                pre_j_ = now.at(j);
+                now.at(j) = now.at(j) + pre_j;     
+                pre_j = pre_j_;  
+            }
+            now.push_back(1);
+            result.push_back(now);
+        }
+
+        return result;
+
+    }

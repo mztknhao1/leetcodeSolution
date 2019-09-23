@@ -13,4 +13,5 @@ class Solution{
 public:
     void merge_q88(vector<int>& nums1, int m, vector<int>& nums2, int n);
     ListNode* addTwoNumbers_q2(ListNode* l1, ListNode* l2);
+    vector<vector<int>> generate_q118(int numRows);
 };
