@@ -16,4 +16,5 @@ public:
     vector<vector<int>> generate_q118(int numRows);
     bool isOneBitCharacter_q717(vector<int>& bits);
     vector<int> addToArrayForm_q989(vector<int>& A, int K);
+    int arrangeCoins_q441(int n);
 };

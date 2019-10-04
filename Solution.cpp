@@ -1,4 +1,5 @@
 #include "Solution.h"
+#include <cmath>
 
 void Solution::merge_q88(vector<int>& nums1,int m, vector<int>& nums2, int n){
     if(m == 0) {swap(nums1,nums2); return;}
@@ -30,30 +31,27 @@ ListNode* Solution::addTwoNumbers_q2(ListNode* l1, ListNode* l2) {
 }
 
 vector<vector<int>> Solution::generate_q118(int numRows) {
-        vector<vector<int>> result;
-        if(numRows==0) return result;
+    vector<vector<int>> result;
+    if(numRows==0) return result;
 
-        vector<int> now;
+    vector<int> now;
+    now.push_back(1);
+    result.push_back(now);
+    int pre_j=1,pre_j_=1; 
+    for(int i=1;i<numRows;i++)
+    {
+        //根据上一行的数据计算下一行的数据,仍然存在now中
+        now.at(0) = 1;
+        for(int j=1;j<i;j++){
+            pre_j_ = now.at(j);
+            now.at(j) = now.at(j) + pre_j;     
+            pre_j = pre_j_;  
+        }
         now.push_back(1);
         result.push_back(now);
-
-        int pre_j=1,pre_j_=1; 
-        for(int i=1;i<numRows;i++)
-        {
-            //根据上一行的数据计算下一行的数据,仍然存在now中
-            now.at(0) = 1;
-            for(int j=1;j<i;j++){
-                pre_j_ = now.at(j);
-                now.at(j) = now.at(j) + pre_j;     
-                pre_j = pre_j_;  
-            }
-            now.push_back(1);
-            result.push_back(now);
-        }
-
-        return result;
-
     }
+    return result;
+}
 
 bool Solution::isOneBitCharacter_q717(vector<int>& bits) {
     int bits_len = bits.size();
@@ -101,3 +99,21 @@ vector<int> Solution::addToArrayForm_q989(vector<int>& A, int K) {
     reverse(result.begin(),result.end());
     return result;
 }
+
+//这个题的解题思路是利用二分查找的方法求得最接近m(m+1)<n的m
+int Solution::arrangeCoins_q441(int n){
+    int little = 0;
+    int big = n/2 + 1;
+    int median = (big - little)/2 + little;
+
+    while(little<big){
+        median = (big-little)>>1 + little;  
+        if(median*(median+1)/2 < n-median){
+            little = little + 1;
+        }else
+        {
+            big = median;
+        }
+    }
+    return little;
+};
