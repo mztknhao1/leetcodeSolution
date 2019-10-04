@@ -1,5 +1,5 @@
 #include "Solution.h"
-#include <cmath>
+
 
 void Solution::merge_q88(vector<int>& nums1,int m, vector<int>& nums2, int n){
     if(m == 0) {swap(nums1,nums2); return;}
@@ -117,3 +117,16 @@ int Solution::arrangeCoins_q441(int n){
     }
     return little;
 };
+
+vector<int> Solution::findDuplicates_q442(vector<int>& nums){
+    vector<int> result;
+    int temp;
+    for(int i=0;i<nums.size();i++){    
+        nums[i]>0?temp=nums[i]:temp=nums[i]*(-1);
+        if(nums[temp-1] > 0){
+            nums[temp-1] = (-1)*nums[temp-1];
+        }
+        else result.push_back(temp);
+    }
+    return result;
+}

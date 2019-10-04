@@ -17,4 +17,5 @@ public:
     bool isOneBitCharacter_q717(vector<int>& bits);
     vector<int> addToArrayForm_q989(vector<int>& A, int K);
     int arrangeCoins_q441(int n);
+    vector<int> findDuplicates_q442(vector<int>& nums); 
 };
