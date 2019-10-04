@@ -18,4 +18,6 @@ public:
     vector<int> addToArrayForm_q989(vector<int>& A, int K);
     int arrangeCoins_q441(int n);
     vector<int> findDuplicates_q442(vector<int>& nums); 
+    bool find132pattern_q456(vector<int>& nums);
+    int minMoves_q453(vector<int>& nums);
 };

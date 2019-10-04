@@ -13,8 +13,9 @@ void printVector(vector<int>& nums){
 
 int main(){
     Solution s;
-    vector<int> nums1{4,3,2,7,8,2,3,1};
-    vector<int> m = s.findDuplicates_q442(nums1);
-    printVector(m);
+    vector<int> nums1{-1,3,2,0};
+    //vector<int> m = s.findDuplicates_q442(nums1);
+    bool pattern = s.find132pattern_q456(nums1);
+    //printVector(m);
     return 0;
 }

@@ -130,3 +130,27 @@ vector<int> Solution::findDuplicates_q442(vector<int>& nums){
     }
     return result;
 }
+
+bool Solution::find132pattern_q456(vector<int>& nums){
+    int one = INT32_MAX;
+    if(nums.size()<3) return false;
+    for(int i=0;i<nums.size();++i){
+        one = std::min(nums[i],one);
+        if(one == nums[i]) continue;
+        for(int j=nums.size()-1;j>i;--j){
+            if(nums[j]>one && nums[j]<nums[i]){
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+int Solution::minMoves_q453(vector<int>& nums) {
+        int minNum = *min_element(nums.begin(),nums.end());
+        int sum=0;
+        for(int i=0;i<nums.size();i++){
+            sum = nums[i]-minNum + sum;
+        }
+        return sum;
+}
