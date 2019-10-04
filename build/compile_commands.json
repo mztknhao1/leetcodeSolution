@@ -1,12 +1,22 @@
 [
 {
   "directory": "E:/ACM/LeetCodeSource/build",
-  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST.dir\\test.cpp.obj -c E:\\ACM\\LeetCodeSource\\test.cpp",
-  "file": "E:/ACM/LeetCodeSource/test.cpp"
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST456.dir\\test456.cpp.obj -c E:\\ACM\\LeetCodeSource\\test456.cpp",
+  "file": "E:/ACM/LeetCodeSource/test456.cpp"
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
-  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST.dir\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\Solution.cpp",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST456.dir\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\Solution.cpp",
+  "file": "E:/ACM/LeetCodeSource/Solution.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST442.dir\\test442.cpp.obj -c E:\\ACM\\LeetCodeSource\\test442.cpp",
+  "file": "E:/ACM/LeetCodeSource/test442.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST442.dir\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\Solution.cpp",
   "file": "E:/ACM/LeetCodeSource/Solution.cpp"
 }
 ]

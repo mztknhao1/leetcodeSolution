@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+E:/ACM/LeetCodeSource/Solution.cpp
+Solution.h
+E:/ACM/LeetCodeSource/Solution.h
+
 E:/ACM/LeetCodeSource/Solution.h
 lib_head.h
 E:/ACM/LeetCodeSource/lib_head.h
@@ -20,7 +24,7 @@ algorithm
 cmath
 -
 
-E:/ACM/LeetCodeSource/test.cpp
+E:/ACM/LeetCodeSource/test456.cpp
 Solution.h
 E:/ACM/LeetCodeSource/Solution.h
 

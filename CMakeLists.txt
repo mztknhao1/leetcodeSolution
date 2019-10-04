@@ -5,10 +5,11 @@ include(CTest)
 enable_testing()
 
 # add_library(LeetCodeSolution Solution.cpp)
-aux_source_directory(. DIR_ROOT_SRCS)
+#aux_source_directory(. DIR_ROOT_SRCS)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
 
-add_executable(TEST test.cpp ${DIR_ROOT_SRCS})
+add_executable(TEST456 test456.cpp Solution.cpp Solution.cpp)
+add_executable(TEST442 test442.cpp Solution.cpp Solution.cpp)

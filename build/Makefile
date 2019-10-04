@@ -66,17 +66,6 @@ package_source/fast: package_source
 
 .PHONY : package_source/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	"C:\Program Files\CMake\bin\ctest.exe" --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
@@ -87,6 +76,17 @@ package: preinstall
 package/fast: package
 
 .PHONY : package/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	"C:\Program Files\CMake\bin\ctest.exe" --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -507,17 +507,30 @@ ContinuousCoverage/fast:
 .PHONY : ContinuousCoverage/fast
 
 #=============================================================================
-# Target rules for targets named TEST
+# Target rules for targets named TEST456
 
 # Build rule for target.
-TEST: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 TEST
-.PHONY : TEST
+TEST456: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TEST456
+.PHONY : TEST456
 
 # fast build rule for target.
-TEST/fast:
-	$(MAKE) -f CMakeFiles\TEST.dir\build.make CMakeFiles/TEST.dir/build
-.PHONY : TEST/fast
+TEST456/fast:
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/build
+.PHONY : TEST456/fast
+
+#=============================================================================
+# Target rules for targets named TEST442
+
+# Build rule for target.
+TEST442: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TEST442
+.PHONY : TEST442
+
+# fast build rule for target.
+TEST442/fast:
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/build
+.PHONY : TEST442/fast
 
 Solution.obj: Solution.cpp.obj
 
@@ -525,7 +538,8 @@ Solution.obj: Solution.cpp.obj
 
 # target to build an object file
 Solution.cpp.obj:
-	$(MAKE) -f CMakeFiles\TEST.dir\build.make CMakeFiles/TEST.dir/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.obj
 .PHONY : Solution.cpp.obj
 
 Solution.i: Solution.cpp.i
@@ -534,7 +548,8 @@ Solution.i: Solution.cpp.i
 
 # target to preprocess a source file
 Solution.cpp.i:
-	$(MAKE) -f CMakeFiles\TEST.dir\build.make CMakeFiles/TEST.dir/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.i
 .PHONY : Solution.cpp.i
 
 Solution.s: Solution.cpp.s
@@ -543,35 +558,63 @@ Solution.s: Solution.cpp.s
 
 # target to generate assembly for a file
 Solution.cpp.s:
-	$(MAKE) -f CMakeFiles\TEST.dir\build.make CMakeFiles/TEST.dir/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.s
 .PHONY : Solution.cpp.s
 
-test.obj: test.cpp.obj
+test442.obj: test442.cpp.obj
 
-.PHONY : test.obj
+.PHONY : test442.obj
 
 # target to build an object file
-test.cpp.obj:
-	$(MAKE) -f CMakeFiles\TEST.dir\build.make CMakeFiles/TEST.dir/test.cpp.obj
-.PHONY : test.cpp.obj
+test442.cpp.obj:
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/test442.cpp.obj
+.PHONY : test442.cpp.obj
 
-test.i: test.cpp.i
+test442.i: test442.cpp.i
 
-.PHONY : test.i
+.PHONY : test442.i
 
 # target to preprocess a source file
-test.cpp.i:
-	$(MAKE) -f CMakeFiles\TEST.dir\build.make CMakeFiles/TEST.dir/test.cpp.i
-.PHONY : test.cpp.i
+test442.cpp.i:
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/test442.cpp.i
+.PHONY : test442.cpp.i
 
-test.s: test.cpp.s
+test442.s: test442.cpp.s
 
-.PHONY : test.s
+.PHONY : test442.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	$(MAKE) -f CMakeFiles\TEST.dir\build.make CMakeFiles/TEST.dir/test.cpp.s
-.PHONY : test.cpp.s
+test442.cpp.s:
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/test442.cpp.s
+.PHONY : test442.cpp.s
+
+test456.obj: test456.cpp.obj
+
+.PHONY : test456.obj
+
+# target to build an object file
+test456.cpp.obj:
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/test456.cpp.obj
+.PHONY : test456.cpp.obj
+
+test456.i: test456.cpp.i
+
+.PHONY : test456.i
+
+# target to preprocess a source file
+test456.cpp.i:
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/test456.cpp.i
+.PHONY : test456.cpp.i
+
+test456.s: test456.cpp.s
+
+.PHONY : test456.s
+
+# target to generate assembly for a file
+test456.cpp.s:
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/test456.cpp.s
+.PHONY : test456.cpp.s
 
 # Help Target
 help:
@@ -608,17 +651,21 @@ help:
 	@echo ... ContinuousBuild
 	@echo ... ContinuousTest
 	@echo ... ContinuousCoverage
-	@echo ... test
-	@echo ... TEST
+	@echo ... TEST456
+	@echo ... TEST442
 	@echo ... package
+	@echo ... test
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Solution.obj
 	@echo ... Solution.i
 	@echo ... Solution.s
-	@echo ... test.obj
-	@echo ... test.i
-	@echo ... test.s
+	@echo ... test442.obj
+	@echo ... test442.i
+	@echo ... test442.s
+	@echo ... test456.obj
+	@echo ... test456.i
+	@echo ... test456.s
 .PHONY : help
 
 
