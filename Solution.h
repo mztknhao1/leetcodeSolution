@@ -8,6 +8,13 @@ struct ListNode {
     ListNode(int x) : val(x), next(NULL) {}
 };
 
+ struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
+
 class Solution{
 
 public:
@@ -20,4 +27,6 @@ public:
     vector<int> findDuplicates_q442(vector<int>& nums); 
     bool find132pattern_q456(vector<int>& nums);
     int minMoves_q453(vector<int>& nums);
+    int minSteps_q650(int n);
+    TreeNode* sortedArrayToBST_q108(vector<int>& nums);  
 };

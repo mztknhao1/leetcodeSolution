@@ -532,6 +532,19 @@ TEST442/fast:
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/build
 .PHONY : TEST442/fast
 
+#=============================================================================
+# Target rules for targets named TEST650
+
+# Build rule for target.
+TEST650: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TEST650
+.PHONY : TEST650
+
+# fast build rule for target.
+TEST650/fast:
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/build
+.PHONY : TEST650/fast
+
 Solution.obj: Solution.cpp.obj
 
 .PHONY : Solution.obj
@@ -540,6 +553,7 @@ Solution.obj: Solution.cpp.obj
 Solution.cpp.obj:
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/Solution.cpp.obj
 .PHONY : Solution.cpp.obj
 
 Solution.i: Solution.cpp.i
@@ -550,6 +564,7 @@ Solution.i: Solution.cpp.i
 Solution.cpp.i:
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/Solution.cpp.i
 .PHONY : Solution.cpp.i
 
 Solution.s: Solution.cpp.s
@@ -560,6 +575,7 @@ Solution.s: Solution.cpp.s
 Solution.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/Solution.cpp.s
 .PHONY : Solution.cpp.s
 
 test442.obj: test442.cpp.obj
@@ -616,6 +632,33 @@ test456.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/test456.cpp.s
 .PHONY : test456.cpp.s
 
+test650.obj: test650.cpp.obj
+
+.PHONY : test650.obj
+
+# target to build an object file
+test650.cpp.obj:
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/test650.cpp.obj
+.PHONY : test650.cpp.obj
+
+test650.i: test650.cpp.i
+
+.PHONY : test650.i
+
+# target to preprocess a source file
+test650.cpp.i:
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/test650.cpp.i
+.PHONY : test650.cpp.i
+
+test650.s: test650.cpp.s
+
+.PHONY : test650.s
+
+# target to generate assembly for a file
+test650.cpp.s:
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/test650.cpp.s
+.PHONY : test650.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -653,6 +696,7 @@ help:
 	@echo ... ContinuousCoverage
 	@echo ... TEST456
 	@echo ... TEST442
+	@echo ... TEST650
 	@echo ... package
 	@echo ... test
 	@echo ... edit_cache
@@ -666,6 +710,9 @@ help:
 	@echo ... test456.obj
 	@echo ... test456.i
 	@echo ... test456.s
+	@echo ... test650.obj
+	@echo ... test650.i
+	@echo ... test650.s
 .PHONY : help
 
 

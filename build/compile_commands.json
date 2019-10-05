@@ -18,5 +18,15 @@
   "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST442.dir\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\Solution.cpp",
   "file": "E:/ACM/LeetCodeSource/Solution.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST650.dir\\test650.cpp.obj -c E:\\ACM\\LeetCodeSource\\test650.cpp",
+  "file": "E:/ACM/LeetCodeSource/test650.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST650.dir\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\Solution.cpp",
+  "file": "E:/ACM/LeetCodeSource/Solution.cpp"
 }
 ]

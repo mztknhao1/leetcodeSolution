@@ -13,3 +13,4 @@ include(CPack)
 
 add_executable(TEST456 test456.cpp Solution.cpp Solution.cpp)
 add_executable(TEST442 test442.cpp Solution.cpp Solution.cpp)
+add_executable(TEST650 test650.cpp Solution.cpp Solution.cpp)

@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = E:\ACM\LeetCodeSource\build
 # The main recursive "all" target.
 all: CMakeFiles/TEST456.dir/all
 all: CMakeFiles/TEST442.dir/all
+all: CMakeFiles/TEST650.dir/all
 
 .PHONY : all
 
@@ -88,6 +89,7 @@ clean: CMakeFiles/ContinuousTest.dir/clean
 clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/TEST456.dir/clean
 clean: CMakeFiles/TEST442.dir/clean
+clean: CMakeFiles/TEST650.dir/clean
 
 .PHONY : clean
 
@@ -905,6 +907,33 @@ TEST442: CMakeFiles/TEST442.dir/rule
 CMakeFiles/TEST442.dir/clean:
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/clean
 .PHONY : CMakeFiles/TEST442.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/TEST650.dir
+
+# All Build rule for target.
+CMakeFiles/TEST650.dir/all:
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/depend
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=7,8,9 "Built target TEST650"
+.PHONY : CMakeFiles/TEST650.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TEST650.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 3
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TEST650.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
+.PHONY : CMakeFiles/TEST650.dir/rule
+
+# Convenience name for target.
+TEST650: CMakeFiles/TEST650.dir/rule
+
+.PHONY : TEST650
+
+# clean rule for target.
+CMakeFiles/TEST650.dir/clean:
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/clean
+.PHONY : CMakeFiles/TEST650.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

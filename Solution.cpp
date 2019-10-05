@@ -147,10 +147,41 @@ bool Solution::find132pattern_q456(vector<int>& nums){
 }
 
 int Solution::minMoves_q453(vector<int>& nums) {
-        int minNum = *min_element(nums.begin(),nums.end());
-        int sum=0;
-        for(int i=0;i<nums.size();i++){
-            sum = nums[i]-minNum + sum;
+    int minNum = *min_element(nums.begin(),nums.end());
+    int sum=0;
+    for(int i=0;i<nums.size();i++){
+        sum = nums[i]-minNum + sum;
+    }
+    return sum;
+}
+
+int Solution::minSteps_q650(int n){
+    if(n == 1) return 0;
+    int res=n;
+    int num = 2;
+    int total = 0;
+    while(res != 1){
+        if(res%num != 0){
+            num++;
+            continue;
         }
-        return sum;
+        res = res/num;
+        total += num;
+    }
+    return total;
+}
+
+
+TreeNode* sortedArrayToBST_q108(vector<int>& nums){
+    if(nums.empty()) return NULL;
+    if(nums.size()==1) return new TreeNode(nums[0]);
+    int begin = 0;
+    int end = nums.size() - 1;
+    int middel = (begin+end)>>1;
+    TreeNode *root = new TreeNode(nums[middel]);
+    vector<int> leftTree(nums.begin(),nums.begin()+middel);
+    vector<int> rightTree(nums.begin()+middel+1,nums.end());
+    root->left = sortedArrayToBST_q108(leftTree);
+    root->right = sortedArrayToBST_q108(rightTree);
+    return root;
 }
