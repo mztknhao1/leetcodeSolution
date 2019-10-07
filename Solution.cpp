@@ -268,3 +268,7 @@ vector<vector<int>> Solution::updateMatrix_q542(vector<vector<int>>& matrix){
 
     return dist;
 }
+
+int Solution::add(int a,int b){
+    return a+b;
+}
