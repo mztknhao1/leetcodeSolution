@@ -6,5 +6,6 @@
 #include<algorithm>
 #include <cmath>
 #include<queue>
+#include<string>
 
 #endif

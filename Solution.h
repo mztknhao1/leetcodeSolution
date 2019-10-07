@@ -42,6 +42,7 @@ public:
     vector<vector<int>> updateMatrix_q542(vector<vector<int>>& matrix);
 
     ListNode* mergeTwoLists_q21(ListNode* l1, ListNode* l2);
+    std::string longestCommonPrefix_q14(vector<std::string>& strs);
     
 };
 

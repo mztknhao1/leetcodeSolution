@@ -281,3 +281,25 @@ ListNode* Solution::mergeTwoLists_q21(ListNode* l1, ListNode* l2){
         return l2;
     }
 }
+
+std::string Solution::longestCommonPrefix_q14(vector<std::string>& strs){
+    std::string result;
+    int size = strs.size();
+    if(size==0) return "";
+    int minLong = INT8_MAX;   
+    for(int i=0;i<size;i++){
+        if(strs[i].size() < minLong){
+            minLong = strs[i].size();
+        }
+    }
+    for(int j=0;j<minLong;j++){
+        char tmp = strs[0][j];
+        for(int i=0;i<size;i++){
+            if(strs[i][j]!=tmp){
+                return result;
+            }
+        }
+        result.push_back(tmp);
+    }
+    return result;
+}
