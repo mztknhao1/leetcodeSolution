@@ -1,42 +1,42 @@
 [
 {
-  "directory": "E:/Master/LeetCode_mztkn/leetcodeSolution/build",
-  "command": "D:\\software\\mingw64\\bin\\g++.exe    -g   -o CMakeFiles\\TEST542.dir\\test542.cpp.obj -c E:\\Master\\LeetCode_mztkn\\leetcodeSolution\\test542.cpp",
-  "file": "E:/Master/LeetCode_mztkn/leetcodeSolution/test542.cpp"
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST542.dir\\test542.cpp.obj -c E:\\ACM\\LeetCodeSource\\test542.cpp",
+  "file": "E:/ACM/LeetCodeSource/test542.cpp"
 },
 {
-  "directory": "E:/Master/LeetCode_mztkn/leetcodeSolution/build",
-  "command": "D:\\software\\mingw64\\bin\\g++.exe    -g   -o CMakeFiles\\TEST542.dir\\Solution.cpp.obj -c E:\\Master\\LeetCode_mztkn\\leetcodeSolution\\Solution.cpp",
-  "file": "E:/Master/LeetCode_mztkn/leetcodeSolution/Solution.cpp"
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST542.dir\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\Solution.cpp",
+  "file": "E:/ACM/LeetCodeSource/Solution.cpp"
 },
 {
-  "directory": "E:/Master/LeetCode_mztkn/leetcodeSolution/build",
-  "command": "D:\\software\\mingw64\\bin\\g++.exe    -g   -o CMakeFiles\\TEST456.dir\\test456.cpp.obj -c E:\\Master\\LeetCode_mztkn\\leetcodeSolution\\test456.cpp",
-  "file": "E:/Master/LeetCode_mztkn/leetcodeSolution/test456.cpp"
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST456.dir\\test456.cpp.obj -c E:\\ACM\\LeetCodeSource\\test456.cpp",
+  "file": "E:/ACM/LeetCodeSource/test456.cpp"
 },
 {
-  "directory": "E:/Master/LeetCode_mztkn/leetcodeSolution/build",
-  "command": "D:\\software\\mingw64\\bin\\g++.exe    -g   -o CMakeFiles\\TEST456.dir\\Solution.cpp.obj -c E:\\Master\\LeetCode_mztkn\\leetcodeSolution\\Solution.cpp",
-  "file": "E:/Master/LeetCode_mztkn/leetcodeSolution/Solution.cpp"
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST456.dir\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\Solution.cpp",
+  "file": "E:/ACM/LeetCodeSource/Solution.cpp"
 },
 {
-  "directory": "E:/Master/LeetCode_mztkn/leetcodeSolution/build",
-  "command": "D:\\software\\mingw64\\bin\\g++.exe    -g   -o CMakeFiles\\TEST442.dir\\test442.cpp.obj -c E:\\Master\\LeetCode_mztkn\\leetcodeSolution\\test442.cpp",
-  "file": "E:/Master/LeetCode_mztkn/leetcodeSolution/test442.cpp"
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST442.dir\\test442.cpp.obj -c E:\\ACM\\LeetCodeSource\\test442.cpp",
+  "file": "E:/ACM/LeetCodeSource/test442.cpp"
 },
 {
-  "directory": "E:/Master/LeetCode_mztkn/leetcodeSolution/build",
-  "command": "D:\\software\\mingw64\\bin\\g++.exe    -g   -o CMakeFiles\\TEST442.dir\\Solution.cpp.obj -c E:\\Master\\LeetCode_mztkn\\leetcodeSolution\\Solution.cpp",
-  "file": "E:/Master/LeetCode_mztkn/leetcodeSolution/Solution.cpp"
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST442.dir\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\Solution.cpp",
+  "file": "E:/ACM/LeetCodeSource/Solution.cpp"
 },
 {
-  "directory": "E:/Master/LeetCode_mztkn/leetcodeSolution/build",
-  "command": "D:\\software\\mingw64\\bin\\g++.exe    -g   -o CMakeFiles\\TEST650.dir\\test650.cpp.obj -c E:\\Master\\LeetCode_mztkn\\leetcodeSolution\\test650.cpp",
-  "file": "E:/Master/LeetCode_mztkn/leetcodeSolution/test650.cpp"
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST650.dir\\test650.cpp.obj -c E:\\ACM\\LeetCodeSource\\test650.cpp",
+  "file": "E:/ACM/LeetCodeSource/test650.cpp"
 },
 {
-  "directory": "E:/Master/LeetCode_mztkn/leetcodeSolution/build",
-  "command": "D:\\software\\mingw64\\bin\\g++.exe    -g   -o CMakeFiles\\TEST650.dir\\Solution.cpp.obj -c E:\\Master\\LeetCode_mztkn\\leetcodeSolution\\Solution.cpp",
-  "file": "E:/Master/LeetCode_mztkn/leetcodeSolution/Solution.cpp"
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST650.dir\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\Solution.cpp",
+  "file": "E:/ACM/LeetCodeSource/Solution.cpp"
 }
 ]

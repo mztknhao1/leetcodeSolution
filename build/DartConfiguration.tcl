@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: E:/Master/LeetCode_mztkn/leetcodeSolution
-BuildDirectory: E:/Master/LeetCode_mztkn/leetcodeSolution/build
+SourceDirectory: E:/ACM/LeetCodeSource
+BuildDirectory: E:/ACM/LeetCodeSource/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: LAPTOP-HP2J68IG
+Site: DESKTOP-L4D0UHH
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Win32-mingw32-make
@@ -26,8 +26,8 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "D:/software/CMake/bin/cmake.exe" "E:/Master/LeetCode_mztkn/leetcodeSolution"
-MakeCommand: D:/software/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "E:/ACM/LeetCodeSource"
+MakeCommand: C:/Program\ Files/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -39,12 +39,12 @@ CVSCommand: CVSCOMMAND-NOTFOUND
 CVSUpdateOptions: -d -A -P
 
 # Subversion options
-SVNCommand: SVNCOMMAND-NOTFOUND
+SVNCommand: C:/Program Files (x86)/Subversion/bin/svn.exe
 SVNOptions: 
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: D:/software/Git/cmd/git.exe
+GITCommand: C:/Program Files/Git/cmd/git.exe
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -57,13 +57,13 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: D:/software/Git/cmd/git.exe
+UpdateCommand: C:/Program Files/Git/cmd/git.exe
 UpdateOptions: 
 UpdateType: git
 
 # Compiler info
-Compiler: D:/software/mingw64/bin/g++.exe
-CompilerVersion: 8.1.0
+Compiler: C:/MinGW/bin/g++.exe
+CompilerVersion: 6.3.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
@@ -76,7 +76,7 @@ MemoryCheckCommandOptions:
 MemoryCheckSuppressionFile: 
 
 # Coverage
-CoverageCommand: D:/software/mingw64/bin/gcov.exe
+CoverageCommand: C:/MinGW/bin/gcov.exe
 CoverageExtraFlags: -l
 
 # Cluster commands

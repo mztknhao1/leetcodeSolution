@@ -281,7 +281,7 @@
 #  define COMPILER_VERSION_MINOR DEC(((__VER__) / 1000) % 1000)
 #  define COMPILER_VERSION_PATCH DEC((__VER__) % 1000)
 #  define COMPILER_VERSION_INTERNAL DEC(__IAR_SYSTEMS_ICC__)
-# elif defined(__VER__) && (defined(__ICCAVR__) || defined(__ICCRX__) || defined(__ICCRH850__) || defined(__ICCRL78__) || defined(__ICC430__) || defined(__ICCRISCV__))
+# elif defined(__VER__) && (defined(__ICCAVR__) || defined(__ICCRX__) || defined(__ICCRH850__) || defined(__ICCRL78__) || defined(__ICC430__))
 #  define COMPILER_VERSION_MAJOR DEC((__VER__) / 100)
 #  define COMPILER_VERSION_MINOR DEC((__VER__) - (((__VER__) / 100)*100))
 #  define COMPILER_VERSION_PATCH DEC(__SUBVERSION__)
@@ -482,9 +482,6 @@ char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
 
 # elif defined(__ICCRL78__)
 #  define ARCHITECTURE_ID "RL78"
-
-# elif defined(__ICCRISCV__)
-#  define ARCHITECTURE_ID "RISCV"
 
 # elif defined(__ICCAVR__)
 #  define ARCHITECTURE_ID "AVR"
