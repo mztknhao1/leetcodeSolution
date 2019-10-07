@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\CMake\bin\cmake.exe"
+CMAKE_COMMAND = D:\software\CMake\bin\cmake.exe
 
 # The command to remove a file.
-RM = "C:\Program Files\CMake\bin\cmake.exe" -E remove -f
+RM = D:\software\CMake\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\ACM\LeetCodeSource
+CMAKE_SOURCE_DIR = E:\Master\LeetCode_mztkn\leetcodeSolution
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\ACM\LeetCodeSource\build
+CMAKE_BINARY_DIR = E:\Master\LeetCode_mztkn\leetcodeSolution\build
 
 # Utility rule file for ContinuousSubmit.
 
@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = E:\ACM\LeetCodeSource\build
 include CMakeFiles/ContinuousSubmit.dir/progress.make
 
 CMakeFiles/ContinuousSubmit:
-	"C:\Program Files\CMake\bin\ctest.exe" -D ContinuousSubmit
+	D:\software\CMake\bin\ctest.exe -D ContinuousSubmit
 
 ContinuousSubmit: CMakeFiles/ContinuousSubmit
 ContinuousSubmit: CMakeFiles/ContinuousSubmit.dir/build.make
@@ -70,6 +70,6 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 .PHONY : CMakeFiles/ContinuousSubmit.dir/clean
 
 CMakeFiles/ContinuousSubmit.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\ACM\LeetCodeSource E:\ACM\LeetCodeSource E:\ACM\LeetCodeSource\build E:\ACM\LeetCodeSource\build E:\ACM\LeetCodeSource\build\CMakeFiles\ContinuousSubmit.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\Master\LeetCode_mztkn\leetcodeSolution E:\Master\LeetCode_mztkn\leetcodeSolution E:\Master\LeetCode_mztkn\leetcodeSolution\build E:\Master\LeetCode_mztkn\leetcodeSolution\build E:\Master\LeetCode_mztkn\leetcodeSolution\build\CMakeFiles\ContinuousSubmit.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ContinuousSubmit.dir/depend
 
