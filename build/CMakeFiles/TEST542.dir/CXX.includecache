@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-E:/ACM/LeetCodeSource/Solution.h
-lib_head.h
-E:/ACM/LeetCodeSource/lib_head.h
+E:/Master/LeetCode_mztkn/leetcodeSolution/Solution.cpp
+Solution.h
+E:/Master/LeetCode_mztkn/leetcodeSolution/Solution.h
 
-E:/ACM/LeetCodeSource/lib_head.h
+E:/Master/LeetCode_mztkn/leetcodeSolution/Solution.h
+lib_head.h
+E:/Master/LeetCode_mztkn/leetcodeSolution/lib_head.h
+
+E:/Master/LeetCode_mztkn/leetcodeSolution/lib_head.h
 vector
 -
 iostream
@@ -22,7 +26,7 @@ cmath
 queue
 -
 
-E:/ACM/LeetCodeSource/test542.cpp
+E:/Master/LeetCode_mztkn/leetcodeSolution/test542.cpp
 Solution.h
-E:/ACM/LeetCodeSource/Solution.h
+E:/Master/LeetCode_mztkn/leetcodeSolution/Solution.h
 

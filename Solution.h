@@ -32,4 +32,6 @@ public:
 
     //这里给出连个题解，根据宏定义不同来选择
     vector<vector<int>> updateMatrix_q542(vector<vector<int>>& matrix);
+
+    int add(int a,int b);
 };
