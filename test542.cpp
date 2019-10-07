@@ -20,7 +20,7 @@ void printMatrix(vector<vector<int>>& matrix){
 
 int main(){
     Solution s;
-    vector<vector<int>> matrix{{0,0,0},{0,1,0},{1,1,1}};
+    vector<vector<int>> matrix{{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}};
     //vector<int> m = s.findDuplicates_q442(nums1);
     vector<vector<int>> dist = s.updateMatrix_q542(matrix);
     printMatrix(dist);

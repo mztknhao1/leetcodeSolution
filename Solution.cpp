@@ -187,17 +187,20 @@ TreeNode* sortedArrayToBST_q108(vector<int>& nums){
 }
 
 vector<vector<int>> Solution::updateMatrix_q542(vector<vector<int>>& matrix){
-    #define BFS_Q542
-    //广度优先搜索
-    #ifdef BFS_Q542
+    #define DP_Q542
 
     int rows=matrix.size();
     if(rows==0) return matrix;
     int cols=matrix[0].size();
 
-    //初始化距离矩阵
+    
+    //广度优先搜索
+    #ifdef BFS_Q542
+     //初始化距离矩阵
     vector<vector<int>> dist(rows, vector<int>(cols, INT32_MAX));
-    //维护一个队列，存放0所在位置
+    
+
+   //维护一个队列，存放0所在位置
     std::queue<std::pair<int,int>> q;
     //第一次循环，放入所有的0的位置在队列中，把0的位置距离矩阵置为9
     for(int i=0;i<rows;i++){
@@ -228,12 +231,40 @@ vector<vector<int>> Solution::updateMatrix_q542(vector<vector<int>>& matrix){
             }
         }
     }
-    return dist;
+    
 
     #endif
 
     //动态规划算法
     #ifdef DP_Q542
 
+     //初始化距离矩阵
+    vector<vector<int>> dist(rows, vector<int>(cols, INT32_MAX-100000));
+    
+   //第一次循环，检查左边和上边
+   for(int i=0;i<rows;i++){
+       for(int j=0;j<cols;j++){
+            if(matrix[i][j] == 0)
+                dist[i][j] = 0;
+            else{
+                if(i>0)
+                    dist[i][j] = std::min(dist[i][j],dist[i-1][j] + 1);
+                if(j>0)
+                    dist[i][j] = std::min(dist[i][j],dist[i][j-1]+1);
+            }
+       }
+   }
+
+   //第二次循环，检查底边和右边
+   for(int i=rows-1;i>=0;i--){
+       for(int j=cols-1;j>=0;j--){
+            if(i<rows-1)
+                dist[i][j] = std::min(dist[i][j],dist[i+1][j] + 1);
+            if(j<cols-1)
+                    dist[i][j] = std::min(dist[i][j],dist[i][j+1]+1);
+       }
+   }
     #endif
+
+    return dist;
 }
