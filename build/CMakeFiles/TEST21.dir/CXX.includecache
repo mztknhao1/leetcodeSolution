@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/ACM/LeetCodeSource/Solution.h
+lib_head.h
+E:/ACM/LeetCodeSource/lib_head.h
+
+E:/ACM/LeetCodeSource/lib_head.h
+vector
+-
+iostream
+-
+algorithm
+-
+cmath
+-
+queue
+-
+
+E:/ACM/LeetCodeSource/test21.cpp
+Solution.h
+E:/ACM/LeetCodeSource/Solution.h
+utils.h
+E:/ACM/LeetCodeSource/utils.h
+
+E:/ACM/LeetCodeSource/utils.h
+Solution.h
+E:/ACM/LeetCodeSource/Solution.h
+

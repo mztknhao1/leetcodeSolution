@@ -2,6 +2,9 @@
 
 using std::vector;
 
+#ifndef _DATASTRUCT
+#define _DATASTRUCT
+
 struct ListNode {
     int val;
     ListNode *next;
@@ -15,6 +18,11 @@ struct ListNode {
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
+#endif
+
+
+#ifndef _SOLUTION
+#define _SOLUTION
 class Solution{
 
 public:
@@ -32,5 +40,9 @@ public:
 
     //这里给出连个题解，根据宏定义不同来选择
     vector<vector<int>> updateMatrix_q542(vector<vector<int>>& matrix);
+
+    ListNode* mergeTwoLists_q21(ListNode* l1, ListNode* l2);
     
 };
+
+#endif

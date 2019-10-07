@@ -269,6 +269,15 @@ vector<vector<int>> Solution::updateMatrix_q542(vector<vector<int>>& matrix){
     return dist;
 }
 
-int Solution::add(int a,int b){
-    return a+b;
+ListNode* Solution::mergeTwoLists_q21(ListNode* l1, ListNode* l2){
+    //递归的方法
+    if(l1==NULL) return l2;
+    else if(l2==NULL) return l1;
+    else if(l1->val < l2->val){
+        l1->next = mergeTwoLists_q21(l1->next,l2);
+        return l1;
+    }else{
+        l2->next = mergeTwoLists_q21(l2->next,l1);
+        return l2;
+    }
 }

@@ -56,6 +56,7 @@ all: CMakeFiles/TEST542.dir/all
 all: CMakeFiles/TEST456.dir/all
 all: CMakeFiles/TEST442.dir/all
 all: CMakeFiles/TEST650.dir/all
+all: CMakeFiles/TEST21.dir/all
 
 .PHONY : all
 
@@ -92,6 +93,7 @@ clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/TEST456.dir/clean
 clean: CMakeFiles/TEST442.dir/clean
 clean: CMakeFiles/TEST650.dir/clean
+clean: CMakeFiles/TEST21.dir/clean
 
 .PHONY : clean
 
@@ -782,7 +784,7 @@ CMakeFiles/ContinuousConfigure.dir/clean:
 CMakeFiles/TEST542.dir/all:
 	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/depend
 	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=7,8,9 "Built target TEST542"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=11,12,13 "Built target TEST542"
 .PHONY : CMakeFiles/TEST542.dir/all
 
 # Build rule for subdir invocation for target.
@@ -890,7 +892,7 @@ CMakeFiles/ContinuousCoverage.dir/clean:
 CMakeFiles/TEST456.dir/all:
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/depend
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=4,5,6 "Built target TEST456"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=8,9,10 "Built target TEST456"
 .PHONY : CMakeFiles/TEST456.dir/all
 
 # Build rule for subdir invocation for target.
@@ -917,7 +919,7 @@ CMakeFiles/TEST456.dir/clean:
 CMakeFiles/TEST442.dir/all:
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/depend
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=1,2,3 "Built target TEST442"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=5,6,7 "Built target TEST442"
 .PHONY : CMakeFiles/TEST442.dir/all
 
 # Build rule for subdir invocation for target.
@@ -944,7 +946,7 @@ CMakeFiles/TEST442.dir/clean:
 CMakeFiles/TEST650.dir/all:
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/depend
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=10,11,12 "Built target TEST650"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=14,15,16 "Built target TEST650"
 .PHONY : CMakeFiles/TEST650.dir/all
 
 # Build rule for subdir invocation for target.
@@ -963,6 +965,33 @@ TEST650: CMakeFiles/TEST650.dir/rule
 CMakeFiles/TEST650.dir/clean:
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/clean
 .PHONY : CMakeFiles/TEST650.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/TEST21.dir
+
+# All Build rule for target.
+CMakeFiles/TEST21.dir/all:
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/depend
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=1,2,3,4 "Built target TEST21"
+.PHONY : CMakeFiles/TEST21.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TEST21.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 4
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TEST21.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
+.PHONY : CMakeFiles/TEST21.dir/rule
+
+# Convenience name for target.
+TEST21: CMakeFiles/TEST21.dir/rule
+
+.PHONY : TEST21
+
+# clean rule for target.
+CMakeFiles/TEST21.dir/clean:
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/clean
+.PHONY : CMakeFiles/TEST21.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

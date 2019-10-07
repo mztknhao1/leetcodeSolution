@@ -558,6 +558,19 @@ TEST650/fast:
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/build
 .PHONY : TEST650/fast
 
+#=============================================================================
+# Target rules for targets named TEST21
+
+# Build rule for target.
+TEST21: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TEST21
+.PHONY : TEST21
+
+# fast build rule for target.
+TEST21/fast:
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/build
+.PHONY : TEST21/fast
+
 Solution.obj: Solution.cpp.obj
 
 .PHONY : Solution.obj
@@ -568,6 +581,7 @@ Solution.cpp.obj:
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/Solution.cpp.obj
 .PHONY : Solution.cpp.obj
 
 Solution.i: Solution.cpp.i
@@ -580,6 +594,7 @@ Solution.cpp.i:
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/Solution.cpp.i
 .PHONY : Solution.cpp.i
 
 Solution.s: Solution.cpp.s
@@ -592,7 +607,35 @@ Solution.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/Solution.cpp.s
 .PHONY : Solution.cpp.s
+
+test21.obj: test21.cpp.obj
+
+.PHONY : test21.obj
+
+# target to build an object file
+test21.cpp.obj:
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/test21.cpp.obj
+.PHONY : test21.cpp.obj
+
+test21.i: test21.cpp.i
+
+.PHONY : test21.i
+
+# target to preprocess a source file
+test21.cpp.i:
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/test21.cpp.i
+.PHONY : test21.cpp.i
+
+test21.s: test21.cpp.s
+
+.PHONY : test21.s
+
+# target to generate assembly for a file
+test21.cpp.s:
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/test21.cpp.s
+.PHONY : test21.cpp.s
 
 test442.obj: test442.cpp.obj
 
@@ -702,6 +745,33 @@ test650.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/test650.cpp.s
 .PHONY : test650.cpp.s
 
+utils.obj: utils.cpp.obj
+
+.PHONY : utils.obj
+
+# target to build an object file
+utils.cpp.obj:
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/utils.cpp.obj
+.PHONY : utils.cpp.obj
+
+utils.i: utils.cpp.i
+
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.cpp.i:
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/utils.cpp.i
+.PHONY : utils.cpp.i
+
+utils.s: utils.cpp.s
+
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.cpp.s:
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/utils.cpp.s
+.PHONY : utils.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -741,6 +811,7 @@ help:
 	@echo ... TEST456
 	@echo ... TEST442
 	@echo ... TEST650
+	@echo ... TEST21
 	@echo ... package
 	@echo ... test
 	@echo ... edit_cache
@@ -748,6 +819,9 @@ help:
 	@echo ... Solution.obj
 	@echo ... Solution.i
 	@echo ... Solution.s
+	@echo ... test21.obj
+	@echo ... test21.i
+	@echo ... test21.s
 	@echo ... test442.obj
 	@echo ... test442.i
 	@echo ... test442.s
@@ -760,6 +834,9 @@ help:
 	@echo ... test650.obj
 	@echo ... test650.i
 	@echo ... test650.s
+	@echo ... utils.obj
+	@echo ... utils.i
+	@echo ... utils.s
 .PHONY : help
 
 
