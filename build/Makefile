@@ -468,6 +468,19 @@ ContinuousConfigure/fast:
 .PHONY : ContinuousConfigure/fast
 
 #=============================================================================
+# Target rules for targets named TEST542
+
+# Build rule for target.
+TEST542: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TEST542
+.PHONY : TEST542
+
+# fast build rule for target.
+TEST542/fast:
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/build
+.PHONY : TEST542/fast
+
+#=============================================================================
 # Target rules for targets named ContinuousBuild
 
 # Build rule for target.
@@ -551,6 +564,7 @@ Solution.obj: Solution.cpp.obj
 
 # target to build an object file
 Solution.cpp.obj:
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/Solution.cpp.obj
@@ -562,6 +576,7 @@ Solution.i: Solution.cpp.i
 
 # target to preprocess a source file
 Solution.cpp.i:
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/Solution.cpp.i
@@ -573,6 +588,7 @@ Solution.s: Solution.cpp.s
 
 # target to generate assembly for a file
 Solution.cpp.s:
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/Solution.cpp.s
@@ -631,6 +647,33 @@ test456.s: test456.cpp.s
 test456.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/test456.cpp.s
 .PHONY : test456.cpp.s
+
+test542.obj: test542.cpp.obj
+
+.PHONY : test542.obj
+
+# target to build an object file
+test542.cpp.obj:
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/test542.cpp.obj
+.PHONY : test542.cpp.obj
+
+test542.i: test542.cpp.i
+
+.PHONY : test542.i
+
+# target to preprocess a source file
+test542.cpp.i:
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/test542.cpp.i
+.PHONY : test542.cpp.i
+
+test542.s: test542.cpp.s
+
+.PHONY : test542.s
+
+# target to generate assembly for a file
+test542.cpp.s:
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/test542.cpp.s
+.PHONY : test542.cpp.s
 
 test650.obj: test650.cpp.obj
 
@@ -691,6 +734,7 @@ help:
 	@echo ... ContinuousUpdate
 	@echo ... ContinuousSubmit
 	@echo ... ContinuousConfigure
+	@echo ... TEST542
 	@echo ... ContinuousBuild
 	@echo ... ContinuousTest
 	@echo ... ContinuousCoverage
@@ -710,6 +754,9 @@ help:
 	@echo ... test456.obj
 	@echo ... test456.i
 	@echo ... test456.s
+	@echo ... test542.obj
+	@echo ... test542.i
+	@echo ... test542.s
 	@echo ... test650.obj
 	@echo ... test650.i
 	@echo ... test650.s

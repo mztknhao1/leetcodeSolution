@@ -185,3 +185,55 @@ TreeNode* sortedArrayToBST_q108(vector<int>& nums){
     root->right = sortedArrayToBST_q108(rightTree);
     return root;
 }
+
+vector<vector<int>> Solution::updateMatrix_q542(vector<vector<int>>& matrix){
+    #define BFS_Q542
+    //广度优先搜索
+    #ifdef BFS_Q542
+
+    int rows=matrix.size();
+    if(rows==0) return matrix;
+    int cols=matrix[0].size();
+
+    //初始化距离矩阵
+    vector<vector<int>> dist(rows, vector<int>(cols, INT32_MAX));
+    //维护一个队列，存放0所在位置
+    std::queue<std::pair<int,int>> q;
+    //第一次循环，放入所有的0的位置在队列中，把0的位置距离矩阵置为9
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<cols;j++){
+            if(matrix[i][j] == 0){
+                dist[i][j] = 0;
+                q.push({i,j});
+            }
+        }
+    }
+
+    int dir[4][2] = {{-1,0},{1,0},{0,-1},{0,1}};  //上下左右四个方向
+    //对每个0作广度优先搜索
+    while(!q.empty()){
+        std::pair<int,int> curr=q.front();  //把队首取出来
+        q.pop();
+        for(int i=0;i<4;i++){
+            //确定新的点的位置，即新的行和列
+            int new_r=curr.first + dir[i][0];
+            int new_c=curr.second + dir[i][1];
+            //判断这是否是一个有效的点
+            if(new_r>=0 && new_c>=0 && new_r<rows && new_c<cols){
+                //更新，如果这个点在距离矩阵中的位置大于当前0的位置+1
+                if(dist[new_r][new_c]>dist[curr.first][curr.second]+1){
+                    dist[new_r][new_c] = dist[curr.first][curr.second]+1;
+                    q.push({new_r,new_c});
+                }
+            }
+        }
+    }
+    return dist;
+
+    #endif
+
+    //动态规划算法
+    #ifdef DP_Q542
+
+    #endif
+}

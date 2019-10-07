@@ -29,4 +29,7 @@ public:
     int minMoves_q453(vector<int>& nums);
     int minSteps_q650(int n);
     TreeNode* sortedArrayToBST_q108(vector<int>& nums);  
+
+    //这里给出连个题解，根据宏定义不同来选择
+    vector<vector<int>> updateMatrix_q542(vector<vector<int>>& matrix);
 };

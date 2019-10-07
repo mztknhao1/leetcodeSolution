@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-E:/ACM/LeetCodeSource/Solution.cpp
-Solution.h
-E:/ACM/LeetCodeSource/Solution.h
-
 E:/ACM/LeetCodeSource/Solution.h
 lib_head.h
 E:/ACM/LeetCodeSource/lib_head.h
@@ -26,7 +22,7 @@ cmath
 queue
 -
 
-E:/ACM/LeetCodeSource/test442.cpp
+E:/ACM/LeetCodeSource/test542.cpp
 Solution.h
 E:/ACM/LeetCodeSource/Solution.h
 
