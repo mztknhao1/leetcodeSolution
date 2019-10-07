@@ -303,3 +303,27 @@ std::string Solution::longestCommonPrefix_q14(vector<std::string>& strs){
     }
     return result;
 }
+
+int Solution::lengthOfLongestSubstring_q3(std::string s){
+    int len = 1;
+    if(s.empty()) return 0;
+    int start;
+    std::string substr;
+    substr.push_back(s[0]);
+    for(int i=1;i<s.size();i++){
+        int pos = substr.find(s[i]);
+        //如果没找到那么
+        if(pos==-1){
+            substr.push_back(s[i]);
+        }else{
+         //删掉前面的串，在后面加上当前的字符
+            start = start+pos;
+            substr.erase(0,pos+1);
+            substr.push_back(s[i]);
+        }
+        std::cout<<substr<<std::endl;
+        len = std::max(len,int(substr.length()));
+        if(s.size()-start < len) break;
+    }
+    return len;
+}

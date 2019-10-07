@@ -494,6 +494,19 @@ ContinuousBuild/fast:
 .PHONY : ContinuousBuild/fast
 
 #=============================================================================
+# Target rules for targets named TEST3
+
+# Build rule for target.
+TEST3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TEST3
+.PHONY : TEST3
+
+# fast build rule for target.
+TEST3/fast:
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/build
+.PHONY : TEST3/fast
+
+#=============================================================================
 # Target rules for targets named ContinuousTest
 
 # Build rule for target.
@@ -578,6 +591,7 @@ Solution.obj: Solution.cpp.obj
 # target to build an object file
 Solution.cpp.obj:
 	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/Solution.cpp.obj
@@ -591,6 +605,7 @@ Solution.i: Solution.cpp.i
 # target to preprocess a source file
 Solution.cpp.i:
 	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/Solution.cpp.i
@@ -604,6 +619,7 @@ Solution.s: Solution.cpp.s
 # target to generate assembly for a file
 Solution.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/Solution.cpp.s
@@ -636,6 +652,33 @@ test21.s: test21.cpp.s
 test21.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/test21.cpp.s
 .PHONY : test21.cpp.s
+
+test3.obj: test3.cpp.obj
+
+.PHONY : test3.obj
+
+# target to build an object file
+test3.cpp.obj:
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/test3.cpp.obj
+.PHONY : test3.cpp.obj
+
+test3.i: test3.cpp.i
+
+.PHONY : test3.i
+
+# target to preprocess a source file
+test3.cpp.i:
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/test3.cpp.i
+.PHONY : test3.cpp.i
+
+test3.s: test3.cpp.s
+
+.PHONY : test3.s
+
+# target to generate assembly for a file
+test3.cpp.s:
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/test3.cpp.s
+.PHONY : test3.cpp.s
 
 test442.obj: test442.cpp.obj
 
@@ -751,6 +794,7 @@ utils.obj: utils.cpp.obj
 
 # target to build an object file
 utils.cpp.obj:
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/utils.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/utils.cpp.obj
 .PHONY : utils.cpp.obj
 
@@ -760,6 +804,7 @@ utils.i: utils.cpp.i
 
 # target to preprocess a source file
 utils.cpp.i:
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/utils.cpp.i
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/utils.cpp.i
 .PHONY : utils.cpp.i
 
@@ -769,6 +814,7 @@ utils.s: utils.cpp.s
 
 # target to generate assembly for a file
 utils.cpp.s:
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/utils.cpp.s
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/utils.cpp.s
 .PHONY : utils.cpp.s
 
@@ -806,6 +852,7 @@ help:
 	@echo ... ContinuousConfigure
 	@echo ... TEST542
 	@echo ... ContinuousBuild
+	@echo ... TEST3
 	@echo ... ContinuousTest
 	@echo ... ContinuousCoverage
 	@echo ... TEST456
@@ -822,6 +869,9 @@ help:
 	@echo ... test21.obj
 	@echo ... test21.i
 	@echo ... test21.s
+	@echo ... test3.obj
+	@echo ... test3.i
+	@echo ... test3.s
 	@echo ... test442.obj
 	@echo ... test442.i
 	@echo ... test442.s
