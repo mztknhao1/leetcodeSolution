@@ -44,6 +44,8 @@ public:
     ListNode* mergeTwoLists_q21(ListNode* l1, ListNode* l2);
     std::string longestCommonPrefix_q14(vector<std::string>& strs);
     int lengthOfLongestSubstring_q3(std::string s);
+
+    vector<vector<int>> threeSum_q15(vector<int>& nums);
     
 };
 

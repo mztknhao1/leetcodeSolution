@@ -1,4 +1,5 @@
 #include "Solution.h"
+#include "utils.h"
 
 
 void Solution::merge_q88(vector<int>& nums1,int m, vector<int>& nums2, int n){
@@ -326,4 +327,42 @@ int Solution::lengthOfLongestSubstring_q3(std::string s){
         if(s.size()-start < len) break;
     }
     return len;
+}
+
+vector<vector<int>> Solution::threeSum_q15(vector<int>& nums){
+    
+    vector<vector<int>> result;
+    int n=nums.size();
+    if(n<3) return result;    
+
+    //首先对数组进行排序
+    std::sort(nums.begin(), nums.end());
+    printVector(nums);
+    //然后遍历，由于经过了排序，则可以简化遍历过程
+    for(int first=0;first<n-2;first++){
+        if(first>0 && nums[first] == nums[first-1]) continue;
+        int second=first+1;
+        int last = n-1;
+        while(second<last){
+            int value=nums[first]+nums[second]+nums[last];
+            if(value==0){
+                vector<int> temp{nums[first],nums[second],nums[last]};
+                result.push_back(temp);
+                second++;
+                last--;
+                //主要为了防止记录到重复的
+                while(second<n && nums[second]==nums[second-1]) second++;
+                while(last>second && nums[last+1]==nums[last]) last--;
+            }
+            else if(value<0){
+                second++;
+                while(second<n && nums[second]==nums[second-1]) second++;
+            }else{
+                last--;
+                //跳过重复复的
+                while(last>second && nums[last+1]==nums[last]) last--;
+            }
+        }
+    }
+    return result;
 }
