@@ -366,3 +366,19 @@ vector<vector<int>> Solution::threeSum_q15(vector<int>& nums){
     }
     return result;
 }
+
+std::string Solution::addString_q415(std::string& s1,std::string& s2){
+    std::string result;
+    int num1=s1.size();
+    int num2=s2.size();
+    int carry = 0;
+    for(int i=num1-1,j=num2-1;i>=0||j>=0;i--,j--){
+        int sum=carry;
+        sum += (i>=0? s1[i]-'0':0);
+        sum += (j>=0? s2[j]-'0':0);
+        result.insert(result.begin(), '0'+sum%10);
+        carry = sum>9?1:0;
+    }
+    if (carry==1) result.insert(result.begin(),'1');
+    return result;
+}

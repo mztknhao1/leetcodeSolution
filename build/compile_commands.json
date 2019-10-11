@@ -1,6 +1,21 @@
 [
 {
   "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST415.dir\\test415.cpp.obj -c E:\\ACM\\LeetCodeSource\\test415.cpp",
+  "file": "E:/ACM/LeetCodeSource/test415.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST415.dir\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\Solution.cpp",
+  "file": "E:/ACM/LeetCodeSource/Solution.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST415.dir\\utils.cpp.obj -c E:\\ACM\\LeetCodeSource\\utils.cpp",
+  "file": "E:/ACM/LeetCodeSource/utils.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST15.dir\\test15.cpp.obj -c E:\\ACM\\LeetCodeSource\\test15.cpp",
   "file": "E:/ACM/LeetCodeSource/test15.cpp"
 },
