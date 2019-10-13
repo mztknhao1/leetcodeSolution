@@ -60,6 +60,7 @@ all: CMakeFiles/TEST456.dir/all
 all: CMakeFiles/TEST442.dir/all
 all: CMakeFiles/TEST650.dir/all
 all: CMakeFiles/TEST21.dir/all
+all: CMakeFiles/TEST721.dir/all
 
 .PHONY : all
 
@@ -100,6 +101,7 @@ clean: CMakeFiles/TEST456.dir/clean
 clean: CMakeFiles/TEST442.dir/clean
 clean: CMakeFiles/TEST650.dir/clean
 clean: CMakeFiles/TEST21.dir/clean
+clean: CMakeFiles/TEST721.dir/clean
 
 .PHONY : clean
 
@@ -1079,6 +1081,33 @@ TEST21: CMakeFiles/TEST21.dir/rule
 CMakeFiles/TEST21.dir/clean:
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/clean
 .PHONY : CMakeFiles/TEST21.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/TEST721.dir
+
+# All Build rule for target.
+CMakeFiles/TEST721.dir/all:
+	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/depend
+	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=29,30,31,32 "Built target TEST721"
+.PHONY : CMakeFiles/TEST721.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TEST721.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 4
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TEST721.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
+.PHONY : CMakeFiles/TEST721.dir/rule
+
+# Convenience name for target.
+TEST721: CMakeFiles/TEST721.dir/rule
+
+.PHONY : TEST721
+
+# clean rule for target.
+CMakeFiles/TEST721.dir/clean:
+	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/clean
+.PHONY : CMakeFiles/TEST721.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

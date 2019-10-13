@@ -4,6 +4,7 @@
 CMakeFiles/TEST21.dir/Solution.cpp.obj: ../Solution.cpp
 CMakeFiles/TEST21.dir/Solution.cpp.obj: ../Solution.h
 CMakeFiles/TEST21.dir/Solution.cpp.obj: ../lib_head.h
+CMakeFiles/TEST21.dir/Solution.cpp.obj: ../utils.h
 
 CMakeFiles/TEST21.dir/test21.cpp.obj: ../Solution.h
 CMakeFiles/TEST21.dir/test21.cpp.obj: ../lib_head.h

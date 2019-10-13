@@ -98,5 +98,20 @@
   "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST21.dir\\utils.cpp.obj -c E:\\ACM\\LeetCodeSource\\utils.cpp",
   "file": "E:/ACM/LeetCodeSource/utils.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST721.dir\\test721.cpp.obj -c E:\\ACM\\LeetCodeSource\\test721.cpp",
+  "file": "E:/ACM/LeetCodeSource/test721.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST721.dir\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\Solution.cpp",
+  "file": "E:/ACM/LeetCodeSource/Solution.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe    -g   -o CMakeFiles\\TEST721.dir\\utils.cpp.obj -c E:\\ACM\\LeetCodeSource\\utils.cpp",
+  "file": "E:/ACM/LeetCodeSource/utils.cpp"
 }
 ]

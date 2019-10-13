@@ -19,4 +19,5 @@ add_executable(TEST21 test21.cpp Solution.cpp utils.cpp)
 add_executable(TEST3 test3.cpp Solution.cpp utils.cpp)
 add_executable(TEST15 test15.cpp Solution.cpp utils.cpp)
 add_executable(TEST415 test415.cpp Solution.cpp utils.cpp)
+add_executable(TEST721 test721.cpp Solution.cpp utils.cpp)
 

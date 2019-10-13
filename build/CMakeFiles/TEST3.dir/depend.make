@@ -4,6 +4,7 @@
 CMakeFiles/TEST3.dir/Solution.cpp.obj: ../Solution.cpp
 CMakeFiles/TEST3.dir/Solution.cpp.obj: ../Solution.h
 CMakeFiles/TEST3.dir/Solution.cpp.obj: ../lib_head.h
+CMakeFiles/TEST3.dir/Solution.cpp.obj: ../utils.h
 
 CMakeFiles/TEST3.dir/test3.cpp.obj: ../Solution.h
 CMakeFiles/TEST3.dir/test3.cpp.obj: ../lib_head.h

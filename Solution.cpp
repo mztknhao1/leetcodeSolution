@@ -407,5 +407,61 @@ std::string Solution::addBinary_q67(std::string a, std::string b) {
 
 
 vector<vector<std::string>> Solution::acountsMerge_q721(vector<vector<std::string>>& acounts){
+    vector<vector<std::string>> result;
+    vector<std::string> tmpAcount;
+    int numCounts = acounts.size();
+    if(numCounts == 0) return result;
+    if(numCounts == 1) {
+        result.push_back(acounts[0]);
+        return result;
+    }
+    //遍历每一个vector
+    //保存flag，对已经融合的vector，falg=1
+    vector<int> flag(numCounts,0);
+    for(int i=0;i<numCounts;i++){
+        for(int j=i+1;j<numCounts;j++){
+            //如果该账户没有被融合则进行比较
+            if(flag[j]==0&&compAcounts(acounts[i],acounts[j])){
+                //将账户融合到第[i]个账户中
+                mergeAcounts(acounts[i],acounts[j]);
+                flag[j] = 1;
+            }
+        }
+    }
+    for(int m=0;m<numCounts;m++){
+        if(flag[m]==0){
+            //std::sort(acounts[m].begin()+1,acounts[m].end(),std::greater<std::string>());
+            result.push_back(acounts[m]);
+        }
+    }
+    return result;
+}
 
+bool Solution::compAcounts(vector<std::string>& acount1,vector<std::string>& acount2){
+    int num1 = acount1.size()-1;
+    int num2 = acount2.size()-1;
+    int n=std::min(num1,num2);
+    int flag = 0;
+    if(n==num1){
+        for(int i=0;i<n;i++){
+            vector<std::string>::iterator iter = find(acount2.begin()+1,acount2.end(),acount1[i+1]);  
+            if(iter!=acount2.end()){
+                flag = 1;
+                acount2.erase(iter);
+            }
+        }
+    }else if(n==num2){
+         for(int i=0;i<n;i++){
+            vector<std::string>::iterator iter = find(acount1.begin()+1,acount1.end(),acount2[i+1]);
+            if(iter!=acount1.end()){
+                flag = 1;
+                acount1.erase(iter);
+            }
+        }   
+    }
+    return flag==1?true:false;
+}
+
+void Solution::mergeAcounts(vector<std::string>& dstAcount,vector<std::string>& srcAcount){
+    dstAcount.insert(dstAcount.end(),srcAcount.begin()+1,srcAcount.end());
 }

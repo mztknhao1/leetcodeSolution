@@ -51,7 +51,11 @@ public:
     std::string addBinary_q67(std::string a, std::string b);
 
     vector<vector<std::string>> acountsMerge_q721(vector<vector<std::string>>& acounts);
-    
+
+
+private:
+    bool compAcounts(vector<std::string>& acount1,vector<std::string>& acount2);
+    void mergeAcounts(vector<std::string>& dstAcount,vector<std::string>& srcAcount);
 };
 
 #endif
