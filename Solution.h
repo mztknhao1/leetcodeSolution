@@ -48,6 +48,9 @@ public:
     vector<vector<int>> threeSum_q15(vector<int>& nums);
 
     std::string addString_q415(std::string& s1,std::string& s2);
+    std::string addBinary_q67(std::string a, std::string b);
+
+    vector<vector<std::string>> acountsMerge_q721(vector<vector<std::string>>& acounts);
     
 };
 

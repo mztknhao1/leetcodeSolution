@@ -382,3 +382,30 @@ std::string Solution::addString_q415(std::string& s1,std::string& s2){
     if (carry==1) result.insert(result.begin(),'1');
     return result;
 }
+
+std::string Solution::addBinary_q67(std::string a, std::string b) {
+        int na = a.size();
+        int nb = b.size();
+        int carry = 0;
+        std::string result;
+        for(int i=na-1,j=nb-1;i>=0||j>=0;i--,j--){
+            int sum=carry;
+            sum += i>=0? a[i]-'0':0;
+            sum += j>=0? b[j]-'0':0;
+            result.insert(result.begin(),'0' + sum%2);
+            if(sum>=2){
+                carry = 1;
+            }else{
+                carry=0;
+            }
+        }
+        if(carry==1){
+            result.insert(result.begin(),'1');
+        }
+        return result;
+}
+
+
+vector<vector<std::string>> Solution::acountsMerge_q721(vector<vector<std::string>>& acounts){
+
+}
