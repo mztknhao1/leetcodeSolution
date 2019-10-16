@@ -57,6 +57,7 @@ include CMakeFiles/TEST650.dir/progress.make
 include CMakeFiles/TEST650.dir/flags.make
 
 CMakeFiles/TEST650.dir/test650.cpp.obj: CMakeFiles/TEST650.dir/flags.make
+CMakeFiles/TEST650.dir/test650.cpp.obj: CMakeFiles/TEST650.dir/includes_CXX.rsp
 CMakeFiles/TEST650.dir/test650.cpp.obj: ../test650.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TEST650.dir/test650.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST650.dir\test650.cpp.obj -c E:\ACM\LeetCodeSource\test650.cpp
@@ -69,34 +70,51 @@ CMakeFiles/TEST650.dir/test650.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST650.dir/test650.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\test650.cpp -o CMakeFiles\TEST650.dir\test650.cpp.s
 
-CMakeFiles/TEST650.dir/Solution.cpp.obj: CMakeFiles/TEST650.dir/flags.make
-CMakeFiles/TEST650.dir/Solution.cpp.obj: ../Solution.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TEST650.dir/Solution.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST650.dir\Solution.cpp.obj -c E:\ACM\LeetCodeSource\Solution.cpp
+CMakeFiles/TEST650.dir/SolutionSrc/Solution.cpp.obj: CMakeFiles/TEST650.dir/flags.make
+CMakeFiles/TEST650.dir/SolutionSrc/Solution.cpp.obj: CMakeFiles/TEST650.dir/includes_CXX.rsp
+CMakeFiles/TEST650.dir/SolutionSrc/Solution.cpp.obj: ../SolutionSrc/Solution.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TEST650.dir/SolutionSrc/Solution.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST650.dir\SolutionSrc\Solution.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\Solution.cpp
 
-CMakeFiles/TEST650.dir/Solution.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST650.dir/Solution.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\ACM\LeetCodeSource\Solution.cpp > CMakeFiles\TEST650.dir\Solution.cpp.i
+CMakeFiles/TEST650.dir/SolutionSrc/Solution.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST650.dir/SolutionSrc/Solution.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\ACM\LeetCodeSource\SolutionSrc\Solution.cpp > CMakeFiles\TEST650.dir\SolutionSrc\Solution.cpp.i
 
-CMakeFiles/TEST650.dir/Solution.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST650.dir/Solution.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\Solution.cpp -o CMakeFiles\TEST650.dir\Solution.cpp.s
+CMakeFiles/TEST650.dir/SolutionSrc/Solution.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST650.dir/SolutionSrc/Solution.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\SolutionSrc\Solution.cpp -o CMakeFiles\TEST650.dir\SolutionSrc\Solution.cpp.s
+
+CMakeFiles/TEST650.dir/SolutionSrc/utils.cpp.obj: CMakeFiles/TEST650.dir/flags.make
+CMakeFiles/TEST650.dir/SolutionSrc/utils.cpp.obj: CMakeFiles/TEST650.dir/includes_CXX.rsp
+CMakeFiles/TEST650.dir/SolutionSrc/utils.cpp.obj: ../SolutionSrc/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TEST650.dir/SolutionSrc/utils.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST650.dir\SolutionSrc\utils.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\utils.cpp
+
+CMakeFiles/TEST650.dir/SolutionSrc/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST650.dir/SolutionSrc/utils.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\ACM\LeetCodeSource\SolutionSrc\utils.cpp > CMakeFiles\TEST650.dir\SolutionSrc\utils.cpp.i
+
+CMakeFiles/TEST650.dir/SolutionSrc/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST650.dir/SolutionSrc/utils.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\SolutionSrc\utils.cpp -o CMakeFiles\TEST650.dir\SolutionSrc\utils.cpp.s
 
 # Object files for target TEST650
 TEST650_OBJECTS = \
 "CMakeFiles/TEST650.dir/test650.cpp.obj" \
-"CMakeFiles/TEST650.dir/Solution.cpp.obj"
+"CMakeFiles/TEST650.dir/SolutionSrc/Solution.cpp.obj" \
+"CMakeFiles/TEST650.dir/SolutionSrc/utils.cpp.obj"
 
 # External object files for target TEST650
 TEST650_EXTERNAL_OBJECTS =
 
 TEST650.exe: CMakeFiles/TEST650.dir/test650.cpp.obj
-TEST650.exe: CMakeFiles/TEST650.dir/Solution.cpp.obj
+TEST650.exe: CMakeFiles/TEST650.dir/SolutionSrc/Solution.cpp.obj
+TEST650.exe: CMakeFiles/TEST650.dir/SolutionSrc/utils.cpp.obj
 TEST650.exe: CMakeFiles/TEST650.dir/build.make
 TEST650.exe: CMakeFiles/TEST650.dir/linklibs.rsp
 TEST650.exe: CMakeFiles/TEST650.dir/objects1.rsp
 TEST650.exe: CMakeFiles/TEST650.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TEST650.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TEST650.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TEST650.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

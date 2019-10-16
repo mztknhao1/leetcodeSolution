@@ -57,6 +57,7 @@ include CMakeFiles/TEST442.dir/progress.make
 include CMakeFiles/TEST442.dir/flags.make
 
 CMakeFiles/TEST442.dir/test442.cpp.obj: CMakeFiles/TEST442.dir/flags.make
+CMakeFiles/TEST442.dir/test442.cpp.obj: CMakeFiles/TEST442.dir/includes_CXX.rsp
 CMakeFiles/TEST442.dir/test442.cpp.obj: ../test442.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TEST442.dir/test442.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST442.dir\test442.cpp.obj -c E:\ACM\LeetCodeSource\test442.cpp
@@ -69,34 +70,51 @@ CMakeFiles/TEST442.dir/test442.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST442.dir/test442.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\test442.cpp -o CMakeFiles\TEST442.dir\test442.cpp.s
 
-CMakeFiles/TEST442.dir/Solution.cpp.obj: CMakeFiles/TEST442.dir/flags.make
-CMakeFiles/TEST442.dir/Solution.cpp.obj: ../Solution.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TEST442.dir/Solution.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST442.dir\Solution.cpp.obj -c E:\ACM\LeetCodeSource\Solution.cpp
+CMakeFiles/TEST442.dir/SolutionSrc/Solution.cpp.obj: CMakeFiles/TEST442.dir/flags.make
+CMakeFiles/TEST442.dir/SolutionSrc/Solution.cpp.obj: CMakeFiles/TEST442.dir/includes_CXX.rsp
+CMakeFiles/TEST442.dir/SolutionSrc/Solution.cpp.obj: ../SolutionSrc/Solution.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TEST442.dir/SolutionSrc/Solution.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST442.dir\SolutionSrc\Solution.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\Solution.cpp
 
-CMakeFiles/TEST442.dir/Solution.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST442.dir/Solution.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\ACM\LeetCodeSource\Solution.cpp > CMakeFiles\TEST442.dir\Solution.cpp.i
+CMakeFiles/TEST442.dir/SolutionSrc/Solution.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST442.dir/SolutionSrc/Solution.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\ACM\LeetCodeSource\SolutionSrc\Solution.cpp > CMakeFiles\TEST442.dir\SolutionSrc\Solution.cpp.i
 
-CMakeFiles/TEST442.dir/Solution.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST442.dir/Solution.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\Solution.cpp -o CMakeFiles\TEST442.dir\Solution.cpp.s
+CMakeFiles/TEST442.dir/SolutionSrc/Solution.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST442.dir/SolutionSrc/Solution.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\SolutionSrc\Solution.cpp -o CMakeFiles\TEST442.dir\SolutionSrc\Solution.cpp.s
+
+CMakeFiles/TEST442.dir/SolutionSrc/utils.cpp.obj: CMakeFiles/TEST442.dir/flags.make
+CMakeFiles/TEST442.dir/SolutionSrc/utils.cpp.obj: CMakeFiles/TEST442.dir/includes_CXX.rsp
+CMakeFiles/TEST442.dir/SolutionSrc/utils.cpp.obj: ../SolutionSrc/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TEST442.dir/SolutionSrc/utils.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST442.dir\SolutionSrc\utils.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\utils.cpp
+
+CMakeFiles/TEST442.dir/SolutionSrc/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST442.dir/SolutionSrc/utils.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\ACM\LeetCodeSource\SolutionSrc\utils.cpp > CMakeFiles\TEST442.dir\SolutionSrc\utils.cpp.i
+
+CMakeFiles/TEST442.dir/SolutionSrc/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST442.dir/SolutionSrc/utils.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\SolutionSrc\utils.cpp -o CMakeFiles\TEST442.dir\SolutionSrc\utils.cpp.s
 
 # Object files for target TEST442
 TEST442_OBJECTS = \
 "CMakeFiles/TEST442.dir/test442.cpp.obj" \
-"CMakeFiles/TEST442.dir/Solution.cpp.obj"
+"CMakeFiles/TEST442.dir/SolutionSrc/Solution.cpp.obj" \
+"CMakeFiles/TEST442.dir/SolutionSrc/utils.cpp.obj"
 
 # External object files for target TEST442
 TEST442_EXTERNAL_OBJECTS =
 
 TEST442.exe: CMakeFiles/TEST442.dir/test442.cpp.obj
-TEST442.exe: CMakeFiles/TEST442.dir/Solution.cpp.obj
+TEST442.exe: CMakeFiles/TEST442.dir/SolutionSrc/Solution.cpp.obj
+TEST442.exe: CMakeFiles/TEST442.dir/SolutionSrc/utils.cpp.obj
 TEST442.exe: CMakeFiles/TEST442.dir/build.make
 TEST442.exe: CMakeFiles/TEST442.dir/linklibs.rsp
 TEST442.exe: CMakeFiles/TEST442.dir/objects1.rsp
 TEST442.exe: CMakeFiles/TEST442.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TEST442.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TEST442.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TEST442.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

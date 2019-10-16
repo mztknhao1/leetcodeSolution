@@ -38,6 +38,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.15/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files/CMake/share/cmake-3.15/Templates/CPackConfig.cmake.in"
   "../CMakeLists.txt"
+  "../SolutionSrc/CMakeLists.txt"
+  "../SolutionTree/CMakeLists.txt"
   "CMakeFiles/3.15.0-rc3/CMakeCCompiler.cmake"
   "CMakeFiles/3.15.0-rc3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.15.0-rc3/CMakeRCCompiler.cmake"
@@ -56,6 +58,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CPackConfig.cmake"
   "CPackSourceConfig.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "SolutionSrc/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "SolutionTree/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -97,4 +101,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/TEST650.dir/DependInfo.cmake"
   "CMakeFiles/TEST21.dir/DependInfo.cmake"
   "CMakeFiles/TEST721.dir/DependInfo.cmake"
+  "SolutionSrc/CMakeFiles/SOLUTION.dir/DependInfo.cmake"
+  "SolutionTree/CMakeFiles/TREE_LIB.dir/DependInfo.cmake"
   )

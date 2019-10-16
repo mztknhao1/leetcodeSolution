@@ -623,56 +623,133 @@ TEST721/fast:
 	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/build
 .PHONY : TEST721/fast
 
-Solution.obj: Solution.cpp.obj
+#=============================================================================
+# Target rules for targets named SOLUTION
 
-.PHONY : Solution.obj
+# Build rule for target.
+SOLUTION: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 SOLUTION
+.PHONY : SOLUTION
+
+# fast build rule for target.
+SOLUTION/fast:
+	$(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/build
+.PHONY : SOLUTION/fast
+
+#=============================================================================
+# Target rules for targets named TREE_LIB
+
+# Build rule for target.
+TREE_LIB: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TREE_LIB
+.PHONY : TREE_LIB
+
+# fast build rule for target.
+TREE_LIB/fast:
+	$(MAKE) -f SolutionTree\CMakeFiles\TREE_LIB.dir\build.make SolutionTree/CMakeFiles/TREE_LIB.dir/build
+.PHONY : TREE_LIB/fast
+
+SolutionSrc/Solution.obj: SolutionSrc/Solution.cpp.obj
+
+.PHONY : SolutionSrc/Solution.obj
 
 # target to build an object file
-Solution.cpp.obj:
-	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/Solution.cpp.obj
-	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/Solution.cpp.obj
-	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/Solution.cpp.obj
-	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/Solution.cpp.obj
-	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.obj
-	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.obj
-	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/Solution.cpp.obj
-	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/Solution.cpp.obj
-	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/Solution.cpp.obj
-.PHONY : Solution.cpp.obj
+SolutionSrc/Solution.cpp.obj:
+	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/SolutionSrc/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/SolutionSrc/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/SolutionSrc/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/SolutionSrc/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/SolutionSrc/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/Solution.cpp.obj
+.PHONY : SolutionSrc/Solution.cpp.obj
 
-Solution.i: Solution.cpp.i
+SolutionSrc/Solution.i: SolutionSrc/Solution.cpp.i
 
-.PHONY : Solution.i
+.PHONY : SolutionSrc/Solution.i
 
 # target to preprocess a source file
-Solution.cpp.i:
-	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/Solution.cpp.i
-	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/Solution.cpp.i
-	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/Solution.cpp.i
-	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/Solution.cpp.i
-	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.i
-	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.i
-	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/Solution.cpp.i
-	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/Solution.cpp.i
-	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/Solution.cpp.i
-.PHONY : Solution.cpp.i
+SolutionSrc/Solution.cpp.i:
+	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/SolutionSrc/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/SolutionSrc/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/SolutionSrc/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/SolutionSrc/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/SolutionSrc/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/Solution.cpp.i
+.PHONY : SolutionSrc/Solution.cpp.i
 
-Solution.s: Solution.cpp.s
+SolutionSrc/Solution.s: SolutionSrc/Solution.cpp.s
 
-.PHONY : Solution.s
+.PHONY : SolutionSrc/Solution.s
 
 # target to generate assembly for a file
-Solution.cpp.s:
-	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/Solution.cpp.s
-	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/Solution.cpp.s
-	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/Solution.cpp.s
-	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/Solution.cpp.s
-	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/Solution.cpp.s
-	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/Solution.cpp.s
-	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/Solution.cpp.s
-	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/Solution.cpp.s
-	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/Solution.cpp.s
-.PHONY : Solution.cpp.s
+SolutionSrc/Solution.cpp.s:
+	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/SolutionSrc/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/SolutionSrc/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/SolutionSrc/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/SolutionSrc/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/SolutionSrc/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/Solution.cpp.s
+.PHONY : SolutionSrc/Solution.cpp.s
+
+SolutionSrc/utils.obj: SolutionSrc/utils.cpp.obj
+
+.PHONY : SolutionSrc/utils.obj
+
+# target to build an object file
+SolutionSrc/utils.cpp.obj:
+	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/utils.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/utils.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/SolutionSrc/utils.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/SolutionSrc/utils.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/SolutionSrc/utils.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/SolutionSrc/utils.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/SolutionSrc/utils.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/utils.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/utils.cpp.obj
+.PHONY : SolutionSrc/utils.cpp.obj
+
+SolutionSrc/utils.i: SolutionSrc/utils.cpp.i
+
+.PHONY : SolutionSrc/utils.i
+
+# target to preprocess a source file
+SolutionSrc/utils.cpp.i:
+	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/utils.cpp.i
+	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/utils.cpp.i
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/SolutionSrc/utils.cpp.i
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/SolutionSrc/utils.cpp.i
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/SolutionSrc/utils.cpp.i
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/SolutionSrc/utils.cpp.i
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/SolutionSrc/utils.cpp.i
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/utils.cpp.i
+	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/utils.cpp.i
+.PHONY : SolutionSrc/utils.cpp.i
+
+SolutionSrc/utils.s: SolutionSrc/utils.cpp.s
+
+.PHONY : SolutionSrc/utils.s
+
+# target to generate assembly for a file
+SolutionSrc/utils.cpp.s:
+	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/utils.cpp.s
+	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/utils.cpp.s
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/SolutionSrc/utils.cpp.s
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/SolutionSrc/utils.cpp.s
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/SolutionSrc/utils.cpp.s
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/SolutionSrc/utils.cpp.s
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/SolutionSrc/utils.cpp.s
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/utils.cpp.s
+	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/utils.cpp.s
+.PHONY : SolutionSrc/utils.cpp.s
 
 test15.obj: test15.cpp.obj
 
@@ -917,45 +994,6 @@ test721.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/test721.cpp.s
 .PHONY : test721.cpp.s
 
-utils.obj: utils.cpp.obj
-
-.PHONY : utils.obj
-
-# target to build an object file
-utils.cpp.obj:
-	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/utils.cpp.obj
-	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/utils.cpp.obj
-	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/utils.cpp.obj
-	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/utils.cpp.obj
-	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/utils.cpp.obj
-.PHONY : utils.cpp.obj
-
-utils.i: utils.cpp.i
-
-.PHONY : utils.i
-
-# target to preprocess a source file
-utils.cpp.i:
-	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/utils.cpp.i
-	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/utils.cpp.i
-	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/utils.cpp.i
-	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/utils.cpp.i
-	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/utils.cpp.i
-.PHONY : utils.cpp.i
-
-utils.s: utils.cpp.s
-
-.PHONY : utils.s
-
-# target to generate assembly for a file
-utils.cpp.s:
-	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/utils.cpp.s
-	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/utils.cpp.s
-	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/utils.cpp.s
-	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/utils.cpp.s
-	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/utils.cpp.s
-.PHONY : utils.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1004,9 +1042,14 @@ help:
 	@echo ... test
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Solution.obj
-	@echo ... Solution.i
-	@echo ... Solution.s
+	@echo ... SOLUTION
+	@echo ... TREE_LIB
+	@echo ... SolutionSrc/Solution.obj
+	@echo ... SolutionSrc/Solution.i
+	@echo ... SolutionSrc/Solution.s
+	@echo ... SolutionSrc/utils.obj
+	@echo ... SolutionSrc/utils.i
+	@echo ... SolutionSrc/utils.s
 	@echo ... test15.obj
 	@echo ... test15.i
 	@echo ... test15.s
@@ -1034,9 +1077,6 @@ help:
 	@echo ... test721.obj
 	@echo ... test721.i
 	@echo ... test721.s
-	@echo ... utils.obj
-	@echo ... utils.i
-	@echo ... utils.s
 .PHONY : help
 
 

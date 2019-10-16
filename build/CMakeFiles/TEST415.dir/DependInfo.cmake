@@ -4,14 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/ACM/LeetCodeSource/Solution.cpp" "E:/ACM/LeetCodeSource/build/CMakeFiles/TEST415.dir/Solution.cpp.obj"
+  "E:/ACM/LeetCodeSource/SolutionSrc/Solution.cpp" "E:/ACM/LeetCodeSource/build/CMakeFiles/TEST415.dir/SolutionSrc/Solution.cpp.obj"
+  "E:/ACM/LeetCodeSource/SolutionSrc/utils.cpp" "E:/ACM/LeetCodeSource/build/CMakeFiles/TEST415.dir/SolutionSrc/utils.cpp.obj"
   "E:/ACM/LeetCodeSource/test415.cpp" "E:/ACM/LeetCodeSource/build/CMakeFiles/TEST415.dir/test415.cpp.obj"
-  "E:/ACM/LeetCodeSource/utils.cpp" "E:/ACM/LeetCodeSource/build/CMakeFiles/TEST415.dir/utils.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../."
+  ".././SolutionSrc"
+  ".././SolutionTree"
   )
 
 # Targets to which this target links.

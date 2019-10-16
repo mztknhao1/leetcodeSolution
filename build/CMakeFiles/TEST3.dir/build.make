@@ -57,6 +57,7 @@ include CMakeFiles/TEST3.dir/progress.make
 include CMakeFiles/TEST3.dir/flags.make
 
 CMakeFiles/TEST3.dir/test3.cpp.obj: CMakeFiles/TEST3.dir/flags.make
+CMakeFiles/TEST3.dir/test3.cpp.obj: CMakeFiles/TEST3.dir/includes_CXX.rsp
 CMakeFiles/TEST3.dir/test3.cpp.obj: ../test3.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TEST3.dir/test3.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST3.dir\test3.cpp.obj -c E:\ACM\LeetCodeSource\test3.cpp
@@ -69,44 +70,46 @@ CMakeFiles/TEST3.dir/test3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST3.dir/test3.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\test3.cpp -o CMakeFiles\TEST3.dir\test3.cpp.s
 
-CMakeFiles/TEST3.dir/Solution.cpp.obj: CMakeFiles/TEST3.dir/flags.make
-CMakeFiles/TEST3.dir/Solution.cpp.obj: ../Solution.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TEST3.dir/Solution.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST3.dir\Solution.cpp.obj -c E:\ACM\LeetCodeSource\Solution.cpp
+CMakeFiles/TEST3.dir/SolutionSrc/Solution.cpp.obj: CMakeFiles/TEST3.dir/flags.make
+CMakeFiles/TEST3.dir/SolutionSrc/Solution.cpp.obj: CMakeFiles/TEST3.dir/includes_CXX.rsp
+CMakeFiles/TEST3.dir/SolutionSrc/Solution.cpp.obj: ../SolutionSrc/Solution.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TEST3.dir/SolutionSrc/Solution.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST3.dir\SolutionSrc\Solution.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\Solution.cpp
 
-CMakeFiles/TEST3.dir/Solution.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST3.dir/Solution.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\ACM\LeetCodeSource\Solution.cpp > CMakeFiles\TEST3.dir\Solution.cpp.i
+CMakeFiles/TEST3.dir/SolutionSrc/Solution.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST3.dir/SolutionSrc/Solution.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\ACM\LeetCodeSource\SolutionSrc\Solution.cpp > CMakeFiles\TEST3.dir\SolutionSrc\Solution.cpp.i
 
-CMakeFiles/TEST3.dir/Solution.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST3.dir/Solution.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\Solution.cpp -o CMakeFiles\TEST3.dir\Solution.cpp.s
+CMakeFiles/TEST3.dir/SolutionSrc/Solution.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST3.dir/SolutionSrc/Solution.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\SolutionSrc\Solution.cpp -o CMakeFiles\TEST3.dir\SolutionSrc\Solution.cpp.s
 
-CMakeFiles/TEST3.dir/utils.cpp.obj: CMakeFiles/TEST3.dir/flags.make
-CMakeFiles/TEST3.dir/utils.cpp.obj: ../utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TEST3.dir/utils.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST3.dir\utils.cpp.obj -c E:\ACM\LeetCodeSource\utils.cpp
+CMakeFiles/TEST3.dir/SolutionSrc/utils.cpp.obj: CMakeFiles/TEST3.dir/flags.make
+CMakeFiles/TEST3.dir/SolutionSrc/utils.cpp.obj: CMakeFiles/TEST3.dir/includes_CXX.rsp
+CMakeFiles/TEST3.dir/SolutionSrc/utils.cpp.obj: ../SolutionSrc/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TEST3.dir/SolutionSrc/utils.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST3.dir\SolutionSrc\utils.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\utils.cpp
 
-CMakeFiles/TEST3.dir/utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST3.dir/utils.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\ACM\LeetCodeSource\utils.cpp > CMakeFiles\TEST3.dir\utils.cpp.i
+CMakeFiles/TEST3.dir/SolutionSrc/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST3.dir/SolutionSrc/utils.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\ACM\LeetCodeSource\SolutionSrc\utils.cpp > CMakeFiles\TEST3.dir\SolutionSrc\utils.cpp.i
 
-CMakeFiles/TEST3.dir/utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST3.dir/utils.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\utils.cpp -o CMakeFiles\TEST3.dir\utils.cpp.s
+CMakeFiles/TEST3.dir/SolutionSrc/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST3.dir/SolutionSrc/utils.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\SolutionSrc\utils.cpp -o CMakeFiles\TEST3.dir\SolutionSrc\utils.cpp.s
 
 # Object files for target TEST3
 TEST3_OBJECTS = \
 "CMakeFiles/TEST3.dir/test3.cpp.obj" \
-"CMakeFiles/TEST3.dir/Solution.cpp.obj" \
-"CMakeFiles/TEST3.dir/utils.cpp.obj"
+"CMakeFiles/TEST3.dir/SolutionSrc/Solution.cpp.obj" \
+"CMakeFiles/TEST3.dir/SolutionSrc/utils.cpp.obj"
 
 # External object files for target TEST3
 TEST3_EXTERNAL_OBJECTS =
 
 TEST3.exe: CMakeFiles/TEST3.dir/test3.cpp.obj
-TEST3.exe: CMakeFiles/TEST3.dir/Solution.cpp.obj
-TEST3.exe: CMakeFiles/TEST3.dir/utils.cpp.obj
+TEST3.exe: CMakeFiles/TEST3.dir/SolutionSrc/Solution.cpp.obj
+TEST3.exe: CMakeFiles/TEST3.dir/SolutionSrc/utils.cpp.obj
 TEST3.exe: CMakeFiles/TEST3.dir/build.make
 TEST3.exe: CMakeFiles/TEST3.dir/linklibs.rsp
 TEST3.exe: CMakeFiles/TEST3.dir/objects1.rsp
