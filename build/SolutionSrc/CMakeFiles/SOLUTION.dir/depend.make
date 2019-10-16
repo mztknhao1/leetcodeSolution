@@ -3,10 +3,17 @@
 
 SolutionSrc/CMakeFiles/SOLUTION.dir/Solution.cpp.obj: ../SolutionSrc/Solution.cpp
 SolutionSrc/CMakeFiles/SOLUTION.dir/Solution.cpp.obj: ../SolutionSrc/Solution.h
+SolutionSrc/CMakeFiles/SOLUTION.dir/Solution.cpp.obj: ../SolutionSrc/dataStruct.h
 SolutionSrc/CMakeFiles/SOLUTION.dir/Solution.cpp.obj: ../SolutionSrc/lib_head.h
 SolutionSrc/CMakeFiles/SOLUTION.dir/Solution.cpp.obj: ../SolutionSrc/utils.h
 
+SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.obj: ../SolutionSrc/dataStruct.h
+SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.obj: ../SolutionSrc/lib_head.h
+SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.obj: ../SolutionSrc/tree.cpp
+SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.obj: ../SolutionSrc/tree.h
+
 SolutionSrc/CMakeFiles/SOLUTION.dir/utils.cpp.obj: ../SolutionSrc/Solution.h
+SolutionSrc/CMakeFiles/SOLUTION.dir/utils.cpp.obj: ../SolutionSrc/dataStruct.h
 SolutionSrc/CMakeFiles/SOLUTION.dir/utils.cpp.obj: ../SolutionSrc/lib_head.h
 SolutionSrc/CMakeFiles/SOLUTION.dir/utils.cpp.obj: ../SolutionSrc/utils.cpp
 SolutionSrc/CMakeFiles/SOLUTION.dir/utils.cpp.obj: ../SolutionSrc/utils.h

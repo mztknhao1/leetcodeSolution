@@ -636,19 +636,6 @@ SOLUTION/fast:
 	$(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/build
 .PHONY : SOLUTION/fast
 
-#=============================================================================
-# Target rules for targets named TREE_LIB
-
-# Build rule for target.
-TREE_LIB: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 TREE_LIB
-.PHONY : TREE_LIB
-
-# fast build rule for target.
-TREE_LIB/fast:
-	$(MAKE) -f SolutionTree\CMakeFiles\TREE_LIB.dir\build.make SolutionTree/CMakeFiles/TREE_LIB.dir/build
-.PHONY : TREE_LIB/fast
-
 SolutionSrc/Solution.obj: SolutionSrc/Solution.cpp.obj
 
 .PHONY : SolutionSrc/Solution.obj
@@ -699,6 +686,57 @@ SolutionSrc/Solution.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/Solution.cpp.s
 .PHONY : SolutionSrc/Solution.cpp.s
+
+SolutionSrc/tree.obj: SolutionSrc/tree.cpp.obj
+
+.PHONY : SolutionSrc/tree.obj
+
+# target to build an object file
+SolutionSrc/tree.cpp.obj:
+	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/tree.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/tree.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/SolutionSrc/tree.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/SolutionSrc/tree.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/SolutionSrc/tree.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/SolutionSrc/tree.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/SolutionSrc/tree.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/tree.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/tree.cpp.obj
+.PHONY : SolutionSrc/tree.cpp.obj
+
+SolutionSrc/tree.i: SolutionSrc/tree.cpp.i
+
+.PHONY : SolutionSrc/tree.i
+
+# target to preprocess a source file
+SolutionSrc/tree.cpp.i:
+	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/tree.cpp.i
+	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/tree.cpp.i
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/SolutionSrc/tree.cpp.i
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/SolutionSrc/tree.cpp.i
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/SolutionSrc/tree.cpp.i
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/SolutionSrc/tree.cpp.i
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/SolutionSrc/tree.cpp.i
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/tree.cpp.i
+	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/tree.cpp.i
+.PHONY : SolutionSrc/tree.cpp.i
+
+SolutionSrc/tree.s: SolutionSrc/tree.cpp.s
+
+.PHONY : SolutionSrc/tree.s
+
+# target to generate assembly for a file
+SolutionSrc/tree.cpp.s:
+	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/tree.cpp.s
+	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/tree.cpp.s
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/SolutionSrc/tree.cpp.s
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/SolutionSrc/tree.cpp.s
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/SolutionSrc/tree.cpp.s
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/SolutionSrc/tree.cpp.s
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/SolutionSrc/tree.cpp.s
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/tree.cpp.s
+	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/tree.cpp.s
+.PHONY : SolutionSrc/tree.cpp.s
 
 SolutionSrc/utils.obj: SolutionSrc/utils.cpp.obj
 
@@ -1043,10 +1081,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... SOLUTION
-	@echo ... TREE_LIB
 	@echo ... SolutionSrc/Solution.obj
 	@echo ... SolutionSrc/Solution.i
 	@echo ... SolutionSrc/Solution.s
+	@echo ... SolutionSrc/tree.obj
+	@echo ... SolutionSrc/tree.i
+	@echo ... SolutionSrc/tree.s
 	@echo ... SolutionSrc/utils.obj
 	@echo ... SolutionSrc/utils.i
 	@echo ... SolutionSrc/utils.s

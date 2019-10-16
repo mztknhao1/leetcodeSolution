@@ -3,10 +3,17 @@
 
 CMakeFiles/TEST21.dir/SolutionSrc/Solution.cpp.obj: ../SolutionSrc/Solution.cpp
 CMakeFiles/TEST21.dir/SolutionSrc/Solution.cpp.obj: ../SolutionSrc/Solution.h
+CMakeFiles/TEST21.dir/SolutionSrc/Solution.cpp.obj: ../SolutionSrc/dataStruct.h
 CMakeFiles/TEST21.dir/SolutionSrc/Solution.cpp.obj: ../SolutionSrc/lib_head.h
 CMakeFiles/TEST21.dir/SolutionSrc/Solution.cpp.obj: ../SolutionSrc/utils.h
 
+CMakeFiles/TEST21.dir/SolutionSrc/tree.cpp.obj: ../SolutionSrc/dataStruct.h
+CMakeFiles/TEST21.dir/SolutionSrc/tree.cpp.obj: ../SolutionSrc/lib_head.h
+CMakeFiles/TEST21.dir/SolutionSrc/tree.cpp.obj: ../SolutionSrc/tree.cpp
+CMakeFiles/TEST21.dir/SolutionSrc/tree.cpp.obj: ../SolutionSrc/tree.h
+
 CMakeFiles/TEST21.dir/SolutionSrc/utils.cpp.obj: ../SolutionSrc/Solution.h
+CMakeFiles/TEST21.dir/SolutionSrc/utils.cpp.obj: ../SolutionSrc/dataStruct.h
 CMakeFiles/TEST21.dir/SolutionSrc/utils.cpp.obj: ../SolutionSrc/lib_head.h
 CMakeFiles/TEST21.dir/SolutionSrc/utils.cpp.obj: ../SolutionSrc/utils.cpp
 CMakeFiles/TEST21.dir/SolutionSrc/utils.cpp.obj: ../SolutionSrc/utils.h

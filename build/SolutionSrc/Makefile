@@ -184,6 +184,33 @@ Solution.cpp.s:
 	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/Solution.cpp.s
 .PHONY : Solution.cpp.s
 
+tree.obj: tree.cpp.obj
+
+.PHONY : tree.obj
+
+# target to build an object file
+tree.cpp.obj:
+	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.obj
+.PHONY : tree.cpp.obj
+
+tree.i: tree.cpp.i
+
+.PHONY : tree.i
+
+# target to preprocess a source file
+tree.cpp.i:
+	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.i
+.PHONY : tree.cpp.i
+
+tree.s: tree.cpp.s
+
+.PHONY : tree.s
+
+# target to generate assembly for a file
+tree.cpp.s:
+	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.s
+.PHONY : tree.cpp.s
+
 utils.obj: utils.cpp.obj
 
 .PHONY : utils.obj
@@ -226,6 +253,9 @@ help:
 	@echo ... Solution.obj
 	@echo ... Solution.i
 	@echo ... Solution.s
+	@echo ... tree.obj
+	@echo ... tree.i
+	@echo ... tree.s
 	@echo ... utils.obj
 	@echo ... utils.i
 	@echo ... utils.s

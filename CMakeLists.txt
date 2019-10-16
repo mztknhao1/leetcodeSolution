@@ -8,12 +8,9 @@ set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
 
-include_directories(./ ./SolutionSrc ./SolutionTree)
+include_directories(./ ./SolutionSrc)
 add_subdirectory(SolutionSrc)
-add_subdirectory(SolutionTree)
-
 aux_source_directory(./SolutionSrc SOLUTIONSRC)
-aux_source_directory(./SolutionTree SOLUTIONTREE)
 
 add_executable(TEST456 test456.cpp ${SOLUTIONSRC})
 add_executable(TEST442 test442.cpp ${SOLUTIONSRC})

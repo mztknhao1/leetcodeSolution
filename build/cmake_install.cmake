@@ -35,7 +35,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("E:/ACM/LeetCodeSource/build/SolutionSrc/cmake_install.cmake")
-  include("E:/ACM/LeetCodeSource/build/SolutionTree/cmake_install.cmake")
 
 endif()
 
