@@ -5,8 +5,9 @@ using std::cout;
 using std::endl;
 
 void printVector(vector<int>& nums){
-    for(vector<int>::iterator it=nums.begin();it<nums.end();it++){
-        cout << (*it) << " ";
+    int n = nums.size();
+    for(int i=0; i<n ; i++){
+        cout << nums[i] << " ";
     }
     cout << endl;
 }

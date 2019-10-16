@@ -21,4 +21,5 @@ add_executable(TEST3 test3.cpp ${SOLUTIONSRC})
 add_executable(TEST15 test15.cpp ${SOLUTIONSRC})
 add_executable(TEST415 test415.cpp ${SOLUTIONSRC})
 add_executable(TEST721 test721.cpp ${SOLUTIONSRC})
+add_executable(TEST637 test637.cpp ${SOLUTIONSRC})
 

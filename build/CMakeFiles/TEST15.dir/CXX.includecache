@@ -36,16 +36,6 @@ string
 set
 -
 
-E:/ACM/LeetCodeSource/SolutionSrc/tree.cpp
-tree.h
-E:/ACM/LeetCodeSource/SolutionSrc/tree.h
-
-E:/ACM/LeetCodeSource/SolutionSrc/tree.h
-dataStruct.h
-E:/ACM/LeetCodeSource/SolutionSrc/dataStruct.h
-lib_head.h
-E:/ACM/LeetCodeSource/SolutionSrc/lib_head.h
-
 E:/ACM/LeetCodeSource/SolutionSrc/utils.cpp
 Solution.h
 E:/ACM/LeetCodeSource/SolutionSrc/Solution.h
@@ -55,4 +45,10 @@ E:/ACM/LeetCodeSource/SolutionSrc/utils.h
 E:/ACM/LeetCodeSource/SolutionSrc/utils.h
 Solution.h
 E:/ACM/LeetCodeSource/SolutionSrc/Solution.h
+
+E:/ACM/LeetCodeSource/test15.cpp
+Solution.h
+E:/ACM/LeetCodeSource/Solution.h
+utils.h
+E:/ACM/LeetCodeSource/utils.h
 
