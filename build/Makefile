@@ -637,6 +637,19 @@ TEST637/fast:
 .PHONY : TEST637/fast
 
 #=============================================================================
+# Target rules for targets named TEST94
+
+# Build rule for target.
+TEST94: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TEST94
+.PHONY : TEST94
+
+# fast build rule for target.
+TEST94/fast:
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/build
+.PHONY : TEST94/fast
+
+#=============================================================================
 # Target rules for targets named SOLUTION
 
 # Build rule for target.
@@ -665,6 +678,7 @@ SolutionSrc/Solution.cpp.obj:
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST637.dir\build.make CMakeFiles/TEST637.dir/SolutionSrc/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/SolutionSrc/Solution.cpp.obj
 .PHONY : SolutionSrc/Solution.cpp.obj
 
 SolutionSrc/Solution.i: SolutionSrc/Solution.cpp.i
@@ -683,6 +697,7 @@ SolutionSrc/Solution.cpp.i:
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST637.dir\build.make CMakeFiles/TEST637.dir/SolutionSrc/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/SolutionSrc/Solution.cpp.i
 .PHONY : SolutionSrc/Solution.cpp.i
 
 SolutionSrc/Solution.s: SolutionSrc/Solution.cpp.s
@@ -701,6 +716,7 @@ SolutionSrc/Solution.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST637.dir\build.make CMakeFiles/TEST637.dir/SolutionSrc/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/SolutionSrc/Solution.cpp.s
 .PHONY : SolutionSrc/Solution.cpp.s
 
 SolutionSrc/tree.obj: SolutionSrc/tree.cpp.obj
@@ -719,6 +735,7 @@ SolutionSrc/tree.cpp.obj:
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/tree.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/tree.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST637.dir\build.make CMakeFiles/TEST637.dir/SolutionSrc/tree.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/SolutionSrc/tree.cpp.obj
 .PHONY : SolutionSrc/tree.cpp.obj
 
 SolutionSrc/tree.i: SolutionSrc/tree.cpp.i
@@ -737,6 +754,7 @@ SolutionSrc/tree.cpp.i:
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/tree.cpp.i
 	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/tree.cpp.i
 	$(MAKE) -f CMakeFiles\TEST637.dir\build.make CMakeFiles/TEST637.dir/SolutionSrc/tree.cpp.i
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/SolutionSrc/tree.cpp.i
 .PHONY : SolutionSrc/tree.cpp.i
 
 SolutionSrc/tree.s: SolutionSrc/tree.cpp.s
@@ -755,6 +773,7 @@ SolutionSrc/tree.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/tree.cpp.s
 	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/tree.cpp.s
 	$(MAKE) -f CMakeFiles\TEST637.dir\build.make CMakeFiles/TEST637.dir/SolutionSrc/tree.cpp.s
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/SolutionSrc/tree.cpp.s
 .PHONY : SolutionSrc/tree.cpp.s
 
 SolutionSrc/utils.obj: SolutionSrc/utils.cpp.obj
@@ -773,6 +792,7 @@ SolutionSrc/utils.cpp.obj:
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/utils.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/utils.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST637.dir\build.make CMakeFiles/TEST637.dir/SolutionSrc/utils.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/SolutionSrc/utils.cpp.obj
 .PHONY : SolutionSrc/utils.cpp.obj
 
 SolutionSrc/utils.i: SolutionSrc/utils.cpp.i
@@ -791,6 +811,7 @@ SolutionSrc/utils.cpp.i:
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/utils.cpp.i
 	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/utils.cpp.i
 	$(MAKE) -f CMakeFiles\TEST637.dir\build.make CMakeFiles/TEST637.dir/SolutionSrc/utils.cpp.i
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/SolutionSrc/utils.cpp.i
 .PHONY : SolutionSrc/utils.cpp.i
 
 SolutionSrc/utils.s: SolutionSrc/utils.cpp.s
@@ -809,6 +830,7 @@ SolutionSrc/utils.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/utils.cpp.s
 	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/utils.cpp.s
 	$(MAKE) -f CMakeFiles\TEST637.dir\build.make CMakeFiles/TEST637.dir/SolutionSrc/utils.cpp.s
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/SolutionSrc/utils.cpp.s
 .PHONY : SolutionSrc/utils.cpp.s
 
 test15.obj: test15.cpp.obj
@@ -1081,6 +1103,33 @@ test721.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/test721.cpp.s
 .PHONY : test721.cpp.s
 
+test94.obj: test94.cpp.obj
+
+.PHONY : test94.obj
+
+# target to build an object file
+test94.cpp.obj:
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/test94.cpp.obj
+.PHONY : test94.cpp.obj
+
+test94.i: test94.cpp.i
+
+.PHONY : test94.i
+
+# target to preprocess a source file
+test94.cpp.i:
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/test94.cpp.i
+.PHONY : test94.cpp.i
+
+test94.s: test94.cpp.s
+
+.PHONY : test94.s
+
+# target to generate assembly for a file
+test94.cpp.s:
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/test94.cpp.s
+.PHONY : test94.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1127,6 +1176,7 @@ help:
 	@echo ... TEST721
 	@echo ... package
 	@echo ... TEST637
+	@echo ... TEST94
 	@echo ... test
 	@echo ... edit_cache
 	@echo ... rebuild_cache
@@ -1170,6 +1220,9 @@ help:
 	@echo ... test721.obj
 	@echo ... test721.i
 	@echo ... test721.s
+	@echo ... test94.obj
+	@echo ... test94.i
+	@echo ... test94.s
 .PHONY : help
 
 

@@ -32,3 +32,40 @@ void TreeSolution::bfs_q637(queue<TreeNode*>*& currentQ, queue<TreeNode*>*&nextQ
     currentQ = nextQ;
     nextQ = tmpQ;
 }
+
+vector<int> TreeSolution::inorderTraversal_q94(TreeNode* root){
+    #define _STACK
+    
+    #ifdef _DIGUI
+    vector<int> result;
+    if(root->left != nullptr){
+        vector<int> tmp = inorderTraversal_q94(root->left);
+        result.insert(result.end(),tmp.begin(),tmp.end());
+    }
+    result.push_back(root->val);
+    if(root->right!=nullptr){
+        vector<int> tmp = inorderTraversal_q94(root->right);
+        result.insert(result.end(),tmp.begin(),tmp.end());
+    }
+    return result;
+    #endif
+
+    #ifdef _STACK
+    std::stack<TreeNode*>* s = new std::stack<TreeNode*>;
+    std::vector<int> result;
+    TreeNode* curr=root;
+    while(curr!=nullptr || !s->empty()){
+        //如果当前左子树非空
+        while(curr!=nullptr){
+            s->push(curr);           
+            curr = curr->left;
+        }
+        if(!s->empty()){
+            result.push_back(s->top()->val);
+            curr = s->top()->right;
+            s->pop();
+        }
+    }
+    return result;
+    #endif
+}

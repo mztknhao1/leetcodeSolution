@@ -62,6 +62,7 @@ all: CMakeFiles/TEST650.dir/all
 all: CMakeFiles/TEST21.dir/all
 all: CMakeFiles/TEST721.dir/all
 all: CMakeFiles/TEST637.dir/all
+all: CMakeFiles/TEST94.dir/all
 all: SolutionSrc/all
 
 .PHONY : all
@@ -105,6 +106,7 @@ clean: CMakeFiles/TEST650.dir/clean
 clean: CMakeFiles/TEST21.dir/clean
 clean: CMakeFiles/TEST721.dir/clean
 clean: CMakeFiles/TEST637.dir/clean
+clean: CMakeFiles/TEST94.dir/clean
 clean: SolutionSrc/clean
 
 .PHONY : clean
@@ -1139,6 +1141,33 @@ TEST637: CMakeFiles/TEST637.dir/rule
 CMakeFiles/TEST637.dir/clean:
 	$(MAKE) -f CMakeFiles\TEST637.dir\build.make CMakeFiles/TEST637.dir/clean
 .PHONY : CMakeFiles/TEST637.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/TEST94.dir
+
+# All Build rule for target.
+CMakeFiles/TEST94.dir/all:
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/depend
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=55,56,57,58,59 "Built target TEST94"
+.PHONY : CMakeFiles/TEST94.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TEST94.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 5
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TEST94.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
+.PHONY : CMakeFiles/TEST94.dir/rule
+
+# Convenience name for target.
+TEST94: CMakeFiles/TEST94.dir/rule
+
+.PHONY : TEST94
+
+# clean rule for target.
+CMakeFiles/TEST94.dir/clean:
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/clean
+.PHONY : CMakeFiles/TEST94.dir/clean
 
 #=============================================================================
 # Directory level rules for directory SolutionSrc

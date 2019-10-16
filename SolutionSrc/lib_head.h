@@ -8,5 +8,6 @@
 #include<queue>
 #include<string>
 #include<set>
+#include<stack>
 
 #endif
