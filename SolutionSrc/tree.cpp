@@ -69,3 +69,47 @@ vector<int> TreeSolution::inorderTraversal_q94(TreeNode* root){
     return result;
     #endif
 }
+
+vector<int> TreeSolution::preorderTraversal_q144(TreeNode* root){
+
+    #define __STACK
+
+    #ifdef __DIGUI
+    //首先使用递归的方法,这是个简单的想法，接下来试试堆栈
+    vector<int> result;
+    if(root==nullptr) return result;
+    result.push_back(root->val);
+    if(root->left!=nullptr){
+        vector<int> tmp = preorderTraversal_q144(root->left);
+        result.insert(result.end(), tmp.begin(), tmp.end());
+    }
+    if(root->right!=nullptr){
+        vector<int> tmp = preorderTraversal_q144(root->right);
+        result.insert(result.end(), tmp.begin(), tmp.end());
+    }
+    return result;
+    #endif
+
+    #ifdef __STACK
+    //创建当前指向的节点指针
+    TreeNode* current = root;
+    //创建堆栈
+    std::stack<TreeNode*>* s=new std::stack<TreeNode*>;
+
+    vector<int> result;
+
+    while(current!=nullptr || !s->empty()){
+        while(current!=nullptr){
+            result.push_back(current->val);
+            s->push(current);
+            current=current->left;
+        }
+        current=s->top()->right;
+        s->pop();
+    }
+    return result;
+
+    #endif
+
+
+}
