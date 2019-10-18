@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Win32-mingw32-make"
+	BuildStamp="20191018-0459-Experimental"
+	Name="DESKTOP-L4D0UHH"
+	Generator="ctest-3.15.0-rc3"
+	CompilerName="C:/MinGW/bin/g++.exe"
+	CompilerVersion="6.3.0"
+	OSName="Windows"
+	Hostname="DESKTOP-L4D0UHH"
+	OSRelease=" Professional"
+	OSVersion=" (Build 18362)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="14"
+	ProcessorCacheSize="-1"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="9637"
+	TotalPhysicalMemory="8101"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1799"
+	>
+	<Testing>
+		<StartDateTime>Oct 18 12:59 ?D1[NON-UTF-8-BYTE-0xA8][NON-UTF-8-BYTE-0xB2][NON-UTF-8-BYTE-0xA1][NON-UTF-8-BYTE-0xC0][NON-UTF-8-BYTE-0xA8][NON-UTF-8-BYTE-0xBA][NON-UTF-8-BYTE-0xA1][NON-UTF-8-BYTE-0xC1]?[NON-UTF-8-BYTE-0xA8][NON-UTF-8-BYTE-0xBA][NON-UTF-8-BYTE-0xA1][NON-UTF-8-BYTE-0xC0]??</StartDateTime>
+		<StartTestTime>1571374780</StartTestTime>
+		<TestList>
+			<Test>./myTEST266</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>myTEST266</Name>
+			<Path>.</Path>
+			<FullName>./myTEST266</FullName>
+			<FullCommandLine>E:\ACM\LeetCodeSource\build\TEST415.exe "1" "2"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0334414</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>E:\ACM\LeetCodeSource\build\TEST415.exe "1" "2"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>3
+</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Oct 18 12:59 ?D1[NON-UTF-8-BYTE-0xA8][NON-UTF-8-BYTE-0xB2][NON-UTF-8-BYTE-0xA1][NON-UTF-8-BYTE-0xC0][NON-UTF-8-BYTE-0xA8][NON-UTF-8-BYTE-0xBA][NON-UTF-8-BYTE-0xA1][NON-UTF-8-BYTE-0xC1]?[NON-UTF-8-BYTE-0xA8][NON-UTF-8-BYTE-0xBA][NON-UTF-8-BYTE-0xA1][NON-UTF-8-BYTE-0xC0]??</EndDateTime>
+		<EndTestTime>1571374781</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
