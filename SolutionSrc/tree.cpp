@@ -115,6 +115,9 @@ vector<int> TreeSolution::preorderTraversal_q144(TreeNode* root){
 }
 
 TreeNode* TreeSolution::invertTree_q266(TreeNode* root){
+    #define __QUEUE
+
+    #ifdef __DIGUI
     if(root==nullptr) return root;
     if(root->left==nullptr&&root->right==nullptr){
         return root;
@@ -125,4 +128,25 @@ TreeNode* TreeSolution::invertTree_q266(TreeNode* root){
     root->left = root->right;
     root->right = tmp;
     return root;
+    #endif
+
+    #ifdef __QUEUE
+        if(root==nullptr) return root;
+        std::queue<TreeNode*>* q=new std::queue<TreeNode*>;
+        q->push(root);
+        TreeNode* current;
+        TreeNode* tmp;
+        while(!q->empty()){
+            //取出队首的节点，对它的左右孩子做交换
+            current = q->front();
+            tmp = current->left;
+            current->left=current->right;
+            current->right=tmp;
+            q->pop();
+            if(current->left!=nullptr) q->push(current->left);
+            if(current->right!=nullptr) q->push(current->right);
+        }
+        return root;
+    #endif
+
 }
