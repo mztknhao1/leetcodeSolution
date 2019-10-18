@@ -114,3 +114,15 @@ vector<int> TreeSolution::preorderTraversal_q144(TreeNode* root){
 
 }
 
+TreeNode* TreeSolution::invertTree_q266(TreeNode* root){
+    if(root==nullptr) return root;
+    if(root->left==nullptr&&root->right==nullptr){
+        return root;
+    }
+    TreeNode* inversleft = invertTree_q266(root->left);
+    TreeNode* inversright = invertTree_q266(root->right);
+    TreeNode* tmp = root->left;
+    root->left = root->right;
+    root->right = tmp;
+    return root;
+}
