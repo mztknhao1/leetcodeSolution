@@ -25,7 +25,9 @@ add_executable(TEST637 test637.cpp ${SOLUTIONSRC})
 add_executable(TEST94 test94.cpp ${SOLUTIONSRC})
 add_executable(TEST144 test144.cpp ${SOLUTIONSRC})
 add_executable(TEST226 test226.cpp ${SOLUTIONSRC})
+add_executable(TEST102 test102.cpp ${SOLUTIONSRC})
 
-enable_testing()
-add_test(myTEST266 TEST415 1 2)
+
+# enable_testing()
+# add_test(myTEST266 TEST415 1 2)
 

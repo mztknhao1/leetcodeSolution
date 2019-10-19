@@ -150,3 +150,31 @@ TreeNode* TreeSolution::invertTree_q266(TreeNode* root){
     #endif
 
 }
+
+
+//二叉树的层次遍历
+vector<vector<int>> TreeSolution::levelOrder_q102(TreeNode* root){
+    //当前层队列和下一层队列
+    std::queue<TreeNode*>* q_current = new std::queue<TreeNode*>;
+    std::queue<TreeNode*>* q_next = new std::queue<TreeNode*>;
+    vector<vector<int>> result;
+    if(root==nullptr) return result;
+    q_current->push(root);
+    while(!q_current->empty()){
+        TreeNode* p_current;
+        vector<int> tmp_vector;
+        while(!q_current->empty()){
+            p_current = q_current->front();
+            tmp_vector.push_back(p_current->val);
+            if(p_current->left!=nullptr) q_next->push(p_current->left);
+            if(p_current->right!=nullptr) q_next->push(p_current->right);
+            q_current->pop(); 
+        }
+        result.push_back(tmp_vector);
+        std::queue<TreeNode*>* tmp;
+        tmp = q_next;
+        q_next = q_current;
+        q_current = tmp;
+    }
+    return result;
+}
