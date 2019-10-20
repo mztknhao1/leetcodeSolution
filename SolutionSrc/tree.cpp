@@ -151,7 +151,6 @@ TreeNode* TreeSolution::invertTree_q266(TreeNode* root){
 
 }
 
-
 //二叉树的层次遍历
 vector<vector<int>> TreeSolution::levelOrder_q102(TreeNode* root){
     //当前层队列和下一层队列
@@ -177,4 +176,27 @@ vector<vector<int>> TreeSolution::levelOrder_q102(TreeNode* root){
         q_current = tmp;
     }
     return result;
+}
+
+//判断是否是平衡二叉树
+bool TreeSolution::isBalanced_q110(TreeNode* root){
+    int h = 0;
+    return balance(root,h);
+}
+
+bool TreeSolution::balance(TreeNode* root, int& h){
+    int hr,hl;
+    if(root==NULL) {
+        h = 0;    
+        return true;
+    }
+    if(root->left==nullptr && root->right==nullptr){
+        h = 1;
+        return true;
+    }
+    bool bl =  balance(root->left, hl);
+    bool br =  balance(root->right, hr);
+    h = (hl>hr?hl:hr)+ 1;
+    if(abs(hl-hr)<2) return br&bl;
+    else return false;
 }
