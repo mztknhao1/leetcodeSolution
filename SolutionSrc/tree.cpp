@@ -200,3 +200,24 @@ bool TreeSolution::balance(TreeNode* root, int& h){
     if(abs(hl-hr)<2) return br&bl;
     else return false;
 }
+
+
+//验证二叉搜索树
+bool TreeSolution::isValidBST_98(TreeNode* root){
+    //这里应用递归的方法试试
+    int upper = INT32_MAX;
+    int lower = INT32_MIN;
+    return isBST_98(root,lower,upper);
+}
+
+bool TreeSolution::isBST_98(TreeNode* root, int lower, int upper){
+    if(root==nullptr) return true;
+    
+    int val = root->val;
+    if(val >= upper) return false;
+    if(val <= lower) return false;
+
+    if(isBST_98(root->left, lower, val)==false) return false;
+    if(isBST_98(root->right, val, upper)==false) return false;
+    return true;
+}

@@ -15,10 +15,12 @@ public:
     TreeNode* invertTree_q266(TreeNode* root);
     vector<vector<int>> levelOrder_q102(TreeNode* root);
     bool isBalanced_q110(TreeNode* root);
+    bool isValidBST_98(TreeNode* root);
 
 private:
     void bfs_q637(queue<TreeNode*>*& currentQ, queue<TreeNode*>*&nextQ, vector<double>& result);
     bool balance(TreeNode* root, int& h);
+    bool isBST_98(TreeNode* root, int upper, int lower);
 
 };
 
