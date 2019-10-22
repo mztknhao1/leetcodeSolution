@@ -221,3 +221,16 @@ bool TreeSolution::isBST_98(TreeNode* root, int lower, int upper){
     if(isBST_98(root->right, val, upper)==false) return false;
     return true;
 }
+
+int TreeSolution::numTrees_q96(int n){
+    int dp[n+1];
+    dp[0] = 1;
+    for(int i=1;i<n;i++){
+        //第dp[i] = dp[j]*dp[i-j] j<i
+        dp[i] = 0;
+        for(int j=1;j<i;j++){
+            dp[i] += dp[j-1]*dp[i-j];
+        }
+    }
+    return dp[n];
+}

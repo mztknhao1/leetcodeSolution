@@ -16,6 +16,7 @@ public:
     vector<vector<int>> levelOrder_q102(TreeNode* root);
     bool isBalanced_q110(TreeNode* root);
     bool isValidBST_98(TreeNode* root);
+    int numTrees_q96(int n);
 
 private:
     void bfs_q637(queue<TreeNode*>*& currentQ, queue<TreeNode*>*&nextQ, vector<double>& result);
