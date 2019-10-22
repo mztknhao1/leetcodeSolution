@@ -234,3 +234,27 @@ int TreeSolution::numTrees_q96(int n){
     }
     return dp[n];
 }
+
+//二叉树的最小深度
+int TreeSolution::minDepth_q111(TreeNode* root){
+    //先试试用深度优先搜索吧,广度优先搜索类似，使用队列
+    //把当前节点和所在深度绑定
+    stack<pair<TreeNode*,int>>* s = new stack<pair<TreeNode*,int>>;
+    if(root==nullptr) return 0;
+    s->push(make_pair(root,1));
+    int minDeep = INT32_MAX;
+    int currentDeep = 0;
+    TreeNode* currentNode;
+    while(!s->empty()){
+        //如果遇到叶子节点则更新最小深度
+        currentNode = s->top().first;
+        currentDeep = s->top().second;
+        if(currentNode->left==nullptr&&currentNode->right==nullptr){
+            minDeep = min(minDeep,currentDeep);
+        }
+        s->pop();
+        if(currentNode->left!=nullptr) s->push(make_pair(currentNode->left, currentDeep+1));
+        if(currentNode->right!=nullptr) s->push(make_pair(currentNode->right,currentDeep+1));
+    }
+    return minDeep;
+}

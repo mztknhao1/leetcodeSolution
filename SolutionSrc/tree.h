@@ -6,6 +6,11 @@
 
 using std::queue;
 using std::vector;
+using std::pair;
+using std::stack;
+using std::make_pair;
+using std::min;
+using std::max;
 
 class TreeSolution{
 public:
@@ -17,6 +22,7 @@ public:
     bool isBalanced_q110(TreeNode* root);
     bool isValidBST_98(TreeNode* root);
     int numTrees_q96(int n);
+    int minDepth_q111(TreeNode* root);
 
 private:
     void bfs_q637(queue<TreeNode*>*& currentQ, queue<TreeNode*>*&nextQ, vector<double>& result);

@@ -27,6 +27,7 @@ add_executable(TEST144 test144.cpp ${SOLUTIONSRC})
 add_executable(TEST226 test226.cpp ${SOLUTIONSRC})
 add_executable(TEST102 test102.cpp ${SOLUTIONSRC})
 add_executable(TEST98 test98.cpp ${SOLUTIONSRC})
+add_executable(TEST111 test111.cpp ${SOLUTIONSRC})
 
 
 # enable_testing()
