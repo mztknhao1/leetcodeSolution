@@ -301,6 +301,26 @@
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST297.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST297.dir\\test297.cpp.obj -c E:\\ACM\\LeetCodeSource\\test297.cpp",
+  "file": "E:/ACM/LeetCodeSource/test297.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST297.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST297.dir\\SolutionSrc\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\Solution.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/Solution.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST297.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST297.dir\\SolutionSrc\\tree.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\tree.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/tree.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST297.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST297.dir\\SolutionSrc\\utils.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\utils.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/utils.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST226.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST226.dir\\test226.cpp.obj -c E:\\ACM\\LeetCodeSource\\test226.cpp",
   "file": "E:/ACM/LeetCodeSource/test226.cpp"
 },
