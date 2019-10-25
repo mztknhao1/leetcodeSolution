@@ -258,3 +258,23 @@ int TreeSolution::minDepth_q111(TreeNode* root){
     }
     return minDeep;
 }
+
+//原地将二叉树展开成链表
+void TreeSolution::flatten_q114(TreeNode* root){
+    //先尝试用递归的方法实现
+    #define DIGUI
+
+    #ifdef DIGUI
+        if(root==nullptr) return;
+        flatten_q114(root->left);
+        flatten_q114(root->right);
+        TreeNode* tmp=root->right;
+        root->right = root->left;
+        root->left = NULL;
+        TreeNode* tmp2 = root;
+        while(tmp2->right!=nullptr){
+            tmp2 = tmp2->right;
+        }
+        tmp2->right = tmp;
+    #endif
+}

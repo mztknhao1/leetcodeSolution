@@ -23,6 +23,7 @@ public:
     bool isValidBST_98(TreeNode* root);
     int numTrees_q96(int n);
     int minDepth_q111(TreeNode* root);
+    void flatten_q114(TreeNode* root);
 
 private:
     void bfs_q637(queue<TreeNode*>*& currentQ, queue<TreeNode*>*&nextQ, vector<double>& result);
