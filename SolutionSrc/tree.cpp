@@ -262,9 +262,9 @@ int TreeSolution::minDepth_q111(TreeNode* root){
 //原地将二叉树展开成链表
 void TreeSolution::flatten_q114(TreeNode* root){
     //先尝试用递归的方法实现
-    #define DIGUI
+    #define _INPLACE
 
-    #ifdef DIGUI
+    #ifdef _DIGUI
         if(root==nullptr) return;
         flatten_q114(root->left);
         flatten_q114(root->right);
@@ -277,4 +277,20 @@ void TreeSolution::flatten_q114(TreeNode* root){
         }
         tmp2->right = tmp;
     #endif
+
+    #ifdef _INPLACE
+        while (root != nullptr) {
+            if (root->left != nullptr) {
+                auto most_right = root->left; // 如果左子树不为空, 那么就先找到左子树的最右节点
+                while (most_right->right != nullptr) most_right = most_right->right; // 找最右节点
+                most_right->right = root->right; // 然后将跟的右孩子放到最右节点的右子树上
+                root->right = root->left; // 这时候跟的右孩子可以释放, 因此我令左孩子放到右孩子上
+                root->left = nullptr; // 将左孩子置为空
+            }
+            root = root->right; // 继续下一个节点
+        }
+        
+        return;
+    #endif
+
 }
