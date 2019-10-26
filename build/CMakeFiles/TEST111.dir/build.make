@@ -84,10 +84,24 @@ CMakeFiles/TEST111.dir/SolutionSrc/Solution.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST111.dir/SolutionSrc/Solution.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\SolutionSrc\Solution.cpp -o CMakeFiles\TEST111.dir\SolutionSrc\Solution.cpp.s
 
+CMakeFiles/TEST111.dir/SolutionSrc/array.cpp.obj: CMakeFiles/TEST111.dir/flags.make
+CMakeFiles/TEST111.dir/SolutionSrc/array.cpp.obj: CMakeFiles/TEST111.dir/includes_CXX.rsp
+CMakeFiles/TEST111.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/array.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TEST111.dir/SolutionSrc/array.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST111.dir\SolutionSrc\array.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\array.cpp
+
+CMakeFiles/TEST111.dir/SolutionSrc/array.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TEST111.dir/SolutionSrc/array.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\ACM\LeetCodeSource\SolutionSrc\array.cpp > CMakeFiles\TEST111.dir\SolutionSrc\array.cpp.i
+
+CMakeFiles/TEST111.dir/SolutionSrc/array.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TEST111.dir/SolutionSrc/array.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\SolutionSrc\array.cpp -o CMakeFiles\TEST111.dir\SolutionSrc\array.cpp.s
+
 CMakeFiles/TEST111.dir/SolutionSrc/tree.cpp.obj: CMakeFiles/TEST111.dir/flags.make
 CMakeFiles/TEST111.dir/SolutionSrc/tree.cpp.obj: CMakeFiles/TEST111.dir/includes_CXX.rsp
 CMakeFiles/TEST111.dir/SolutionSrc/tree.cpp.obj: ../SolutionSrc/tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TEST111.dir/SolutionSrc/tree.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TEST111.dir/SolutionSrc/tree.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST111.dir\SolutionSrc\tree.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\tree.cpp
 
 CMakeFiles/TEST111.dir/SolutionSrc/tree.cpp.i: cmake_force
@@ -101,7 +115,7 @@ CMakeFiles/TEST111.dir/SolutionSrc/tree.cpp.s: cmake_force
 CMakeFiles/TEST111.dir/SolutionSrc/utils.cpp.obj: CMakeFiles/TEST111.dir/flags.make
 CMakeFiles/TEST111.dir/SolutionSrc/utils.cpp.obj: CMakeFiles/TEST111.dir/includes_CXX.rsp
 CMakeFiles/TEST111.dir/SolutionSrc/utils.cpp.obj: ../SolutionSrc/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TEST111.dir/SolutionSrc/utils.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TEST111.dir/SolutionSrc/utils.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TEST111.dir\SolutionSrc\utils.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\utils.cpp
 
 CMakeFiles/TEST111.dir/SolutionSrc/utils.cpp.i: cmake_force
@@ -116,6 +130,7 @@ CMakeFiles/TEST111.dir/SolutionSrc/utils.cpp.s: cmake_force
 TEST111_OBJECTS = \
 "CMakeFiles/TEST111.dir/test111.cpp.obj" \
 "CMakeFiles/TEST111.dir/SolutionSrc/Solution.cpp.obj" \
+"CMakeFiles/TEST111.dir/SolutionSrc/array.cpp.obj" \
 "CMakeFiles/TEST111.dir/SolutionSrc/tree.cpp.obj" \
 "CMakeFiles/TEST111.dir/SolutionSrc/utils.cpp.obj"
 
@@ -124,13 +139,14 @@ TEST111_EXTERNAL_OBJECTS =
 
 TEST111.exe: CMakeFiles/TEST111.dir/test111.cpp.obj
 TEST111.exe: CMakeFiles/TEST111.dir/SolutionSrc/Solution.cpp.obj
+TEST111.exe: CMakeFiles/TEST111.dir/SolutionSrc/array.cpp.obj
 TEST111.exe: CMakeFiles/TEST111.dir/SolutionSrc/tree.cpp.obj
 TEST111.exe: CMakeFiles/TEST111.dir/SolutionSrc/utils.cpp.obj
 TEST111.exe: CMakeFiles/TEST111.dir/build.make
 TEST111.exe: CMakeFiles/TEST111.dir/linklibs.rsp
 TEST111.exe: CMakeFiles/TEST111.dir/objects1.rsp
 TEST111.exe: CMakeFiles/TEST111.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable TEST111.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable TEST111.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TEST111.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

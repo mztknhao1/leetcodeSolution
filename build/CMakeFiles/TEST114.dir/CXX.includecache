@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+E:/ACM/LeetCodeSource/SolutionSrc/Solution.h
+lib_head.h
+E:/ACM/LeetCodeSource/SolutionSrc/lib_head.h
+dataStruct.h
+E:/ACM/LeetCodeSource/SolutionSrc/dataStruct.h
+
+E:/ACM/LeetCodeSource/SolutionSrc/array.cpp
+array.h
+E:/ACM/LeetCodeSource/SolutionSrc/array.h
+
+E:/ACM/LeetCodeSource/SolutionSrc/array.h
+utils.h
+E:/ACM/LeetCodeSource/SolutionSrc/utils.h
+lib_head.h
+E:/ACM/LeetCodeSource/SolutionSrc/lib_head.h
+
 E:/ACM/LeetCodeSource/SolutionSrc/dataStruct.h
 
 E:/ACM/LeetCodeSource/SolutionSrc/lib_head.h
@@ -35,4 +51,12 @@ dataStruct.h
 E:/ACM/LeetCodeSource/SolutionSrc/dataStruct.h
 lib_head.h
 E:/ACM/LeetCodeSource/SolutionSrc/lib_head.h
+
+E:/ACM/LeetCodeSource/SolutionSrc/utils.h
+Solution.h
+E:/ACM/LeetCodeSource/SolutionSrc/Solution.h
+iostream
+-
+sstream
+-
 

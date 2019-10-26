@@ -108,5 +108,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/TEST94.dir/DependInfo.cmake"
   "CMakeFiles/TEST297.dir/DependInfo.cmake"
   "CMakeFiles/TEST226.dir/DependInfo.cmake"
+  "CMakeFiles/TEST4.dir/DependInfo.cmake"
   "SolutionSrc/CMakeFiles/SOLUTION.dir/DependInfo.cmake"
   )

@@ -1,3 +1,6 @@
+#ifndef __UTILS
+#define __UTILS
+
 #include"Solution.h"
 #include <iostream>
 #include<sstream>
@@ -20,3 +23,5 @@ public:
 	// Decodes your encoded data to tree.
 	TreeNode* deserialize(string data);		
 };
+
+#endif

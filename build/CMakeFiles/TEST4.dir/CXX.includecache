@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/ACM/LeetCodeSource/test4.cpp
+array.h
+E:/ACM/LeetCodeSource/array.h
+utils.h
+E:/ACM/LeetCodeSource/utils.h
+

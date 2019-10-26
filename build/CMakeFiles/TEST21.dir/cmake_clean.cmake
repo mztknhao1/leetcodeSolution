@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/TEST21.dir/SolutionSrc/Solution.cpp.obj"
+  "CMakeFiles/TEST21.dir/SolutionSrc/array.cpp.obj"
   "CMakeFiles/TEST21.dir/SolutionSrc/tree.cpp.obj"
   "CMakeFiles/TEST21.dir/SolutionSrc/utils.cpp.obj"
   "CMakeFiles/TEST21.dir/test21.cpp.obj"
