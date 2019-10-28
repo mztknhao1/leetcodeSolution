@@ -11,6 +11,7 @@ using std::stack;
 using std::make_pair;
 using std::min;
 using std::max;
+using std::string;
 
 class TreeSolution{
 public:
@@ -24,11 +25,13 @@ public:
     int numTrees_q96(int n);
     int minDepth_q111(TreeNode* root);
     void flatten_q114(TreeNode* root);
+    vector<string> letterCasePermutation_q784(string S);
 
 private:
     void bfs_q637(queue<TreeNode*>*& currentQ, queue<TreeNode*>*&nextQ, vector<double>& result);
     bool balance(TreeNode* root, int& h);
     bool isBST_98(TreeNode* root, int upper, int lower);
+    vector<string> dfs_q784(string S,int index, int len, stack<char>& stack, vector<string>& res);
 
 };
 

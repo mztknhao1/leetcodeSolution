@@ -294,3 +294,32 @@ void TreeSolution::flatten_q114(TreeNode* root){
     #endif
 
 }
+
+vector<string> letterCasePermutation_q784(string S){
+    // 这个题用回溯法，深度优先搜索解
+    vector<string> res;
+    int len = S.length();
+    dfs_q784(S,0,len,res);
+    return res;
+}
+
+void dfs_q784(string S,int index, int len, vector<string>& res){
+   if(index != len){
+       //小写字母
+       if(S[index]>='a' && S[index]<='z'){
+           dfs_q784(S,index+1,len,res);
+           S[index] = S[index] - 'a' + 'A';
+           dfs_q784(S,index+1,len,res);
+       }
+       else if(S[index]>='A' && S[index]<='Z'){
+           dfs_q784(S,index+1,len,res);
+           S[index] = S[index] - 'A' + 'a';
+           dfs_q784(S,index+1,len,res);
+       }else{
+           dfs_q784(S,index+1,len,res);
+       }
+   }
+   else{
+       res.push_back(S);
+   }
+}
