@@ -31,7 +31,7 @@ private:
     void bfs_q637(queue<TreeNode*>*& currentQ, queue<TreeNode*>*&nextQ, vector<double>& result);
     bool balance(TreeNode* root, int& h);
     bool isBST_98(TreeNode* root, int upper, int lower);
-    vector<string> dfs_q784(string S,int index, int len, stack<char>& stack, vector<string>& res);
+    void dfs_q784(string S,int index, int len, vector<string>& res);
 
 };
 

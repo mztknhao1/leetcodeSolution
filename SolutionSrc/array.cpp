@@ -33,7 +33,26 @@ double ArraySolution::findMedianSortedArrays_q4(vector<int> nums1, vector<int> n
     }
 
    return 0.0;
+}
 
-
-    
+int ArraySolution::maxArea_q11(vector<int>& height){
+    //寻找能盛水最多的两个柱子组成的容器，使用双指针
+    int left,right;
+    int size = height.size();
+    left = 0;
+    right = size-1;
+    int result=(right-left)*std::min(height[left],height[right]);
+    int now=0;
+    while(left<right){
+        if(height[left]<height[right]){
+            now = (right - left)*height[left];
+            result = now>result?now:result;
+            left++;
+        }else{
+            now = (right-left)*height[right];
+            result = now>result?now:result;
+            right--;
+        }
+    }
+    return result;
 }

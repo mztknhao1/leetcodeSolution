@@ -754,6 +754,19 @@ TEST4/fast:
 .PHONY : TEST4/fast
 
 #=============================================================================
+# Target rules for targets named TESTARRAY
+
+# Build rule for target.
+TESTARRAY: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TESTARRAY
+.PHONY : TESTARRAY
+
+# fast build rule for target.
+TESTARRAY/fast:
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/build
+.PHONY : TESTARRAY/fast
+
+#=============================================================================
 # Target rules for targets named SOLUTION
 
 # Build rule for target.
@@ -791,6 +804,7 @@ SolutionSrc/Solution.cpp.obj:
 	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/SolutionSrc/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/SolutionSrc/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/SolutionSrc/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/Solution.cpp.obj
 .PHONY : SolutionSrc/Solution.cpp.obj
 
 SolutionSrc/Solution.i: SolutionSrc/Solution.cpp.i
@@ -818,6 +832,7 @@ SolutionSrc/Solution.cpp.i:
 	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/SolutionSrc/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/SolutionSrc/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/SolutionSrc/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/Solution.cpp.i
 .PHONY : SolutionSrc/Solution.cpp.i
 
 SolutionSrc/Solution.s: SolutionSrc/Solution.cpp.s
@@ -845,6 +860,7 @@ SolutionSrc/Solution.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/SolutionSrc/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/SolutionSrc/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/SolutionSrc/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/Solution.cpp.s
 .PHONY : SolutionSrc/Solution.cpp.s
 
 SolutionSrc/array.obj: SolutionSrc/array.cpp.obj
@@ -872,6 +888,7 @@ SolutionSrc/array.cpp.obj:
 	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/SolutionSrc/array.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/SolutionSrc/array.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/SolutionSrc/array.cpp.obj
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/array.cpp.obj
 .PHONY : SolutionSrc/array.cpp.obj
 
 SolutionSrc/array.i: SolutionSrc/array.cpp.i
@@ -899,6 +916,7 @@ SolutionSrc/array.cpp.i:
 	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/SolutionSrc/array.cpp.i
 	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/SolutionSrc/array.cpp.i
 	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/SolutionSrc/array.cpp.i
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/array.cpp.i
 .PHONY : SolutionSrc/array.cpp.i
 
 SolutionSrc/array.s: SolutionSrc/array.cpp.s
@@ -926,6 +944,7 @@ SolutionSrc/array.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/SolutionSrc/array.cpp.s
 	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/SolutionSrc/array.cpp.s
 	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/SolutionSrc/array.cpp.s
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/array.cpp.s
 .PHONY : SolutionSrc/array.cpp.s
 
 SolutionSrc/tree.obj: SolutionSrc/tree.cpp.obj
@@ -953,6 +972,7 @@ SolutionSrc/tree.cpp.obj:
 	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/SolutionSrc/tree.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/SolutionSrc/tree.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/SolutionSrc/tree.cpp.obj
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/tree.cpp.obj
 .PHONY : SolutionSrc/tree.cpp.obj
 
 SolutionSrc/tree.i: SolutionSrc/tree.cpp.i
@@ -980,6 +1000,7 @@ SolutionSrc/tree.cpp.i:
 	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/SolutionSrc/tree.cpp.i
 	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/SolutionSrc/tree.cpp.i
 	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/SolutionSrc/tree.cpp.i
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/tree.cpp.i
 .PHONY : SolutionSrc/tree.cpp.i
 
 SolutionSrc/tree.s: SolutionSrc/tree.cpp.s
@@ -1007,6 +1028,7 @@ SolutionSrc/tree.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/SolutionSrc/tree.cpp.s
 	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/SolutionSrc/tree.cpp.s
 	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/SolutionSrc/tree.cpp.s
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/tree.cpp.s
 .PHONY : SolutionSrc/tree.cpp.s
 
 SolutionSrc/utils.obj: SolutionSrc/utils.cpp.obj
@@ -1034,6 +1056,7 @@ SolutionSrc/utils.cpp.obj:
 	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/SolutionSrc/utils.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/SolutionSrc/utils.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/SolutionSrc/utils.cpp.obj
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/utils.cpp.obj
 .PHONY : SolutionSrc/utils.cpp.obj
 
 SolutionSrc/utils.i: SolutionSrc/utils.cpp.i
@@ -1061,6 +1084,7 @@ SolutionSrc/utils.cpp.i:
 	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/SolutionSrc/utils.cpp.i
 	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/SolutionSrc/utils.cpp.i
 	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/SolutionSrc/utils.cpp.i
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/utils.cpp.i
 .PHONY : SolutionSrc/utils.cpp.i
 
 SolutionSrc/utils.s: SolutionSrc/utils.cpp.s
@@ -1088,6 +1112,7 @@ SolutionSrc/utils.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/SolutionSrc/utils.cpp.s
 	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/SolutionSrc/utils.cpp.s
 	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/SolutionSrc/utils.cpp.s
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/utils.cpp.s
 .PHONY : SolutionSrc/utils.cpp.s
 
 test102.obj: test102.cpp.obj
@@ -1603,6 +1628,33 @@ test98.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/test98.cpp.s
 .PHONY : test98.cpp.s
 
+testArray.obj: testArray.cpp.obj
+
+.PHONY : testArray.obj
+
+# target to build an object file
+testArray.cpp.obj:
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/testArray.cpp.obj
+.PHONY : testArray.cpp.obj
+
+testArray.i: testArray.cpp.i
+
+.PHONY : testArray.i
+
+# target to preprocess a source file
+testArray.cpp.i:
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/testArray.cpp.i
+.PHONY : testArray.cpp.i
+
+testArray.s: testArray.cpp.s
+
+.PHONY : testArray.s
+
+# target to generate assembly for a file
+testArray.cpp.s:
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/testArray.cpp.s
+.PHONY : testArray.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1658,6 +1710,7 @@ help:
 	@echo ... TEST297
 	@echo ... TEST226
 	@echo ... TEST4
+	@echo ... TESTARRAY
 	@echo ... test
 	@echo ... edit_cache
 	@echo ... rebuild_cache
@@ -1731,6 +1784,9 @@ help:
 	@echo ... test98.obj
 	@echo ... test98.i
 	@echo ... test98.s
+	@echo ... testArray.obj
+	@echo ... testArray.i
+	@echo ... testArray.s
 .PHONY : help
 
 

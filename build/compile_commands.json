@@ -475,6 +475,31 @@
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/utils.cpp"
 },
 {
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTARRAY.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTARRAY.dir\\testArray.cpp.obj -c E:\\ACM\\LeetCodeSource\\testArray.cpp",
+  "file": "E:/ACM/LeetCodeSource/testArray.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTARRAY.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTARRAY.dir\\SolutionSrc\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\Solution.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/Solution.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTARRAY.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTARRAY.dir\\SolutionSrc\\array.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\array.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/array.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTARRAY.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTARRAY.dir\\SolutionSrc\\tree.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\tree.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/tree.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTARRAY.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTARRAY.dir\\SolutionSrc\\utils.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\utils.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/utils.cpp"
+},
+{
   "directory": "E:/ACM/LeetCodeSource/build/SolutionSrc",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/SOLUTION.dir/includes_CXX.rsp -g   -o CMakeFiles\\SOLUTION.dir\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\Solution.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/Solution.cpp"

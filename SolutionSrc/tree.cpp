@@ -295,7 +295,7 @@ void TreeSolution::flatten_q114(TreeNode* root){
 
 }
 
-vector<string> letterCasePermutation_q784(string S){
+vector<string> TreeSolution::letterCasePermutation_q784(string S){
     // 这个题用回溯法，深度优先搜索解
     vector<string> res;
     int len = S.length();
@@ -303,7 +303,7 @@ vector<string> letterCasePermutation_q784(string S){
     return res;
 }
 
-void dfs_q784(string S,int index, int len, vector<string>& res){
+void TreeSolution::dfs_q784(string S,int index, int len, vector<string>& res){
    if(index != len){
        //小写字母
        if(S[index]>='a' && S[index]<='z'){

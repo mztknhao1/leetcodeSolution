@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-E:/ACM/LeetCodeSource/SolutionSrc/Solution.cpp
-Solution.h
-E:/ACM/LeetCodeSource/SolutionSrc/Solution.h
-utils.h
-E:/ACM/LeetCodeSource/SolutionSrc/utils.h
-
 E:/ACM/LeetCodeSource/SolutionSrc/Solution.h
 lib_head.h
 E:/ACM/LeetCodeSource/SolutionSrc/lib_head.h
@@ -50,24 +44,6 @@ set
 stack
 -
 
-E:/ACM/LeetCodeSource/SolutionSrc/tree.cpp
-tree.h
-E:/ACM/LeetCodeSource/SolutionSrc/tree.h
-
-E:/ACM/LeetCodeSource/SolutionSrc/tree.h
-dataStruct.h
-E:/ACM/LeetCodeSource/SolutionSrc/dataStruct.h
-lib_head.h
-E:/ACM/LeetCodeSource/SolutionSrc/lib_head.h
-
-E:/ACM/LeetCodeSource/SolutionSrc/utils.cpp
-Solution.h
-E:/ACM/LeetCodeSource/SolutionSrc/Solution.h
-utils.h
-E:/ACM/LeetCodeSource/SolutionSrc/utils.h
-dataStruct.h
-E:/ACM/LeetCodeSource/SolutionSrc/dataStruct.h
-
 E:/ACM/LeetCodeSource/SolutionSrc/utils.h
 Solution.h
 E:/ACM/LeetCodeSource/SolutionSrc/Solution.h
@@ -75,4 +51,12 @@ iostream
 -
 sstream
 -
+
+E:/ACM/LeetCodeSource/testArray.cpp
+Solution.h
+E:/ACM/LeetCodeSource/Solution.h
+utils.h
+E:/ACM/LeetCodeSource/utils.h
+array.h
+E:/ACM/LeetCodeSource/array.h
 
