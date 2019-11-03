@@ -56,3 +56,43 @@ int ArraySolution::maxArea_q11(vector<int>& height){
     }
     return result;
 }
+
+
+int ArraySolution::threeSumClosest_q16(vector<int>& nums, int target){
+    //先给数组排个序
+    std::sort(nums.begin(), nums.end());
+    int size = nums.size();
+
+    //记录结果
+    int result = nums[0] + nums[size-1] + nums[1];  //先记录这几个数吧
+
+    //固定下C位以后，还是使用双指针寻找这个时候最接近的两个数
+    for(int i=1;i<size-1;i++)             
+    {
+        int left = 0,right = size-1;    //选取的第二个和第三个数的指针
+        int localBest;                              //记录当前最优解
+        int localres;                               //记录当前残差
+        localBest = nums[left] + nums[right] + nums[i];
+        while(left<right && left<i && right>i){
+            localres = nums[left] + nums[right] + nums[i] - target;
+
+            //如果当前残差小于局部最优解残差，更新当前最优解
+            if(abs(localres)<abs(localBest-target)){
+                localBest = nums[left] + nums[right] + nums[i];
+            }
+
+            //如果局部残差为0，直接返回，找到了最优解
+            if(localres == 0){
+                return target;
+            }
+
+            //如果残差小于0，即代表当前三个数的和小于target，则将左边的指针右移，否则左移右指针
+            (localres>0)?right--:left++;
+        }
+        //如果局部最优值小于前值最优值，则更新当前最优值
+        if(abs(localBest-target)<abs(result-target)){
+            result = localBest;
+        }
+    }
+    return result;
+}

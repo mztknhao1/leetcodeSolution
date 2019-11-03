@@ -10,6 +10,7 @@ class ArraySolution{
 public:
     double findMedianSortedArrays_q4(vector<int> nums1, vector<int> nums2);
     int maxArea_q11(vector<int>& height);
+    int threeSumClosest_q16(vector<int>& nums, int target);
 };
 
 #endif
