@@ -14,6 +14,11 @@ int main(){
     vector<int> height = {2,3,4,5,18,17,6};
     int maxArea = aS.maxArea_q11(height);
 
+    //第31题测试
+    vector<int> nums_31 = {1,2,5,5,4};
+    aS.nextPermutation_q31(nums_31);
+    printVector(nums_31);
+
     
 
     return 0;

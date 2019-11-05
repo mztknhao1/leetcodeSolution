@@ -96,3 +96,43 @@ int ArraySolution::threeSumClosest_q16(vector<int>& nums, int target){
     }
     return result;
 }
+
+void ArraySolution::nextPermutation_q31(vector<int>& nums){
+    //基本思路是从最后一个找起，找到第一个大于小于前面所有数的那个数，
+    int size = nums.size();
+    if(size==0 || size==1) return;
+    int max = nums[size-1];
+    int i=size-2;
+    //找到第一个a[i-1]<a[i]的数
+    for(;i>=0;i--){
+        if(nums[i]>=max) max = nums[i];
+        else {
+            //如果找到了，则交换a[i-1]与a[j]其中，a[j]>a[i-1],且
+            //j的范围是(i-1,size-1]
+            int j = size-1;
+            while(nums[j]<=nums[i] && j>=0){
+                j--;
+            }
+            swap(nums[j],nums[i]);
+            break;
+        } 
+    }
+    reverse(nums,i+1);
+}
+
+void ArraySolution::swap(int& a, int& b){
+    int tmp;
+    tmp = a;
+    a = b;
+    b = tmp;
+}
+
+void ArraySolution::reverse(vector<int> & nums, int start){
+    int i=start;
+    int j = nums.size()-1;
+    while(i<j){
+        swap(nums[i],nums[j]);
+        i++;
+        j--;
+    }
+}
