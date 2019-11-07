@@ -136,3 +136,17 @@ void ArraySolution::reverse(vector<int> & nums, int start){
         j--;
     }
 }
+
+vector<vector<int>> ArraySolution::merge_q56(vector<vector<int>>& intervals){
+    //这个题主要思路在于先排序再合并，
+    //排完序后，只要前一个后一个区间的最小值小于等于前一个区间的最大值
+    //就可以将这两个区间合并
+    
+    //先试试内置函数进行排序，接下来尽量自己实现一些排序算法
+    sort(intervals.begin(),intervals.end(),comp_q56);
+}
+
+bool ArraySolution::comp_q56(const vector<int>&a, const vector<int>&b){
+    if(a[0]<=b[0]) return true;
+    if(a[0]> b[0]) return false;
+}
