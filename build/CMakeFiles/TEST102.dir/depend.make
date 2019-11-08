@@ -14,6 +14,13 @@ CMakeFiles/TEST102.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/dataStruct.h
 CMakeFiles/TEST102.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/lib_head.h
 CMakeFiles/TEST102.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/utils.h
 
+CMakeFiles/TEST102.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/Solution.h
+CMakeFiles/TEST102.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/dataStruct.h
+CMakeFiles/TEST102.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/lib_head.h
+CMakeFiles/TEST102.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/my_sort.cpp
+CMakeFiles/TEST102.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/my_sort.h
+CMakeFiles/TEST102.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/utils.h
+
 CMakeFiles/TEST102.dir/SolutionSrc/tree.cpp.obj: ../SolutionSrc/dataStruct.h
 CMakeFiles/TEST102.dir/SolutionSrc/tree.cpp.obj: ../SolutionSrc/lib_head.h
 CMakeFiles/TEST102.dir/SolutionSrc/tree.cpp.obj: ../SolutionSrc/tree.cpp

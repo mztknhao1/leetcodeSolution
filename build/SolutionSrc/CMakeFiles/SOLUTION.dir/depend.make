@@ -7,6 +7,20 @@ SolutionSrc/CMakeFiles/SOLUTION.dir/Solution.cpp.obj: ../SolutionSrc/dataStruct.
 SolutionSrc/CMakeFiles/SOLUTION.dir/Solution.cpp.obj: ../SolutionSrc/lib_head.h
 SolutionSrc/CMakeFiles/SOLUTION.dir/Solution.cpp.obj: ../SolutionSrc/utils.h
 
+SolutionSrc/CMakeFiles/SOLUTION.dir/array.cpp.obj: ../SolutionSrc/Solution.h
+SolutionSrc/CMakeFiles/SOLUTION.dir/array.cpp.obj: ../SolutionSrc/array.cpp
+SolutionSrc/CMakeFiles/SOLUTION.dir/array.cpp.obj: ../SolutionSrc/array.h
+SolutionSrc/CMakeFiles/SOLUTION.dir/array.cpp.obj: ../SolutionSrc/dataStruct.h
+SolutionSrc/CMakeFiles/SOLUTION.dir/array.cpp.obj: ../SolutionSrc/lib_head.h
+SolutionSrc/CMakeFiles/SOLUTION.dir/array.cpp.obj: ../SolutionSrc/utils.h
+
+SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.obj: ../SolutionSrc/Solution.h
+SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.obj: ../SolutionSrc/dataStruct.h
+SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.obj: ../SolutionSrc/lib_head.h
+SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.obj: ../SolutionSrc/my_sort.cpp
+SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.obj: ../SolutionSrc/my_sort.h
+SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.obj: ../SolutionSrc/utils.h
+
 SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.obj: ../SolutionSrc/dataStruct.h
 SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.obj: ../SolutionSrc/lib_head.h
 SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.obj: ../SolutionSrc/tree.cpp

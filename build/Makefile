@@ -377,6 +377,19 @@ ExperimentalUpdate/fast:
 .PHONY : ExperimentalUpdate/fast
 
 #=============================================================================
+# Target rules for targets named TESTSORT
+
+# Build rule for target.
+TESTSORT: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 TESTSORT
+.PHONY : TESTSORT
+
+# fast build rule for target.
+TESTSORT/fast:
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/build
+.PHONY : TESTSORT/fast
+
+#=============================================================================
 # Target rules for targets named ContinuousMemCheck
 
 # Build rule for target.
@@ -788,6 +801,7 @@ SolutionSrc/Solution.cpp.obj:
 	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/SolutionSrc/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST114.dir\build.make CMakeFiles/TEST114.dir/SolutionSrc/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/Solution.cpp.obj
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/SolutionSrc/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/SolutionSrc/Solution.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/SolutionSrc/Solution.cpp.obj
@@ -816,6 +830,7 @@ SolutionSrc/Solution.cpp.i:
 	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/SolutionSrc/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST114.dir\build.make CMakeFiles/TEST114.dir/SolutionSrc/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/Solution.cpp.i
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/SolutionSrc/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/SolutionSrc/Solution.cpp.i
 	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/SolutionSrc/Solution.cpp.i
@@ -844,6 +859,7 @@ SolutionSrc/Solution.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/SolutionSrc/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST114.dir\build.make CMakeFiles/TEST114.dir/SolutionSrc/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/Solution.cpp.s
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/SolutionSrc/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/SolutionSrc/Solution.cpp.s
 	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/SolutionSrc/Solution.cpp.s
@@ -872,6 +888,7 @@ SolutionSrc/array.cpp.obj:
 	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/SolutionSrc/array.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST114.dir\build.make CMakeFiles/TEST114.dir/SolutionSrc/array.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/array.cpp.obj
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/SolutionSrc/array.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/array.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/SolutionSrc/array.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/SolutionSrc/array.cpp.obj
@@ -900,6 +917,7 @@ SolutionSrc/array.cpp.i:
 	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/SolutionSrc/array.cpp.i
 	$(MAKE) -f CMakeFiles\TEST114.dir\build.make CMakeFiles/TEST114.dir/SolutionSrc/array.cpp.i
 	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/array.cpp.i
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/SolutionSrc/array.cpp.i
 	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/array.cpp.i
 	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/SolutionSrc/array.cpp.i
 	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/SolutionSrc/array.cpp.i
@@ -928,6 +946,7 @@ SolutionSrc/array.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/SolutionSrc/array.cpp.s
 	$(MAKE) -f CMakeFiles\TEST114.dir\build.make CMakeFiles/TEST114.dir/SolutionSrc/array.cpp.s
 	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/array.cpp.s
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/SolutionSrc/array.cpp.s
 	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/array.cpp.s
 	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/SolutionSrc/array.cpp.s
 	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/SolutionSrc/array.cpp.s
@@ -947,6 +966,93 @@ SolutionSrc/array.cpp.s:
 	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/array.cpp.s
 .PHONY : SolutionSrc/array.cpp.s
 
+SolutionSrc/my_sort.obj: SolutionSrc/my_sort.cpp.obj
+
+.PHONY : SolutionSrc/my_sort.obj
+
+# target to build an object file
+SolutionSrc/my_sort.cpp.obj:
+	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST114.dir\build.make CMakeFiles/TEST114.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST102.dir\build.make CMakeFiles/TEST102.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST637.dir\build.make CMakeFiles/TEST637.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/SolutionSrc/my_sort.cpp.obj
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/my_sort.cpp.obj
+.PHONY : SolutionSrc/my_sort.cpp.obj
+
+SolutionSrc/my_sort.i: SolutionSrc/my_sort.cpp.i
+
+.PHONY : SolutionSrc/my_sort.i
+
+# target to preprocess a source file
+SolutionSrc/my_sort.cpp.i:
+	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST114.dir\build.make CMakeFiles/TEST114.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST102.dir\build.make CMakeFiles/TEST102.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST637.dir\build.make CMakeFiles/TEST637.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/SolutionSrc/my_sort.cpp.i
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/my_sort.cpp.i
+.PHONY : SolutionSrc/my_sort.cpp.i
+
+SolutionSrc/my_sort.s: SolutionSrc/my_sort.cpp.s
+
+.PHONY : SolutionSrc/my_sort.s
+
+# target to generate assembly for a file
+SolutionSrc/my_sort.cpp.s:
+	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST114.dir\build.make CMakeFiles/TEST114.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST102.dir\build.make CMakeFiles/TEST102.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST637.dir\build.make CMakeFiles/TEST637.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/SolutionSrc/my_sort.cpp.s
+	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/SolutionSrc/my_sort.cpp.s
+.PHONY : SolutionSrc/my_sort.cpp.s
+
 SolutionSrc/tree.obj: SolutionSrc/tree.cpp.obj
 
 .PHONY : SolutionSrc/tree.obj
@@ -956,6 +1062,7 @@ SolutionSrc/tree.cpp.obj:
 	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/SolutionSrc/tree.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST114.dir\build.make CMakeFiles/TEST114.dir/SolutionSrc/tree.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/tree.cpp.obj
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/SolutionSrc/tree.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/tree.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/SolutionSrc/tree.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/SolutionSrc/tree.cpp.obj
@@ -984,6 +1091,7 @@ SolutionSrc/tree.cpp.i:
 	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/SolutionSrc/tree.cpp.i
 	$(MAKE) -f CMakeFiles\TEST114.dir\build.make CMakeFiles/TEST114.dir/SolutionSrc/tree.cpp.i
 	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/tree.cpp.i
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/SolutionSrc/tree.cpp.i
 	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/tree.cpp.i
 	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/SolutionSrc/tree.cpp.i
 	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/SolutionSrc/tree.cpp.i
@@ -1012,6 +1120,7 @@ SolutionSrc/tree.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/SolutionSrc/tree.cpp.s
 	$(MAKE) -f CMakeFiles\TEST114.dir\build.make CMakeFiles/TEST114.dir/SolutionSrc/tree.cpp.s
 	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/tree.cpp.s
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/SolutionSrc/tree.cpp.s
 	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/tree.cpp.s
 	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/SolutionSrc/tree.cpp.s
 	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/SolutionSrc/tree.cpp.s
@@ -1040,6 +1149,7 @@ SolutionSrc/utils.cpp.obj:
 	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/SolutionSrc/utils.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST114.dir\build.make CMakeFiles/TEST114.dir/SolutionSrc/utils.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/utils.cpp.obj
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/SolutionSrc/utils.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/utils.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/SolutionSrc/utils.cpp.obj
 	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/SolutionSrc/utils.cpp.obj
@@ -1068,6 +1178,7 @@ SolutionSrc/utils.cpp.i:
 	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/SolutionSrc/utils.cpp.i
 	$(MAKE) -f CMakeFiles\TEST114.dir\build.make CMakeFiles/TEST114.dir/SolutionSrc/utils.cpp.i
 	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/utils.cpp.i
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/SolutionSrc/utils.cpp.i
 	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/utils.cpp.i
 	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/SolutionSrc/utils.cpp.i
 	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/SolutionSrc/utils.cpp.i
@@ -1096,6 +1207,7 @@ SolutionSrc/utils.cpp.s:
 	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/SolutionSrc/utils.cpp.s
 	$(MAKE) -f CMakeFiles\TEST114.dir\build.make CMakeFiles/TEST114.dir/SolutionSrc/utils.cpp.s
 	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/SolutionSrc/utils.cpp.s
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/SolutionSrc/utils.cpp.s
 	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/SolutionSrc/utils.cpp.s
 	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/SolutionSrc/utils.cpp.s
 	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/SolutionSrc/utils.cpp.s
@@ -1655,6 +1767,33 @@ testArray.cpp.s:
 	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/testArray.cpp.s
 .PHONY : testArray.cpp.s
 
+testSort.obj: testSort.cpp.obj
+
+.PHONY : testSort.obj
+
+# target to build an object file
+testSort.cpp.obj:
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/testSort.cpp.obj
+.PHONY : testSort.cpp.obj
+
+testSort.i: testSort.cpp.i
+
+.PHONY : testSort.i
+
+# target to preprocess a source file
+testSort.cpp.i:
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/testSort.cpp.i
+.PHONY : testSort.cpp.i
+
+testSort.s: testSort.cpp.s
+
+.PHONY : testSort.s
+
+# target to generate assembly for a file
+testSort.cpp.s:
+	$(MAKE) -f CMakeFiles\TESTSORT.dir\build.make CMakeFiles/TESTSORT.dir/testSort.cpp.s
+.PHONY : testSort.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -1679,6 +1818,7 @@ help:
 	@echo ... ExperimentalBuild
 	@echo ... ExperimentalStart
 	@echo ... ExperimentalUpdate
+	@echo ... TESTSORT
 	@echo ... ContinuousMemCheck
 	@echo ... ExperimentalConfigure
 	@echo ... TEST15
@@ -1721,6 +1861,9 @@ help:
 	@echo ... SolutionSrc/array.obj
 	@echo ... SolutionSrc/array.i
 	@echo ... SolutionSrc/array.s
+	@echo ... SolutionSrc/my_sort.obj
+	@echo ... SolutionSrc/my_sort.i
+	@echo ... SolutionSrc/my_sort.s
 	@echo ... SolutionSrc/tree.obj
 	@echo ... SolutionSrc/tree.i
 	@echo ... SolutionSrc/tree.s
@@ -1787,6 +1930,9 @@ help:
 	@echo ... testArray.obj
 	@echo ... testArray.i
 	@echo ... testArray.s
+	@echo ... testSort.obj
+	@echo ... testSort.i
+	@echo ... testSort.s
 .PHONY : help
 
 

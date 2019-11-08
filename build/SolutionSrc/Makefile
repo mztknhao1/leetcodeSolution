@@ -211,6 +211,33 @@ array.cpp.s:
 	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/array.cpp.s
 .PHONY : array.cpp.s
 
+my_sort.obj: my_sort.cpp.obj
+
+.PHONY : my_sort.obj
+
+# target to build an object file
+my_sort.cpp.obj:
+	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.obj
+.PHONY : my_sort.cpp.obj
+
+my_sort.i: my_sort.cpp.i
+
+.PHONY : my_sort.i
+
+# target to preprocess a source file
+my_sort.cpp.i:
+	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.i
+.PHONY : my_sort.cpp.i
+
+my_sort.s: my_sort.cpp.s
+
+.PHONY : my_sort.s
+
+# target to generate assembly for a file
+my_sort.cpp.s:
+	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.s
+.PHONY : my_sort.cpp.s
+
 tree.obj: tree.cpp.obj
 
 .PHONY : tree.obj
@@ -283,6 +310,9 @@ help:
 	@echo ... array.obj
 	@echo ... array.i
 	@echo ... array.s
+	@echo ... my_sort.obj
+	@echo ... my_sort.i
+	@echo ... my_sort.s
 	@echo ... tree.obj
 	@echo ... tree.i
 	@echo ... tree.s
