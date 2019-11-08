@@ -7,6 +7,13 @@ CMakeFiles/TEST542.dir/SolutionSrc/Solution.cpp.obj: ../SolutionSrc/dataStruct.h
 CMakeFiles/TEST542.dir/SolutionSrc/Solution.cpp.obj: ../SolutionSrc/lib_head.h
 CMakeFiles/TEST542.dir/SolutionSrc/Solution.cpp.obj: ../SolutionSrc/utils.h
 
+CMakeFiles/TEST542.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/Solution.h
+CMakeFiles/TEST542.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/array.cpp
+CMakeFiles/TEST542.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/array.h
+CMakeFiles/TEST542.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/dataStruct.h
+CMakeFiles/TEST542.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/lib_head.h
+CMakeFiles/TEST542.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/utils.h
+
 CMakeFiles/TEST542.dir/SolutionSrc/tree.cpp.obj: ../SolutionSrc/dataStruct.h
 CMakeFiles/TEST542.dir/SolutionSrc/tree.cpp.obj: ../SolutionSrc/lib_head.h
 CMakeFiles/TEST542.dir/SolutionSrc/tree.cpp.obj: ../SolutionSrc/tree.cpp

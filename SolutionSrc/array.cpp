@@ -141,12 +141,26 @@ vector<vector<int>> ArraySolution::merge_q56(vector<vector<int>>& intervals){
     //这个题主要思路在于先排序再合并，
     //排完序后，只要前一个后一个区间的最小值小于等于前一个区间的最大值
     //就可以将这两个区间合并
-    
+    vector<vector<int>> result;
+    int size = intervals.size();
+    if(size<=1) return intervals;
     //先试试内置函数进行排序，接下来尽量自己实现一些排序算法
-    sort(intervals.begin(),intervals.end(),comp_q56);
+    sort(intervals.begin(),intervals.end());
+
+    //排序之后就是遍历与合并了
+    for(int i=0;i<intervals.size();){
+        int lb=intervals[i][0],ub=intervals[i][1];
+        //如果后一个区间的最小值小于等于前一个区间的最大值
+        while(i<intervals.size()-1 && intervals[i+1][0]<=ub){
+            lb = std::min(intervals[i][0],lb);
+            ub = std::max(intervals[i+1][1],ub);
+            i++;
+        }
+        vector<int> tmp = {lb,ub};
+        result.push_back(tmp);
+        i++;
+    }
+
+    return result;
 }
 
-bool ArraySolution::comp_q56(const vector<int>&a, const vector<int>&b){
-    if(a[0]<=b[0]) return true;
-    if(a[0]> b[0]) return false;
-}

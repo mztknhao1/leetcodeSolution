@@ -17,7 +17,7 @@ public:
 private:
     void swap(int& a, int& b);
     void reverse(vector<int>& nums, int start);
-    bool comp_q56(const vector<int>& a, const vector<int>& b);
+  
 };
 
 #endif
