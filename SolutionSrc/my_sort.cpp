@@ -59,3 +59,58 @@ void insertSort(vector<int>& nums){
         nums[i+1] = key;
     }
 }
+
+
+void heepSort(vector<int>& nums){
+    #define _BIG_HEEP
+
+    int size = nums.size();
+    if(size<=1) return;
+
+    //首先建堆,先建个大堆用于升序排序
+    #ifdef _BIG_HEEP
+
+    //构造一个有序堆
+    //其实size/2-1表示的是第一个非叶子节点(堆结构中，有size/2个叶子节点)
+    //遍历所有非叶子节点
+    for(int i=size/2-1;i>=0;i--){
+        sink(nums,i,size);
+    }
+    // printVector(nums);
+    size = size-1;
+    
+    while(size>0){
+        swap(nums,0,size--);
+        sink(nums,0,size);
+    }
+
+    #endif
+}
+
+//k为下沉开始的位置，N为下沉结束的位置
+void sink(vector<int>& nums, int k, int N){
+    int tmp = nums[k];      //取出当前元素k
+    //满足向下移动条件
+    while(2*k+1<=N){
+        //从最后一个非叶子节点开始调整
+        int j=2*k+1;
+        if(j<N-1 && nums[j+1] > nums[j]){ //j+1 和 j 其实是非叶子节点k下面的两个节点,如果nums[j+1]>nums[j]将指针指向j+1
+            j++;
+        }
+        //如果子节点大于父节点，将子节点的值赋给父节点，不交换
+        if(nums[j]>tmp){
+            nums[k] = nums[j];
+            k = j;
+        }else{
+            break;
+        }
+    }
+    nums[k] = tmp;
+}
+
+//辅助函数，交换数组中下表为a和b的元素
+void swap(vector<int>& nums,int a, int b){
+    int tmp=nums[a];
+    nums[a] = nums[b];
+    nums[b] = tmp;
+}
