@@ -38,5 +38,9 @@ int main(){
     vector<vector<int>> result_q56 = aS.merge_q56(qujians);
     printMatrix(result_q56);
 
+    //第217题测试
+    vector<int> nums_q217 = {3,3};
+    bool re = aS.containDuplicate_q217(nums_q217);
+
     return 0;
 }

@@ -13,6 +13,7 @@ public:
     int threeSumClosest_q16(vector<int>& nums, int target);
     void nextPermutation_q31(vector<int>& nums);
     vector<vector<int>> merge_q56(vector<vector<int>>& intervals);
+    bool containDuplicate_q217(vector<int>& nums);
 
 private:
     void swap(int& a, int& b);

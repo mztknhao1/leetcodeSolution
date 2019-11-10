@@ -6,7 +6,7 @@
 
 using std::vector;
 
-//首先完成快速排序算法
+//快速排序算法
 void quickSort(vector<int>& nums);
 void quickSortSub(vector<int>& nums,int begin,int end);
 

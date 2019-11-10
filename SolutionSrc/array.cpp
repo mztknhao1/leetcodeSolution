@@ -1,5 +1,6 @@
 #include "array.h"
 #include "utils.h"
+#include <unordered_map>
 
 double ArraySolution::findMedianSortedArrays_q4(vector<int> nums1, vector<int> nums2){
     int m = nums1.size();
@@ -162,5 +163,36 @@ vector<vector<int>> ArraySolution::merge_q56(vector<vector<int>>& intervals){
     }
 
     return result;
+}
+
+bool ArraySolution::containDuplicate_q217(vector<int>& nums){
+    #define _HASH
+
+    #ifdef _SORT
+    if(nums.size()<=1) return false;
+    std::sort(nums.begin(),nums.end());
+    for(int i=0;i<nums.size()-1;i++){
+        if(nums[i] == nums[i+1]){
+            return true;
+        }
+    }
+    return false;
+    #endif
+
+
+    #ifdef _HASH
+    //学习一下Hash方法求解这类问题
+    std::unordered_map<int,int> mymap;
+    for(int i=0;i<nums.size();i++){
+        if(mymap.find(nums[i]) == mymap.end()){
+            mymap[nums[i]] = i;
+        }else{
+            return true;
+        }
+    }
+    return false;
+
+    #endif
+
 }
 
