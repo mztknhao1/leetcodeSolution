@@ -84,10 +84,24 @@ SolutionSrc/CMakeFiles/SOLUTION.dir/array.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SOLUTION.dir/array.cpp.s"
 	cd /d E:\ACM\LeetCodeSource\build\SolutionSrc && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\SolutionSrc\array.cpp -o CMakeFiles\SOLUTION.dir\array.cpp.s
 
+SolutionSrc/CMakeFiles/SOLUTION.dir/linkList.cpp.obj: SolutionSrc/CMakeFiles/SOLUTION.dir/flags.make
+SolutionSrc/CMakeFiles/SOLUTION.dir/linkList.cpp.obj: SolutionSrc/CMakeFiles/SOLUTION.dir/includes_CXX.rsp
+SolutionSrc/CMakeFiles/SOLUTION.dir/linkList.cpp.obj: ../SolutionSrc/linkList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object SolutionSrc/CMakeFiles/SOLUTION.dir/linkList.cpp.obj"
+	cd /d E:\ACM\LeetCodeSource\build\SolutionSrc && C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SOLUTION.dir\linkList.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\linkList.cpp
+
+SolutionSrc/CMakeFiles/SOLUTION.dir/linkList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SOLUTION.dir/linkList.cpp.i"
+	cd /d E:\ACM\LeetCodeSource\build\SolutionSrc && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\ACM\LeetCodeSource\SolutionSrc\linkList.cpp > CMakeFiles\SOLUTION.dir\linkList.cpp.i
+
+SolutionSrc/CMakeFiles/SOLUTION.dir/linkList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SOLUTION.dir/linkList.cpp.s"
+	cd /d E:\ACM\LeetCodeSource\build\SolutionSrc && C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\SolutionSrc\linkList.cpp -o CMakeFiles\SOLUTION.dir\linkList.cpp.s
+
 SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.obj: SolutionSrc/CMakeFiles/SOLUTION.dir/flags.make
 SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.obj: SolutionSrc/CMakeFiles/SOLUTION.dir/includes_CXX.rsp
 SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.obj: ../SolutionSrc/my_sort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.obj"
 	cd /d E:\ACM\LeetCodeSource\build\SolutionSrc && C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SOLUTION.dir\my_sort.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\my_sort.cpp
 
 SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.i: cmake_force
@@ -101,7 +115,7 @@ SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.s: cmake_force
 SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.obj: SolutionSrc/CMakeFiles/SOLUTION.dir/flags.make
 SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.obj: SolutionSrc/CMakeFiles/SOLUTION.dir/includes_CXX.rsp
 SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.obj: ../SolutionSrc/tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.obj"
 	cd /d E:\ACM\LeetCodeSource\build\SolutionSrc && C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SOLUTION.dir\tree.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\tree.cpp
 
 SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.i: cmake_force
@@ -115,7 +129,7 @@ SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.s: cmake_force
 SolutionSrc/CMakeFiles/SOLUTION.dir/utils.cpp.obj: SolutionSrc/CMakeFiles/SOLUTION.dir/flags.make
 SolutionSrc/CMakeFiles/SOLUTION.dir/utils.cpp.obj: SolutionSrc/CMakeFiles/SOLUTION.dir/includes_CXX.rsp
 SolutionSrc/CMakeFiles/SOLUTION.dir/utils.cpp.obj: ../SolutionSrc/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object SolutionSrc/CMakeFiles/SOLUTION.dir/utils.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object SolutionSrc/CMakeFiles/SOLUTION.dir/utils.cpp.obj"
 	cd /d E:\ACM\LeetCodeSource\build\SolutionSrc && C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SOLUTION.dir\utils.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\utils.cpp
 
 SolutionSrc/CMakeFiles/SOLUTION.dir/utils.cpp.i: cmake_force
@@ -130,6 +144,7 @@ SolutionSrc/CMakeFiles/SOLUTION.dir/utils.cpp.s: cmake_force
 SOLUTION_OBJECTS = \
 "CMakeFiles/SOLUTION.dir/Solution.cpp.obj" \
 "CMakeFiles/SOLUTION.dir/array.cpp.obj" \
+"CMakeFiles/SOLUTION.dir/linkList.cpp.obj" \
 "CMakeFiles/SOLUTION.dir/my_sort.cpp.obj" \
 "CMakeFiles/SOLUTION.dir/tree.cpp.obj" \
 "CMakeFiles/SOLUTION.dir/utils.cpp.obj"
@@ -139,12 +154,13 @@ SOLUTION_EXTERNAL_OBJECTS =
 
 SolutionSrc/libSOLUTION.a: SolutionSrc/CMakeFiles/SOLUTION.dir/Solution.cpp.obj
 SolutionSrc/libSOLUTION.a: SolutionSrc/CMakeFiles/SOLUTION.dir/array.cpp.obj
+SolutionSrc/libSOLUTION.a: SolutionSrc/CMakeFiles/SOLUTION.dir/linkList.cpp.obj
 SolutionSrc/libSOLUTION.a: SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.obj
 SolutionSrc/libSOLUTION.a: SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.obj
 SolutionSrc/libSOLUTION.a: SolutionSrc/CMakeFiles/SOLUTION.dir/utils.cpp.obj
 SolutionSrc/libSOLUTION.a: SolutionSrc/CMakeFiles/SOLUTION.dir/build.make
 SolutionSrc/libSOLUTION.a: SolutionSrc/CMakeFiles/SOLUTION.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libSOLUTION.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libSOLUTION.a"
 	cd /d E:\ACM\LeetCodeSource\build\SolutionSrc && $(CMAKE_COMMAND) -P CMakeFiles\SOLUTION.dir\cmake_clean_target.cmake
 	cd /d E:\ACM\LeetCodeSource\build\SolutionSrc && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SOLUTION.dir\link.txt --verbose=$(VERBOSE)
 

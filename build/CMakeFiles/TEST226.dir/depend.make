@@ -14,6 +14,13 @@ CMakeFiles/TEST226.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/dataStruct.h
 CMakeFiles/TEST226.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/lib_head.h
 CMakeFiles/TEST226.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/utils.h
 
+CMakeFiles/TEST226.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/Solution.h
+CMakeFiles/TEST226.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/dataStruct.h
+CMakeFiles/TEST226.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/lib_head.h
+CMakeFiles/TEST226.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/linkList.cpp
+CMakeFiles/TEST226.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/linkList.h
+CMakeFiles/TEST226.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/utils.h
+
 CMakeFiles/TEST226.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/Solution.h
 CMakeFiles/TEST226.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/dataStruct.h
 CMakeFiles/TEST226.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/lib_head.h

@@ -14,6 +14,13 @@ CMakeFiles/TESTSORT.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/dataStruct.h
 CMakeFiles/TESTSORT.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/lib_head.h
 CMakeFiles/TESTSORT.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/utils.h
 
+CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/Solution.h
+CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/dataStruct.h
+CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/lib_head.h
+CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/linkList.cpp
+CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/linkList.h
+CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/utils.h
+
 CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/Solution.h
 CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/dataStruct.h
 CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/lib_head.h

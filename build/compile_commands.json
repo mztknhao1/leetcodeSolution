@@ -16,6 +16,11 @@
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST111.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST111.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST111.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST111.dir\\SolutionSrc\\my_sort.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\my_sort.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/my_sort.cpp"
 },
@@ -43,6 +48,11 @@
   "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST114.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST114.dir\\SolutionSrc\\array.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\array.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/array.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST114.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST114.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
@@ -76,6 +86,11 @@
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST415.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST415.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST415.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST415.dir\\SolutionSrc\\my_sort.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\my_sort.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/my_sort.cpp"
 },
@@ -103,6 +118,11 @@
   "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTSORT.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTSORT.dir\\SolutionSrc\\array.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\array.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/array.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTSORT.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTSORT.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
@@ -136,6 +156,11 @@
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST15.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST15.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST15.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST15.dir\\SolutionSrc\\my_sort.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\my_sort.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/my_sort.cpp"
 },
@@ -163,6 +188,11 @@
   "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST98.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST98.dir\\SolutionSrc\\array.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\array.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/array.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST98.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST98.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
@@ -196,6 +226,11 @@
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST144.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST144.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST144.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST144.dir\\SolutionSrc\\my_sort.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\my_sort.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/my_sort.cpp"
 },
@@ -223,6 +258,11 @@
   "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST542.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST542.dir\\SolutionSrc\\array.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\array.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/array.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST542.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST542.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
@@ -256,6 +296,11 @@
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST102.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST102.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST102.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST102.dir\\SolutionSrc\\my_sort.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\my_sort.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/my_sort.cpp"
 },
@@ -283,6 +328,11 @@
   "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST3.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST3.dir\\SolutionSrc\\array.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\array.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/array.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST3.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST3.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
@@ -316,6 +366,11 @@
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST456.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST456.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST456.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST456.dir\\SolutionSrc\\my_sort.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\my_sort.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/my_sort.cpp"
 },
@@ -343,6 +398,11 @@
   "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST442.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST442.dir\\SolutionSrc\\array.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\array.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/array.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST442.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST442.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
@@ -376,6 +436,11 @@
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST650.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST650.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST650.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST650.dir\\SolutionSrc\\my_sort.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\my_sort.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/my_sort.cpp"
 },
@@ -403,6 +468,11 @@
   "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST21.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST21.dir\\SolutionSrc\\array.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\array.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/array.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST21.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST21.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
@@ -436,6 +506,11 @@
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST721.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST721.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST721.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST721.dir\\SolutionSrc\\my_sort.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\my_sort.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/my_sort.cpp"
 },
@@ -463,6 +538,11 @@
   "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST637.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST637.dir\\SolutionSrc\\array.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\array.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/array.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST637.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST637.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
@@ -496,6 +576,11 @@
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST94.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST94.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST94.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST94.dir\\SolutionSrc\\my_sort.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\my_sort.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/my_sort.cpp"
 },
@@ -523,6 +608,11 @@
   "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST297.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST297.dir\\SolutionSrc\\array.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\array.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/array.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST297.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST297.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
@@ -556,6 +646,11 @@
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST226.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST226.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST226.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST226.dir\\SolutionSrc\\my_sort.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\my_sort.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/my_sort.cpp"
 },
@@ -583,6 +678,11 @@
   "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST4.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST4.dir\\SolutionSrc\\array.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\array.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/array.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TEST4.dir/includes_CXX.rsp -g   -o CMakeFiles\\TEST4.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
@@ -616,6 +716,11 @@
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTARRAY.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTARRAY.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTARRAY.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTARRAY.dir\\SolutionSrc\\my_sort.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\my_sort.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/my_sort.cpp"
 },
@@ -630,6 +735,41 @@
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/utils.cpp"
 },
 {
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTLINK.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTLINK.dir\\testLink.cpp.obj -c E:\\ACM\\LeetCodeSource\\testLink.cpp",
+  "file": "E:/ACM/LeetCodeSource/testLink.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTLINK.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTLINK.dir\\SolutionSrc\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\Solution.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/Solution.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTLINK.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTLINK.dir\\SolutionSrc\\array.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\array.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/array.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTLINK.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTLINK.dir\\SolutionSrc\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTLINK.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTLINK.dir\\SolutionSrc\\my_sort.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\my_sort.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/my_sort.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTLINK.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTLINK.dir\\SolutionSrc\\tree.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\tree.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/tree.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/TESTLINK.dir/includes_CXX.rsp -g   -o CMakeFiles\\TESTLINK.dir\\SolutionSrc\\utils.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\utils.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/utils.cpp"
+},
+{
   "directory": "E:/ACM/LeetCodeSource/build/SolutionSrc",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/SOLUTION.dir/includes_CXX.rsp -g   -o CMakeFiles\\SOLUTION.dir\\Solution.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\Solution.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/Solution.cpp"
@@ -638,6 +778,11 @@
   "directory": "E:/ACM/LeetCodeSource/build/SolutionSrc",
   "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/SOLUTION.dir/includes_CXX.rsp -g   -o CMakeFiles\\SOLUTION.dir\\array.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\array.cpp",
   "file": "E:/ACM/LeetCodeSource/SolutionSrc/array.cpp"
+},
+{
+  "directory": "E:/ACM/LeetCodeSource/build/SolutionSrc",
+  "command": "C:\\MinGW\\bin\\g++.exe   @CMakeFiles/SOLUTION.dir/includes_CXX.rsp -g   -o CMakeFiles\\SOLUTION.dir\\linkList.cpp.obj -c E:\\ACM\\LeetCodeSource\\SolutionSrc\\linkList.cpp",
+  "file": "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp"
 },
 {
   "directory": "E:/ACM/LeetCodeSource/build/SolutionSrc",

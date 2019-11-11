@@ -14,6 +14,13 @@ CMakeFiles/TESTARRAY.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/dataStruct.h
 CMakeFiles/TESTARRAY.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/lib_head.h
 CMakeFiles/TESTARRAY.dir/SolutionSrc/array.cpp.obj: ../SolutionSrc/utils.h
 
+CMakeFiles/TESTARRAY.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/Solution.h
+CMakeFiles/TESTARRAY.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/dataStruct.h
+CMakeFiles/TESTARRAY.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/lib_head.h
+CMakeFiles/TESTARRAY.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/linkList.cpp
+CMakeFiles/TESTARRAY.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/linkList.h
+CMakeFiles/TESTARRAY.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/utils.h
+
 CMakeFiles/TESTARRAY.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/Solution.h
 CMakeFiles/TESTARRAY.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/dataStruct.h
 CMakeFiles/TESTARRAY.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/lib_head.h

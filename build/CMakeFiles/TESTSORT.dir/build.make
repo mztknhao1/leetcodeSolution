@@ -98,10 +98,24 @@ CMakeFiles/TESTSORT.dir/SolutionSrc/array.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TESTSORT.dir/SolutionSrc/array.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\SolutionSrc\array.cpp -o CMakeFiles\TESTSORT.dir\SolutionSrc\array.cpp.s
 
+CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.obj: CMakeFiles/TESTSORT.dir/flags.make
+CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.obj: CMakeFiles/TESTSORT.dir/includes_CXX.rsp
+CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.obj: ../SolutionSrc/linkList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TESTSORT.dir\SolutionSrc\linkList.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\linkList.cpp
+
+CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\ACM\LeetCodeSource\SolutionSrc\linkList.cpp > CMakeFiles\TESTSORT.dir\SolutionSrc\linkList.cpp.i
+
+CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\ACM\LeetCodeSource\SolutionSrc\linkList.cpp -o CMakeFiles\TESTSORT.dir\SolutionSrc\linkList.cpp.s
+
 CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.obj: CMakeFiles/TESTSORT.dir/flags.make
 CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.obj: CMakeFiles/TESTSORT.dir/includes_CXX.rsp
 CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.obj: ../SolutionSrc/my_sort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TESTSORT.dir\SolutionSrc\my_sort.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\my_sort.cpp
 
 CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.i: cmake_force
@@ -115,7 +129,7 @@ CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.s: cmake_force
 CMakeFiles/TESTSORT.dir/SolutionSrc/tree.cpp.obj: CMakeFiles/TESTSORT.dir/flags.make
 CMakeFiles/TESTSORT.dir/SolutionSrc/tree.cpp.obj: CMakeFiles/TESTSORT.dir/includes_CXX.rsp
 CMakeFiles/TESTSORT.dir/SolutionSrc/tree.cpp.obj: ../SolutionSrc/tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TESTSORT.dir/SolutionSrc/tree.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TESTSORT.dir/SolutionSrc/tree.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TESTSORT.dir\SolutionSrc\tree.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\tree.cpp
 
 CMakeFiles/TESTSORT.dir/SolutionSrc/tree.cpp.i: cmake_force
@@ -129,7 +143,7 @@ CMakeFiles/TESTSORT.dir/SolutionSrc/tree.cpp.s: cmake_force
 CMakeFiles/TESTSORT.dir/SolutionSrc/utils.cpp.obj: CMakeFiles/TESTSORT.dir/flags.make
 CMakeFiles/TESTSORT.dir/SolutionSrc/utils.cpp.obj: CMakeFiles/TESTSORT.dir/includes_CXX.rsp
 CMakeFiles/TESTSORT.dir/SolutionSrc/utils.cpp.obj: ../SolutionSrc/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TESTSORT.dir/SolutionSrc/utils.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TESTSORT.dir/SolutionSrc/utils.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\TESTSORT.dir\SolutionSrc\utils.cpp.obj -c E:\ACM\LeetCodeSource\SolutionSrc\utils.cpp
 
 CMakeFiles/TESTSORT.dir/SolutionSrc/utils.cpp.i: cmake_force
@@ -145,6 +159,7 @@ TESTSORT_OBJECTS = \
 "CMakeFiles/TESTSORT.dir/testSort.cpp.obj" \
 "CMakeFiles/TESTSORT.dir/SolutionSrc/Solution.cpp.obj" \
 "CMakeFiles/TESTSORT.dir/SolutionSrc/array.cpp.obj" \
+"CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.obj" \
 "CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.obj" \
 "CMakeFiles/TESTSORT.dir/SolutionSrc/tree.cpp.obj" \
 "CMakeFiles/TESTSORT.dir/SolutionSrc/utils.cpp.obj"
@@ -155,6 +170,7 @@ TESTSORT_EXTERNAL_OBJECTS =
 TESTSORT.exe: CMakeFiles/TESTSORT.dir/testSort.cpp.obj
 TESTSORT.exe: CMakeFiles/TESTSORT.dir/SolutionSrc/Solution.cpp.obj
 TESTSORT.exe: CMakeFiles/TESTSORT.dir/SolutionSrc/array.cpp.obj
+TESTSORT.exe: CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.obj
 TESTSORT.exe: CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.obj
 TESTSORT.exe: CMakeFiles/TESTSORT.dir/SolutionSrc/tree.cpp.obj
 TESTSORT.exe: CMakeFiles/TESTSORT.dir/SolutionSrc/utils.cpp.obj
@@ -162,7 +178,7 @@ TESTSORT.exe: CMakeFiles/TESTSORT.dir/build.make
 TESTSORT.exe: CMakeFiles/TESTSORT.dir/linklibs.rsp
 TESTSORT.exe: CMakeFiles/TESTSORT.dir/objects1.rsp
 TESTSORT.exe: CMakeFiles/TESTSORT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable TESTSORT.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable TESTSORT.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TESTSORT.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

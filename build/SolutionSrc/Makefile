@@ -211,6 +211,33 @@ array.cpp.s:
 	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/array.cpp.s
 .PHONY : array.cpp.s
 
+linkList.obj: linkList.cpp.obj
+
+.PHONY : linkList.obj
+
+# target to build an object file
+linkList.cpp.obj:
+	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/linkList.cpp.obj
+.PHONY : linkList.cpp.obj
+
+linkList.i: linkList.cpp.i
+
+.PHONY : linkList.i
+
+# target to preprocess a source file
+linkList.cpp.i:
+	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/linkList.cpp.i
+.PHONY : linkList.cpp.i
+
+linkList.s: linkList.cpp.s
+
+.PHONY : linkList.s
+
+# target to generate assembly for a file
+linkList.cpp.s:
+	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/linkList.cpp.s
+.PHONY : linkList.cpp.s
+
 my_sort.obj: my_sort.cpp.obj
 
 .PHONY : my_sort.obj
@@ -310,6 +337,9 @@ help:
 	@echo ... array.obj
 	@echo ... array.i
 	@echo ... array.s
+	@echo ... linkList.obj
+	@echo ... linkList.i
+	@echo ... linkList.s
 	@echo ... my_sort.obj
 	@echo ... my_sort.i
 	@echo ... my_sort.s
