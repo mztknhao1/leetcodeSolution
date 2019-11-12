@@ -6,7 +6,7 @@
 class linkSolution{
 public:
     ListNode* rotateRight_q61(ListNode* head,int k);
-
+    ListNode* swapPairs_q24(ListNode* head);
 };
 
 #endif
