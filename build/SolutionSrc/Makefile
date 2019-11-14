@@ -265,6 +265,33 @@ my_sort.cpp.s:
 	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.s
 .PHONY : my_sort.cpp.s
 
+queueS.obj: queueS.cpp.obj
+
+.PHONY : queueS.obj
+
+# target to build an object file
+queueS.cpp.obj:
+	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/queueS.cpp.obj
+.PHONY : queueS.cpp.obj
+
+queueS.i: queueS.cpp.i
+
+.PHONY : queueS.i
+
+# target to preprocess a source file
+queueS.cpp.i:
+	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/queueS.cpp.i
+.PHONY : queueS.cpp.i
+
+queueS.s: queueS.cpp.s
+
+.PHONY : queueS.s
+
+# target to generate assembly for a file
+queueS.cpp.s:
+	cd /d E:\ACM\LeetCodeSource\build && $(MAKE) -f SolutionSrc\CMakeFiles\SOLUTION.dir\build.make SolutionSrc/CMakeFiles/SOLUTION.dir/queueS.cpp.s
+.PHONY : queueS.cpp.s
+
 tree.obj: tree.cpp.obj
 
 .PHONY : tree.obj
@@ -343,6 +370,9 @@ help:
 	@echo ... my_sort.obj
 	@echo ... my_sort.i
 	@echo ... my_sort.s
+	@echo ... queueS.obj
+	@echo ... queueS.i
+	@echo ... queueS.s
 	@echo ... tree.obj
 	@echo ... tree.i
 	@echo ... tree.s

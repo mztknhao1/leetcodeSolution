@@ -74,6 +74,7 @@ all: CMakeFiles/TEST226.dir/all
 all: CMakeFiles/TEST4.dir/all
 all: CMakeFiles/TESTARRAY.dir/all
 all: CMakeFiles/TESTLINK.dir/all
+all: CMakeFiles/TESTQUEUE.dir/all
 all: SolutionSrc/all
 
 .PHONY : all
@@ -129,6 +130,7 @@ clean: CMakeFiles/TEST226.dir/clean
 clean: CMakeFiles/TEST4.dir/clean
 clean: CMakeFiles/TESTARRAY.dir/clean
 clean: CMakeFiles/TESTLINK.dir/clean
+clean: CMakeFiles/TESTQUEUE.dir/clean
 clean: SolutionSrc/clean
 
 .PHONY : clean
@@ -199,12 +201,12 @@ CMakeFiles/Experimental.dir/clean:
 CMakeFiles/TEST111.dir/all:
 	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/depend
 	$(MAKE) -f CMakeFiles\TEST111.dir\build.make CMakeFiles/TEST111.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=9,10,11,12 "Built target TEST111"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=8,9,10,11,12 "Built target TEST111"
 .PHONY : CMakeFiles/TEST111.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TEST111.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 5
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TEST111.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
 .PHONY : CMakeFiles/TEST111.dir/rule
@@ -496,7 +498,7 @@ CMakeFiles/TEST114.dir/clean:
 CMakeFiles/TEST415.dir/all:
 	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/depend
 	$(MAKE) -f CMakeFiles\TEST415.dir\build.make CMakeFiles/TEST415.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=48,49,50,51 "Built target TEST415"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=46,47,48,49 "Built target TEST415"
 .PHONY : CMakeFiles/TEST415.dir/all
 
 # Build rule for subdir invocation for target.
@@ -712,7 +714,7 @@ CMakeFiles/ExperimentalConfigure.dir/clean:
 CMakeFiles/TEST15.dir/all:
 	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/depend
 	$(MAKE) -f CMakeFiles\TEST15.dir\build.make CMakeFiles/TEST15.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=22,23,24,25 "Built target TEST15"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=21,22,23,24 "Built target TEST15"
 .PHONY : CMakeFiles/TEST15.dir/all
 
 # Build rule for subdir invocation for target.
@@ -793,7 +795,7 @@ CMakeFiles/ExperimentalCoverage.dir/clean:
 CMakeFiles/TEST98.dir/all:
 	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/depend
 	$(MAKE) -f CMakeFiles\TEST98.dir\build.make CMakeFiles/TEST98.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=83,84,85,86 "Built target TEST98"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=80,81,82,83 "Built target TEST98"
 .PHONY : CMakeFiles/TEST98.dir/all
 
 # Build rule for subdir invocation for target.
@@ -820,12 +822,12 @@ CMakeFiles/TEST98.dir/clean:
 CMakeFiles/TEST144.dir/all:
 	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/depend
 	$(MAKE) -f CMakeFiles\TEST144.dir\build.make CMakeFiles/TEST144.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=17,18,19,20,21 "Built target TEST144"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=17,18,19,20 "Built target TEST144"
 .PHONY : CMakeFiles/TEST144.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TEST144.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TEST144.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
 .PHONY : CMakeFiles/TEST144.dir/rule
@@ -1009,12 +1011,12 @@ CMakeFiles/ContinuousConfigure.dir/clean:
 CMakeFiles/TEST542.dir/all:
 	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/depend
 	$(MAKE) -f CMakeFiles\TEST542.dir\build.make CMakeFiles/TEST542.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=61,62,63,64,65 "Built target TEST542"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=59,60,61,62 "Built target TEST542"
 .PHONY : CMakeFiles/TEST542.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TEST542.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TEST542.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
 .PHONY : CMakeFiles/TEST542.dir/rule
@@ -1063,12 +1065,12 @@ CMakeFiles/ContinuousBuild.dir/clean:
 CMakeFiles/TEST102.dir/all:
 	$(MAKE) -f CMakeFiles\TEST102.dir\build.make CMakeFiles/TEST102.dir/depend
 	$(MAKE) -f CMakeFiles\TEST102.dir\build.make CMakeFiles/TEST102.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=4,5,6,7,8 "Built target TEST102"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=4,5,6,7 "Built target TEST102"
 .PHONY : CMakeFiles/TEST102.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TEST102.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TEST102.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
 .PHONY : CMakeFiles/TEST102.dir/rule
@@ -1090,12 +1092,12 @@ CMakeFiles/TEST102.dir/clean:
 CMakeFiles/TEST3.dir/all:
 	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/depend
 	$(MAKE) -f CMakeFiles\TEST3.dir\build.make CMakeFiles/TEST3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=39,40,41,42,43 "Built target TEST3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=38,39,40,41 "Built target TEST3"
 .PHONY : CMakeFiles/TEST3.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TEST3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TEST3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
 .PHONY : CMakeFiles/TEST3.dir/rule
@@ -1171,12 +1173,12 @@ CMakeFiles/ContinuousCoverage.dir/clean:
 CMakeFiles/TEST456.dir/all:
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/depend
 	$(MAKE) -f CMakeFiles\TEST456.dir\build.make CMakeFiles/TEST456.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=57,58,59,60 "Built target TEST456"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=54,55,56,57,58 "Built target TEST456"
 .PHONY : CMakeFiles/TEST456.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TEST456.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 5
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TEST456.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
 .PHONY : CMakeFiles/TEST456.dir/rule
@@ -1198,12 +1200,12 @@ CMakeFiles/TEST456.dir/clean:
 CMakeFiles/TEST442.dir/all:
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/depend
 	$(MAKE) -f CMakeFiles\TEST442.dir\build.make CMakeFiles/TEST442.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=52,53,54,55,56 "Built target TEST442"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=50,51,52,53 "Built target TEST442"
 .PHONY : CMakeFiles/TEST442.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TEST442.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TEST442.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
 .PHONY : CMakeFiles/TEST442.dir/rule
@@ -1225,7 +1227,7 @@ CMakeFiles/TEST442.dir/clean:
 CMakeFiles/TEST650.dir/all:
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/depend
 	$(MAKE) -f CMakeFiles\TEST650.dir\build.make CMakeFiles/TEST650.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=70,71,72,73 "Built target TEST650"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=67,68,69,70 "Built target TEST650"
 .PHONY : CMakeFiles/TEST650.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1252,12 +1254,12 @@ CMakeFiles/TEST650.dir/clean:
 CMakeFiles/TEST21.dir/all:
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/depend
 	$(MAKE) -f CMakeFiles\TEST21.dir\build.make CMakeFiles/TEST21.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=26,27,28,29,30 "Built target TEST21"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=25,26,27,28 "Built target TEST21"
 .PHONY : CMakeFiles/TEST21.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TEST21.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TEST21.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
 .PHONY : CMakeFiles/TEST21.dir/rule
@@ -1279,12 +1281,12 @@ CMakeFiles/TEST21.dir/clean:
 CMakeFiles/TEST721.dir/all:
 	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/depend
 	$(MAKE) -f CMakeFiles\TEST721.dir\build.make CMakeFiles/TEST721.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=74,75,76,77,78 "Built target TEST721"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=71,72,73,74 "Built target TEST721"
 .PHONY : CMakeFiles/TEST721.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TEST721.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TEST721.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
 .PHONY : CMakeFiles/TEST721.dir/rule
@@ -1306,7 +1308,7 @@ CMakeFiles/TEST721.dir/clean:
 CMakeFiles/TEST637.dir/all:
 	$(MAKE) -f CMakeFiles\TEST637.dir\build.make CMakeFiles/TEST637.dir/depend
 	$(MAKE) -f CMakeFiles\TEST637.dir\build.make CMakeFiles/TEST637.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=66,67,68,69 "Built target TEST637"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=63,64,65,66 "Built target TEST637"
 .PHONY : CMakeFiles/TEST637.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1333,12 +1335,12 @@ CMakeFiles/TEST637.dir/clean:
 CMakeFiles/TEST94.dir/all:
 	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/depend
 	$(MAKE) -f CMakeFiles\TEST94.dir\build.make CMakeFiles/TEST94.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=79,80,81,82 "Built target TEST94"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=75,76,77,78,79 "Built target TEST94"
 .PHONY : CMakeFiles/TEST94.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TEST94.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 5
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TEST94.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
 .PHONY : CMakeFiles/TEST94.dir/rule
@@ -1360,7 +1362,7 @@ CMakeFiles/TEST94.dir/clean:
 CMakeFiles/TEST297.dir/all:
 	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/depend
 	$(MAKE) -f CMakeFiles\TEST297.dir\build.make CMakeFiles/TEST297.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=35,36,37,38 "Built target TEST297"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=34,35,36,37 "Built target TEST297"
 .PHONY : CMakeFiles/TEST297.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1387,12 +1389,12 @@ CMakeFiles/TEST297.dir/clean:
 CMakeFiles/TEST226.dir/all:
 	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/depend
 	$(MAKE) -f CMakeFiles\TEST226.dir\build.make CMakeFiles/TEST226.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=31,32,33,34 "Built target TEST226"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=29,30,31,32,33 "Built target TEST226"
 .PHONY : CMakeFiles/TEST226.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TEST226.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 5
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TEST226.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
 .PHONY : CMakeFiles/TEST226.dir/rule
@@ -1414,7 +1416,7 @@ CMakeFiles/TEST226.dir/clean:
 CMakeFiles/TEST4.dir/all:
 	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/depend
 	$(MAKE) -f CMakeFiles\TEST4.dir\build.make CMakeFiles/TEST4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=44,45,46,47 "Built target TEST4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=42,43,44,45 "Built target TEST4"
 .PHONY : CMakeFiles/TEST4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1441,12 +1443,12 @@ CMakeFiles/TEST4.dir/clean:
 CMakeFiles/TESTARRAY.dir/all:
 	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/depend
 	$(MAKE) -f CMakeFiles\TESTARRAY.dir\build.make CMakeFiles/TESTARRAY.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=87,88,89,90,91 "Built target TESTARRAY"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=84,85,86,87 "Built target TESTARRAY"
 .PHONY : CMakeFiles/TESTARRAY.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TESTARRAY.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TESTARRAY.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
 .PHONY : CMakeFiles/TESTARRAY.dir/rule
@@ -1468,7 +1470,7 @@ CMakeFiles/TESTARRAY.dir/clean:
 CMakeFiles/TESTLINK.dir/all:
 	$(MAKE) -f CMakeFiles\TESTLINK.dir\build.make CMakeFiles/TESTLINK.dir/depend
 	$(MAKE) -f CMakeFiles\TESTLINK.dir\build.make CMakeFiles/TESTLINK.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=92,93,94,95 "Built target TESTLINK"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=88,89,90,91 "Built target TESTLINK"
 .PHONY : CMakeFiles/TESTLINK.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1487,6 +1489,33 @@ TESTLINK: CMakeFiles/TESTLINK.dir/rule
 CMakeFiles/TESTLINK.dir/clean:
 	$(MAKE) -f CMakeFiles\TESTLINK.dir\build.make CMakeFiles/TESTLINK.dir/clean
 .PHONY : CMakeFiles/TESTLINK.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/TESTQUEUE.dir
+
+# All Build rule for target.
+CMakeFiles/TESTQUEUE.dir/all:
+	$(MAKE) -f CMakeFiles\TESTQUEUE.dir\build.make CMakeFiles/TESTQUEUE.dir/depend
+	$(MAKE) -f CMakeFiles\TESTQUEUE.dir\build.make CMakeFiles/TESTQUEUE.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\ACM\LeetCodeSource\build\CMakeFiles --progress-num=92,93,94,95 "Built target TESTQUEUE"
+.PHONY : CMakeFiles/TESTQUEUE.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TESTQUEUE.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 4
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/TESTQUEUE.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\ACM\LeetCodeSource\build\CMakeFiles 0
+.PHONY : CMakeFiles/TESTQUEUE.dir/rule
+
+# Convenience name for target.
+TESTQUEUE: CMakeFiles/TESTQUEUE.dir/rule
+
+.PHONY : TESTQUEUE
+
+# clean rule for target.
+CMakeFiles/TESTQUEUE.dir/clean:
+	$(MAKE) -f CMakeFiles\TESTQUEUE.dir\build.make CMakeFiles/TESTQUEUE.dir/clean
+.PHONY : CMakeFiles/TESTQUEUE.dir/clean
 
 #=============================================================================
 # Directory level rules for directory SolutionSrc

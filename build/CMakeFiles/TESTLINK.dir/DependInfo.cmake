@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/ACM/LeetCodeSource/SolutionSrc/array.cpp" "E:/ACM/LeetCodeSource/build/CMakeFiles/TESTLINK.dir/SolutionSrc/array.cpp.obj"
   "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp" "E:/ACM/LeetCodeSource/build/CMakeFiles/TESTLINK.dir/SolutionSrc/linkList.cpp.obj"
   "E:/ACM/LeetCodeSource/SolutionSrc/my_sort.cpp" "E:/ACM/LeetCodeSource/build/CMakeFiles/TESTLINK.dir/SolutionSrc/my_sort.cpp.obj"
+  "E:/ACM/LeetCodeSource/SolutionSrc/queueS.cpp" "E:/ACM/LeetCodeSource/build/CMakeFiles/TESTLINK.dir/SolutionSrc/queueS.cpp.obj"
   "E:/ACM/LeetCodeSource/SolutionSrc/tree.cpp" "E:/ACM/LeetCodeSource/build/CMakeFiles/TESTLINK.dir/SolutionSrc/tree.cpp.obj"
   "E:/ACM/LeetCodeSource/SolutionSrc/utils.cpp" "E:/ACM/LeetCodeSource/build/CMakeFiles/TESTLINK.dir/SolutionSrc/utils.cpp.obj"
   "E:/ACM/LeetCodeSource/testLink.cpp" "E:/ACM/LeetCodeSource/build/CMakeFiles/TESTLINK.dir/testLink.cpp.obj"

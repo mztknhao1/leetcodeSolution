@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TESTSORT.dir/SolutionSrc/array.cpp.obj"
   "CMakeFiles/TESTSORT.dir/SolutionSrc/linkList.cpp.obj"
   "CMakeFiles/TESTSORT.dir/SolutionSrc/my_sort.cpp.obj"
+  "CMakeFiles/TESTSORT.dir/SolutionSrc/queueS.cpp.obj"
   "CMakeFiles/TESTSORT.dir/SolutionSrc/tree.cpp.obj"
   "CMakeFiles/TESTSORT.dir/SolutionSrc/utils.cpp.obj"
   "CMakeFiles/TESTSORT.dir/testSort.cpp.obj"
