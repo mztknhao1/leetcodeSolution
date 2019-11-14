@@ -40,3 +40,26 @@ ListNode* linkSolution::swapPairs_q24(ListNode* head){
     head = root.next;
     return head;
 }
+
+ListNode* linkSolution::partition_q86(ListNode* head, int x){
+    //初始化两个哑指针
+    ListNode* dummy1 = new ListNode(0);
+    ListNode* dummy2 = new ListNode(0);
+    auto node1 = dummy1;
+    auto node2 = dummy2;
+    while(head!=NULL){
+        if(head->val < x){
+            node1->next = head;
+            node1 = node1->next;
+        }
+        else{
+            node2->next = head;
+            node2 = node2->next;
+        }
+        head = head->next;
+    }
+    node1->next = dummy2->next;
+    //这句话千万别忘了写
+    node2->next = NULL;
+    return dummy1->next;
+}
