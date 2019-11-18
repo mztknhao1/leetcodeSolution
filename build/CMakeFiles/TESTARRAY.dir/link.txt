@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\TESTARRAY.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\TESTARRAY.dir/objects.a @CMakeFiles\TESTARRAY.dir\objects1.rsp
-C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\TESTARRAY.dir/objects.a -Wl,--no-whole-archive  -o TESTARRAY.exe -Wl,--out-implib,libTESTARRAY.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TESTARRAY.dir\linklibs.rsp
