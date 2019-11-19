@@ -2,6 +2,7 @@
 #define _LINKLIST
 
 #include "dataStruct.h"
+#include "utils.h"
 
 class queueSolution{
 public:

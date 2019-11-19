@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSOLUTION.a  CMakeFiles/SOLUTION.dir/linkList.cpp.o CMakeFiles/SOLUTION.dir/array.cpp.o CMakeFiles/SOLUTION.dir/utils.cpp.o CMakeFiles/SOLUTION.dir/queueS.cpp.o CMakeFiles/SOLUTION.dir/tree.cpp.o CMakeFiles/SOLUTION.dir/DP.cpp.o CMakeFiles/SOLUTION.dir/Solution.cpp.o CMakeFiles/SOLUTION.dir/my_sort.cpp.o
+/usr/bin/ranlib libSOLUTION.a
