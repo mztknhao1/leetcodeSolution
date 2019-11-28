@@ -20,7 +20,7 @@ set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
 
-include_directories(./ ./SolutionSrc)
+include_directories(./ ./SolutionSrc ./include)
 add_subdirectory(SolutionSrc)
 aux_source_directory(./SolutionSrc SOLUTIONSRC)
 

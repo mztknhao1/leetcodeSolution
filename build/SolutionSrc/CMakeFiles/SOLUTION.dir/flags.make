@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/mztkn/study/Leetcode/leetcodeSolution/. -I/home/mztkn/study/Leetcode/leetcodeSolution/./SolutionSrc 
+CXX_INCLUDES = -I/home/mztkn/study/Leetcode/leetcodeSolution/. -I/home/mztkn/study/Leetcode/leetcodeSolution/./SolutionSrc -I/home/mztkn/study/Leetcode/leetcodeSolution/./include -I/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/../include 
 

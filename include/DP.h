@@ -9,6 +9,7 @@ class dpSolution{
         int maxProfit_q121(vector<int>& prices);
         int longestPalindrome_q409(string s); 
         bool divisorGame_1025(int N);
+        vector<int> sortArrayByParity_q905(vector<int>& A);
 };
 
 

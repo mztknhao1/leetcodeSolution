@@ -10,5 +10,13 @@
 #include<set>
 #include<stack>
 #include<unordered_map>
+#include"DP.h"
+#include"linkList.h"
+#include"tree.h"
+#include"Solution.h"
+#include"queueS.h"
+#include"utils.h"
+#include"my_sort.h"
+#include"dataStruct.h"
 
 #endif

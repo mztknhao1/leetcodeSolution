@@ -6,15 +6,27 @@
 
 #IncludeRegexTransform: 
 
-.././SolutionSrc/Solution.h
+.././include/DP.h
+utils.h
+.././include/utils.h
+set
+-
+
+.././include/Solution.h
 lib_head.h
-.././SolutionSrc/lib_head.h
+.././include/lib_head.h
 dataStruct.h
-.././SolutionSrc/dataStruct.h
+.././include/dataStruct.h
 
-.././SolutionSrc/dataStruct.h
+.././include/array.h
+utils.h
+.././include/utils.h
+lib_head.h
+.././include/lib_head.h
 
-.././SolutionSrc/lib_head.h
+.././include/dataStruct.h
+
+.././include/lib_head.h
 vector
 -
 iostream
@@ -34,19 +46,41 @@ stack
 unordered_map
 -
 
-.././SolutionSrc/my_sort.h
-utils.h
-.././SolutionSrc/utils.h
-lib_head.h
-.././SolutionSrc/lib_head.h
+.././include/linkList.h
+dataStruct.h
+.././include/dataStruct.h
 
-.././SolutionSrc/utils.h
+.././include/my_sort.h
+utils.h
+.././include/utils.h
+lib_head.h
+.././include/lib_head.h
+
+.././include/queueS.h
+dataStruct.h
+.././include/dataStruct.h
+utils.h
+.././include/utils.h
+
+.././include/tree.h
+dataStruct.h
+.././include/dataStruct.h
+lib_head.h
+.././include/lib_head.h
+
+.././include/utils.h
 Solution.h
-.././SolutionSrc/Solution.h
+.././include/Solution.h
 iostream
 -
 sstream
 -
+
+/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/DP.cpp
+DP.h
+/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/DP.h
+lib_head.h
+/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/lib_head.h
 
 /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/Solution.cpp
 Solution.h
@@ -54,45 +88,11 @@ Solution.h
 utils.h
 /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/utils.h
 
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/Solution.h
-lib_head.h
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/lib_head.h
-dataStruct.h
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/dataStruct.h
-
 /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/array.cpp
 array.h
 /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/array.h
 utils.h
 /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/utils.h
-unordered_map
--
-
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/array.h
-utils.h
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/utils.h
-lib_head.h
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/lib_head.h
-
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/dataStruct.h
-
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/lib_head.h
-vector
--
-iostream
--
-algorithm
--
-cmath
--
-queue
--
-string
--
-set
--
-stack
--
 unordered_map
 -
 
@@ -104,19 +104,9 @@ utils.h
 lib_head.h
 /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/lib_head.h
 
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/linkList.h
-dataStruct.h
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/dataStruct.h
-
 /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/my_sort.cpp
 my_sort.h
 /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/my_sort.h
-
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/my_sort.h
-utils.h
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/utils.h
-lib_head.h
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/lib_head.h
 
 /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/queueS.cpp
 queueS.h
@@ -128,21 +118,9 @@ lib_head.h
 algorithm
 -
 
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/queueS.h
-dataStruct.h
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/dataStruct.h
-utils.h
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/utils.h
-
 /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/tree.cpp
 tree.h
 /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/tree.h
-
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/tree.h
-dataStruct.h
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/dataStruct.h
-lib_head.h
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/lib_head.h
 
 /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/utils.cpp
 Solution.h
@@ -151,14 +129,6 @@ utils.h
 /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/utils.h
 dataStruct.h
 /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/dataStruct.h
-
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/utils.h
-Solution.h
-/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/Solution.h
-iostream
--
-sstream
--
 
 /home/mztkn/study/Leetcode/leetcodeSolution/testSort.cpp
 my_sort.h

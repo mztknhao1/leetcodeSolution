@@ -1,4 +1,3 @@
-#include "DP.h"
 #include "lib_head.h"
 
 int dpSolution::maxProfit_q121(vector<int> &prices)
@@ -83,4 +82,28 @@ bool dpSolution::divisorGame_1025(int N)
         dp.push_back(1);
     }
     return dp[N - 2];
+}
+
+
+vector<int> dpSolution::sortArrayByParity_q905(vector<int>& A){
+    //这个题好像可以不用动态规划做，先按自己的想法试试吧
+    //经过测试，这个方法时间比别人多，但是内存消耗还行
+    int sizeA = A.size();
+    if(sizeA <= 1){
+        return A;
+    }
+
+    vector<int> even,odd;
+
+    for(auto num :A){
+        if(num%2==0){
+            even.emplace_back(num);
+        }else{
+            odd.emplace_back(num);
+        }
+    }
+    even.insert(even.end(),odd.begin(),odd.end());
+    return even;
+
+    //看了答案可以借鉴快速排序的思想，方法是使用双指针，这里就尝试了，想做一个中等难度的快速排序
 }
