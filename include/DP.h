@@ -10,6 +10,7 @@ class dpSolution{
         int longestPalindrome_q409(string s); 
         bool divisorGame_1025(int N);
         vector<int> sortArrayByParity_q905(vector<int>& A);
+        int numDecodings_q91(string s);
 };
 
 
