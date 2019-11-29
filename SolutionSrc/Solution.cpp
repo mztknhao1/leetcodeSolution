@@ -465,3 +465,32 @@ bool Solution::compAcounts(vector<std::string>& acount1,vector<std::string>& aco
 void Solution::mergeAcounts(vector<std::string>& dstAcount,vector<std::string>& srcAcount){
     dstAcount.insert(dstAcount.end(),srcAcount.begin()+1,srcAcount.end());
 }
+
+
+bool Solution::checkStraightLine_q1232(vector<vector<int>>& coordinates) {
+        if(coordinates.size()<=2){
+            return true;
+        }
+        double x1 = coordinates[0][0],x2=coordinates[1][0],x3=coordinates[2][0];
+        double y1 = coordinates[0][1],y2=coordinates[1][1],y3=coordinates[2][0];
+        if((x1==x2 && x2!=x3)||(x1!=x2&&x2==x3)) return false;
+        if(x1==x2 && x2==x3){
+            for(int i=3;i<coordinates.size();i++){
+                if(coordinates[i][0]!=x1){
+                    return false;
+                }
+            }
+            return true;
+        }
+        for(int i=0;i<coordinates.size()-2;i++){
+            x1 = coordinates[i][0],x2=coordinates[i+1][0],x3=coordinates[i+2][0];
+            y1 = coordinates[i][1],y2=coordinates[i+1][1],y3=coordinates[i+2][1];
+            if(x1==x2 || x2==x3){
+                return false;
+            }
+            if((y3-y2)/(x3-x2)!=(y2-y1)/(x2-x1)){
+                return false;
+            }
+        }
+        return true;
+    }

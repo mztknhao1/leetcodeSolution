@@ -34,6 +34,8 @@ public:
 
     vector<vector<std::string>> acountsMerge_q721(vector<vector<std::string>>& acounts);
 
+    bool checkStraightLine_q1232(vector<vector<int>>& coordinates);
+
 
 private:
     bool compAcounts(vector<std::string>& acount1,vector<std::string>& acount2);

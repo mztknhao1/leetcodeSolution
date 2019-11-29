@@ -42,5 +42,23 @@ int main(){
     vector<int> nums_q217 = {3,3};
     bool re = aS.containDuplicate_q217(nums_q217);
 
+    //第1232题测试
+    vector<int> q1232={1,2};
+    vector<vector<int>> qnums;
+    qnums.push_back(q1232);
+    q1232[0] = 2;
+    q1232[1] = 3;
+    qnums.push_back(q1232);
+    q1232[0] = 3;
+    q1232[1] = 4;
+    qnums.push_back(q1232);    
+    q1232[0] = 4;
+    q1232[1] = 5;
+    qnums.push_back(q1232);
+    Solution ss;
+    bool resultq1232 = ss.checkStraightLine_q1232(qnums);
+    
+    
+
     return 0;
 }

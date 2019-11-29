@@ -2,7 +2,11 @@
 #define __DP
 
 #include"utils.h"
-#include<set>
+#include"lib_head.h"
+
+using std::vector;
+using std::string;
+
 
 class dpSolution{
     public:
