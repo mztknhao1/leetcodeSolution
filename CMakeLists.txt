@@ -49,6 +49,7 @@ add_executable(TESTARRAY testArray.cpp ${SOLUTIONSRC})
 add_executable(TESTSORT testSort.cpp ${SOLUTIONSRC})
 add_executable(TESTLINK testLink.cpp ${SOLUTIONSRC})
 add_executable(TESTQUEUE testQueue.cpp ${SOLUTIONSRC})
+add_executable(TESTSTRING testString.cpp ${SOLUTIONSRC})
 
 # enable_testing()
 # add_test(myTEST266 TEST415 1 2)

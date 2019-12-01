@@ -1,5 +1,6 @@
 /home/mztkn/study/Leetcode/leetcodeSolution/build/CMakeFiles/edit_cache.dir
 /home/mztkn/study/Leetcode/leetcodeSolution/build/CMakeFiles/rebuild_cache.dir
+/home/mztkn/study/Leetcode/leetcodeSolution/build/CMakeFiles/TESTSTRING.dir
 /home/mztkn/study/Leetcode/leetcodeSolution/build/CMakeFiles/TESTLINK.dir
 /home/mztkn/study/Leetcode/leetcodeSolution/build/CMakeFiles/TESTSORT.dir
 /home/mztkn/study/Leetcode/leetcodeSolution/build/CMakeFiles/TESTARRAY.dir
