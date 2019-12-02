@@ -85,3 +85,26 @@ int myAtoi_q8(string str)
         result = -result;
     return result;
 }
+
+ string convert_q6(string s, int numRows) {
+        if(numRows==1) return s;
+
+        int currentRow = 0;
+        vector<string> rows(min(numRows,(int)s.size()));
+        
+        bool goingDown = false;
+
+        for(char c:s){
+            rows[currentRow] += c;
+            if(currentRow==0 || currentRow==numRows-1){
+                goingDown = !goingDown;
+            }
+            currentRow += goingDown?1:-1;
+        }
+
+        string result;
+        for(string str:rows){
+            result += str;
+        }
+        return result;
+    }
