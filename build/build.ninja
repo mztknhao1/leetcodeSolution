@@ -2621,13 +2621,6 @@ build TEST98: CXX_EXECUTABLE_LINKER__TEST98 CMakeFiles/TEST98.dir/test98.cpp.o C
   TARGET_PDB = TEST98.pdb
 
 #############################################
-# Custom command for CMakeFiles/Experimental
-
-build CMakeFiles/Experimental: CUSTOM_COMMAND
-  COMMAND = cd /home/mztkn/study/Leetcode/leetcodeSolution/build && /usr/bin/ctest -D Experimental
-  pool = console
-
-#############################################
 # Custom command for CMakeFiles/Nightly
 
 build CMakeFiles/Nightly: CUSTOM_COMMAND
@@ -2639,6 +2632,13 @@ build CMakeFiles/Nightly: CUSTOM_COMMAND
 
 build CMakeFiles/Continuous: CUSTOM_COMMAND
   COMMAND = cd /home/mztkn/study/Leetcode/leetcodeSolution/build && /usr/bin/ctest -D Continuous
+  pool = console
+
+#############################################
+# Custom command for CMakeFiles/Experimental
+
+build CMakeFiles/Experimental: CUSTOM_COMMAND
+  COMMAND = cd /home/mztkn/study/Leetcode/leetcodeSolution/build && /usr/bin/ctest -D Experimental
   pool = console
 
 #############################################
@@ -2747,13 +2747,6 @@ build CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
   pool = console
 
 #############################################
-# Custom command for CMakeFiles/ContinuousSubmit
-
-build CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
-  COMMAND = cd /home/mztkn/study/Leetcode/leetcodeSolution/build && /usr/bin/ctest -D ContinuousSubmit
-  pool = console
-
-#############################################
 # Custom command for CMakeFiles/NightlyTest
 
 build CMakeFiles/NightlyTest: CUSTOM_COMMAND
@@ -2814,6 +2807,13 @@ build CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
 
 build CMakeFiles/NightlyBuild: CUSTOM_COMMAND
   COMMAND = cd /home/mztkn/study/Leetcode/leetcodeSolution/build && /usr/bin/ctest -D NightlyBuild
+  pool = console
+
+#############################################
+# Custom command for CMakeFiles/ContinuousSubmit
+
+build CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
+  COMMAND = cd /home/mztkn/study/Leetcode/leetcodeSolution/build && /usr/bin/ctest -D ContinuousSubmit
   pool = console
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
