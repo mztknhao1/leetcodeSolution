@@ -33,3 +33,31 @@ void traceback_q46(vector<int>& nums, vector<int>& trace, vector<vector<int>>& r
         trace.pop_back();
     }
 }
+
+
+
+//其实也可用动态规划或者深度优先搜索算法的，这个回溯类似于深度优先算法
+vector<vector<int>> combinationSum_q39(vector<int>& candidates, int target){
+    std::sort(candidates.begin(),candidates.end());
+    vector<vector<int>> result;
+    if(candidates.size()==0) return result;
+    if(candidates[0]>target) return result;
+
+    vector<int> track;
+    traceback_q39(candidates,track,target,result);
+    return result;
+}
+
+void traceback_q39(vector<int>& candidates, vector<int>& track, int target,vector<vector<int>>& result){
+    //终止回溯
+    if(target==0) result.push_back(track);
+    if(candidates[0]>target) return;
+
+    //这里需要注意的是为了防止重复，需要减枝，后面选取的数不应该比前面选取的数要小
+    for(int i:candidates){
+        if(track.size()!=0 && i<track[track.size()-1]) continue;
+        track.push_back(i);
+        traceback_q39(candidates,track,target-i,result);
+        track.pop_back();
+    }
+}
