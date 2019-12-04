@@ -61,3 +61,26 @@ void traceback_q39(vector<int>& candidates, vector<int>& track, int target,vecto
         track.pop_back();
     }
 }
+
+vector<string> letterCombinations_q17(string digits){
+    std::unordered_map<char,string> mp;
+    mp['2'] = "abc",mp['3'] = "def",mp['4']="ghi",mp['5']="jkl";
+    mp['6'] = "mno",mp['7'] = "pqrs",mp['8']="tuv",mp['9']="wxyz";
+    vector<string> result;
+    string track;
+    trackback_q17(digits,mp,track,result);
+    return result;
+}
+
+
+void trackback_q17(string& digits, std::unordered_map<char,string>& mp, string& track,vector<string>& result){
+    if(track.size()==digits.size()){
+        result.push_back(track);
+    }
+
+    for(char c:mp[digits[track.size()]]){
+        track.push_back(c);
+        trackback_q17(digits,mp,track,result);
+        track.pop_back();
+    }
+}

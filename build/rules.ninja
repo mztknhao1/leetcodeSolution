@@ -22,6 +22,25 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for compiling CXX files.
 
+rule CXX_COMPILER__SOLUTION
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__SOLUTION
+  command = $PRE_LINK && /usr/bin/cmake -E remove $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && $POST_BUILD
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
 rule CXX_COMPILER__TESTSTRING
   depfile = $DEP_FILE
   deps = gcc
@@ -41,7 +60,7 @@ rule CXX_EXECUTABLE_LINKER__TESTSTRING
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__TESTLINK
+rule CXX_COMPILER__TESTQUEUE
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -51,7 +70,7 @@ rule CXX_COMPILER__TESTLINK
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__TESTLINK
+rule CXX_EXECUTABLE_LINKER__TESTQUEUE
   command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -60,7 +79,7 @@ rule CXX_EXECUTABLE_LINKER__TESTLINK
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__TESTSORT
+rule CXX_COMPILER__TEST297
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -70,7 +89,83 @@ rule CXX_COMPILER__TESTSORT
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__TESTSORT
+rule CXX_EXECUTABLE_LINKER__TEST297
+  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__TEST15
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__TEST15
+  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__TEST21
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__TEST21
+  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__TEST650
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__TEST650
+  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__TEST226
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__TEST226
   command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -98,7 +193,7 @@ rule CXX_EXECUTABLE_LINKER__TESTARRAY
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__TEST4
+rule CXX_COMPILER__TEST442
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -108,7 +203,45 @@ rule CXX_COMPILER__TEST4
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__TEST4
+rule CXX_EXECUTABLE_LINKER__TEST442
+  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__TEST415
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__TEST415
+  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__TEST456
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__TEST456
   command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -155,44 +288,6 @@ rule CXX_EXECUTABLE_LINKER__TEST3
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__TEST102
-  depfile = $DEP_FILE
-  deps = gcc
-  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX executable.
-
-rule CXX_EXECUTABLE_LINKER__TEST102
-  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
-  description = Linking CXX executable $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
-rule CXX_COMPILER__TESTQUEUE
-  depfile = $DEP_FILE
-  deps = gcc
-  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX executable.
-
-rule CXX_EXECUTABLE_LINKER__TESTQUEUE
-  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
-  description = Linking CXX executable $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
 rule CXX_COMPILER__TEST144
   depfile = $DEP_FILE
   deps = gcc
@@ -212,7 +307,7 @@ rule CXX_EXECUTABLE_LINKER__TEST144
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__TEST226
+rule CXX_COMPILER__TEST102
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -222,45 +317,7 @@ rule CXX_COMPILER__TEST226
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__TEST226
-  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
-  description = Linking CXX executable $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
-rule CXX_COMPILER__TEST442
-  depfile = $DEP_FILE
-  deps = gcc
-  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX executable.
-
-rule CXX_EXECUTABLE_LINKER__TEST442
-  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
-  description = Linking CXX executable $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
-rule CXX_COMPILER__TEST21
-  depfile = $DEP_FILE
-  deps = gcc
-  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX executable.
-
-rule CXX_EXECUTABLE_LINKER__TEST21
+rule CXX_EXECUTABLE_LINKER__TEST102
   command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -307,7 +364,7 @@ rule CXX_EXECUTABLE_LINKER__TEST114
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__TEST650
+rule CXX_COMPILER__TEST4
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -317,7 +374,7 @@ rule CXX_COMPILER__TEST650
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__TEST650
+rule CXX_EXECUTABLE_LINKER__TEST4
   command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -326,7 +383,7 @@ rule CXX_EXECUTABLE_LINKER__TEST650
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__TEST456
+rule CXX_COMPILER__TEST98
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -336,83 +393,7 @@ rule CXX_COMPILER__TEST456
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__TEST456
-  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
-  description = Linking CXX executable $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
-rule CXX_COMPILER__TEST415
-  depfile = $DEP_FILE
-  deps = gcc
-  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX executable.
-
-rule CXX_EXECUTABLE_LINKER__TEST415
-  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
-  description = Linking CXX executable $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
-rule CXX_COMPILER__TEST637
-  depfile = $DEP_FILE
-  deps = gcc
-  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX executable.
-
-rule CXX_EXECUTABLE_LINKER__TEST637
-  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
-  description = Linking CXX executable $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
-rule CXX_COMPILER__TEST15
-  depfile = $DEP_FILE
-  deps = gcc
-  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX executable.
-
-rule CXX_EXECUTABLE_LINKER__TEST15
-  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
-  description = Linking CXX executable $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling CXX files.
-
-rule CXX_COMPILER__TEST297
-  depfile = $DEP_FILE
-  deps = gcc
-  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building CXX object $out
-
-
-#############################################
-# Rule for linking CXX executable.
-
-rule CXX_EXECUTABLE_LINKER__TEST297
+rule CXX_EXECUTABLE_LINKER__TEST98
   command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -459,7 +440,7 @@ rule CXX_EXECUTABLE_LINKER__TEST111
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__TEST98
+rule CXX_COMPILER__TESTSORT
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -469,7 +450,7 @@ rule CXX_COMPILER__TEST98
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__TEST98
+rule CXX_EXECUTABLE_LINKER__TESTSORT
   command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -478,7 +459,7 @@ rule CXX_EXECUTABLE_LINKER__TEST98
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__SOLUTION
+rule CXX_COMPILER__TEST637
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -486,11 +467,30 @@ rule CXX_COMPILER__SOLUTION
 
 
 #############################################
-# Rule for linking CXX static library.
+# Rule for linking CXX executable.
 
-rule CXX_STATIC_LIBRARY_LINKER__SOLUTION
-  command = $PRE_LINK && /usr/bin/cmake -E remove $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && $POST_BUILD
-  description = Linking CXX static library $TARGET_FILE
+rule CXX_EXECUTABLE_LINKER__TEST637
+  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__TESTLINK
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__TESTLINK
+  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
 

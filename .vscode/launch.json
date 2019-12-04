@@ -8,7 +8,7 @@
             "name": "(gdb) 启动",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/TESTSTRING",
+            "program": "${workspaceFolder}/build/test/TESTSTRING",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
