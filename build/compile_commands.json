@@ -61,6 +61,72 @@
 
 {
   "directory": "/home/mztkn/study/Leetcode/leetcodeSolution/build",
+  "command": "/usr/bin/g++-5    -I../test/. -I../test/../SolutionSrc -I../test/../include   -std=c++11 -g   -o test/CMakeFiles/TESTTRACK.dir/testTrack.cpp.o -c /home/mztkn/study/Leetcode/leetcodeSolution/test/testTrack.cpp",
+  "file": "/home/mztkn/study/Leetcode/leetcodeSolution/test/testTrack.cpp"
+},
+
+{
+  "directory": "/home/mztkn/study/Leetcode/leetcodeSolution/build",
+  "command": "/usr/bin/g++-5    -I../test/. -I../test/../SolutionSrc -I../test/../include   -std=c++11 -g   -o test/CMakeFiles/TESTTRACK.dir/__/SolutionSrc/linkList.cpp.o -c /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/linkList.cpp",
+  "file": "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/linkList.cpp"
+},
+
+{
+  "directory": "/home/mztkn/study/Leetcode/leetcodeSolution/build",
+  "command": "/usr/bin/g++-5    -I../test/. -I../test/../SolutionSrc -I../test/../include   -std=c++11 -g   -o test/CMakeFiles/TESTTRACK.dir/__/SolutionSrc/array.cpp.o -c /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/array.cpp",
+  "file": "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/array.cpp"
+},
+
+{
+  "directory": "/home/mztkn/study/Leetcode/leetcodeSolution/build",
+  "command": "/usr/bin/g++-5    -I../test/. -I../test/../SolutionSrc -I../test/../include   -std=c++11 -g   -o test/CMakeFiles/TESTTRACK.dir/__/SolutionSrc/utils.cpp.o -c /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/utils.cpp",
+  "file": "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/utils.cpp"
+},
+
+{
+  "directory": "/home/mztkn/study/Leetcode/leetcodeSolution/build",
+  "command": "/usr/bin/g++-5    -I../test/. -I../test/../SolutionSrc -I../test/../include   -std=c++11 -g   -o test/CMakeFiles/TESTTRACK.dir/__/SolutionSrc/queueS.cpp.o -c /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/queueS.cpp",
+  "file": "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/queueS.cpp"
+},
+
+{
+  "directory": "/home/mztkn/study/Leetcode/leetcodeSolution/build",
+  "command": "/usr/bin/g++-5    -I../test/. -I../test/../SolutionSrc -I../test/../include   -std=c++11 -g   -o test/CMakeFiles/TESTTRACK.dir/__/SolutionSrc/tree.cpp.o -c /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/tree.cpp",
+  "file": "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/tree.cpp"
+},
+
+{
+  "directory": "/home/mztkn/study/Leetcode/leetcodeSolution/build",
+  "command": "/usr/bin/g++-5    -I../test/. -I../test/../SolutionSrc -I../test/../include   -std=c++11 -g   -o test/CMakeFiles/TESTTRACK.dir/__/SolutionSrc/trackback.cpp.o -c /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/trackback.cpp",
+  "file": "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/trackback.cpp"
+},
+
+{
+  "directory": "/home/mztkn/study/Leetcode/leetcodeSolution/build",
+  "command": "/usr/bin/g++-5    -I../test/. -I../test/../SolutionSrc -I../test/../include   -std=c++11 -g   -o test/CMakeFiles/TESTTRACK.dir/__/SolutionSrc/DP.cpp.o -c /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/DP.cpp",
+  "file": "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/DP.cpp"
+},
+
+{
+  "directory": "/home/mztkn/study/Leetcode/leetcodeSolution/build",
+  "command": "/usr/bin/g++-5    -I../test/. -I../test/../SolutionSrc -I../test/../include   -std=c++11 -g   -o test/CMakeFiles/TESTTRACK.dir/__/SolutionSrc/stringS.cpp.o -c /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/stringS.cpp",
+  "file": "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/stringS.cpp"
+},
+
+{
+  "directory": "/home/mztkn/study/Leetcode/leetcodeSolution/build",
+  "command": "/usr/bin/g++-5    -I../test/. -I../test/../SolutionSrc -I../test/../include   -std=c++11 -g   -o test/CMakeFiles/TESTTRACK.dir/__/SolutionSrc/Solution.cpp.o -c /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/Solution.cpp",
+  "file": "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/Solution.cpp"
+},
+
+{
+  "directory": "/home/mztkn/study/Leetcode/leetcodeSolution/build",
+  "command": "/usr/bin/g++-5    -I../test/. -I../test/../SolutionSrc -I../test/../include   -std=c++11 -g   -o test/CMakeFiles/TESTTRACK.dir/__/SolutionSrc/my_sort.cpp.o -c /home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/my_sort.cpp",
+  "file": "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/my_sort.cpp"
+},
+
+{
+  "directory": "/home/mztkn/study/Leetcode/leetcodeSolution/build",
   "command": "/usr/bin/g++-5    -I../test/. -I../test/../SolutionSrc -I../test/../include   -std=c++11 -g   -o test/CMakeFiles/TESTSTRING.dir/testString.cpp.o -c /home/mztkn/study/Leetcode/leetcodeSolution/test/testString.cpp",
   "file": "/home/mztkn/study/Leetcode/leetcodeSolution/test/testString.cpp"
 },

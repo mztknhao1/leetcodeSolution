@@ -41,6 +41,25 @@ rule CXX_STATIC_LIBRARY_LINKER__SOLUTION
 #############################################
 # Rule for compiling CXX files.
 
+rule CXX_COMPILER__TESTTRACK
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/g++-5   $DEFINES $INCLUDES $FLAGS -MMD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__TESTTRACK
+  command = $PRE_LINK && /usr/bin/g++-5   $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
 rule CXX_COMPILER__TESTSTRING
   depfile = $DEP_FILE
   deps = gcc
