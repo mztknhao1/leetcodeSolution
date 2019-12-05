@@ -1,8 +1,8 @@
-# Install script for directory: /home/mztkn/study/Leetcode/leetcodeSolution
+# Install script for directory: E:/ACM/LeetCodeSource
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/LeetCodeSolution")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -27,15 +27,15 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-# Install shared libraries without execute permission?
-if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/mztkn/study/Leetcode/leetcodeSolution/build/SolutionSrc/cmake_install.cmake")
-  include("/home/mztkn/study/Leetcode/leetcodeSolution/build/test/cmake_install.cmake")
+  include("E:/ACM/LeetCodeSource/build/SolutionSrc/cmake_install.cmake")
+  include("E:/ACM/LeetCodeSource/build/test/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mztkn/study/Leetcode/leetcodeSolution/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/ACM/LeetCodeSource/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

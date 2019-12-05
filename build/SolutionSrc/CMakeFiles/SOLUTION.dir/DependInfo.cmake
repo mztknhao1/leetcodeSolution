@@ -4,22 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/DP.cpp" "/home/mztkn/study/Leetcode/leetcodeSolution/build/SolutionSrc/CMakeFiles/SOLUTION.dir/DP.cpp.o"
-  "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/Solution.cpp" "/home/mztkn/study/Leetcode/leetcodeSolution/build/SolutionSrc/CMakeFiles/SOLUTION.dir/Solution.cpp.o"
-  "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/array.cpp" "/home/mztkn/study/Leetcode/leetcodeSolution/build/SolutionSrc/CMakeFiles/SOLUTION.dir/array.cpp.o"
-  "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/linkList.cpp" "/home/mztkn/study/Leetcode/leetcodeSolution/build/SolutionSrc/CMakeFiles/SOLUTION.dir/linkList.cpp.o"
-  "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/my_sort.cpp" "/home/mztkn/study/Leetcode/leetcodeSolution/build/SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.o"
-  "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/queueS.cpp" "/home/mztkn/study/Leetcode/leetcodeSolution/build/SolutionSrc/CMakeFiles/SOLUTION.dir/queueS.cpp.o"
-  "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/tree.cpp" "/home/mztkn/study/Leetcode/leetcodeSolution/build/SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.o"
-  "/home/mztkn/study/Leetcode/leetcodeSolution/SolutionSrc/utils.cpp" "/home/mztkn/study/Leetcode/leetcodeSolution/build/SolutionSrc/CMakeFiles/SOLUTION.dir/utils.cpp.o"
+  "E:/ACM/LeetCodeSource/SolutionSrc/DP.cpp" "E:/ACM/LeetCodeSource/build/SolutionSrc/CMakeFiles/SOLUTION.dir/DP.cpp.obj"
+  "E:/ACM/LeetCodeSource/SolutionSrc/Solution.cpp" "E:/ACM/LeetCodeSource/build/SolutionSrc/CMakeFiles/SOLUTION.dir/Solution.cpp.obj"
+  "E:/ACM/LeetCodeSource/SolutionSrc/array.cpp" "E:/ACM/LeetCodeSource/build/SolutionSrc/CMakeFiles/SOLUTION.dir/array.cpp.obj"
+  "E:/ACM/LeetCodeSource/SolutionSrc/linkList.cpp" "E:/ACM/LeetCodeSource/build/SolutionSrc/CMakeFiles/SOLUTION.dir/linkList.cpp.obj"
+  "E:/ACM/LeetCodeSource/SolutionSrc/my_sort.cpp" "E:/ACM/LeetCodeSource/build/SolutionSrc/CMakeFiles/SOLUTION.dir/my_sort.cpp.obj"
+  "E:/ACM/LeetCodeSource/SolutionSrc/queueS.cpp" "E:/ACM/LeetCodeSource/build/SolutionSrc/CMakeFiles/SOLUTION.dir/queueS.cpp.obj"
+  "E:/ACM/LeetCodeSource/SolutionSrc/stringS.cpp" "E:/ACM/LeetCodeSource/build/SolutionSrc/CMakeFiles/SOLUTION.dir/stringS.cpp.obj"
+  "E:/ACM/LeetCodeSource/SolutionSrc/trackback.cpp" "E:/ACM/LeetCodeSource/build/SolutionSrc/CMakeFiles/SOLUTION.dir/trackback.cpp.obj"
+  "E:/ACM/LeetCodeSource/SolutionSrc/tree.cpp" "E:/ACM/LeetCodeSource/build/SolutionSrc/CMakeFiles/SOLUTION.dir/tree.cpp.obj"
+  "E:/ACM/LeetCodeSource/SolutionSrc/utils.cpp" "E:/ACM/LeetCodeSource/build/SolutionSrc/CMakeFiles/SOLUTION.dir/utils.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../."
-  ".././SolutionSrc"
-  ".././include"
   "../SolutionSrc/../include"
   )
 

@@ -1,14 +1,16 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/SOLUTION.dir/linkList.cpp.o"
-  "CMakeFiles/SOLUTION.dir/array.cpp.o"
-  "CMakeFiles/SOLUTION.dir/utils.cpp.o"
-  "CMakeFiles/SOLUTION.dir/queueS.cpp.o"
-  "CMakeFiles/SOLUTION.dir/tree.cpp.o"
-  "CMakeFiles/SOLUTION.dir/DP.cpp.o"
-  "CMakeFiles/SOLUTION.dir/Solution.cpp.o"
-  "CMakeFiles/SOLUTION.dir/my_sort.cpp.o"
-  "libSOLUTION.pdb"
+  "CMakeFiles/SOLUTION.dir/DP.cpp.obj"
+  "CMakeFiles/SOLUTION.dir/Solution.cpp.obj"
+  "CMakeFiles/SOLUTION.dir/array.cpp.obj"
+  "CMakeFiles/SOLUTION.dir/linkList.cpp.obj"
+  "CMakeFiles/SOLUTION.dir/my_sort.cpp.obj"
+  "CMakeFiles/SOLUTION.dir/queueS.cpp.obj"
+  "CMakeFiles/SOLUTION.dir/stringS.cpp.obj"
+  "CMakeFiles/SOLUTION.dir/trackback.cpp.obj"
+  "CMakeFiles/SOLUTION.dir/tree.cpp.obj"
+  "CMakeFiles/SOLUTION.dir/utils.cpp.obj"
   "libSOLUTION.a"
+  "libSOLUTION.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
