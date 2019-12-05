@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\TEST15.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\TEST15.dir/objects.a @CMakeFiles\TEST15.dir\objects1.rsp
-C:\MinGW\bin\g++.exe  -std=c++11 -g   -Wl,--whole-archive CMakeFiles\TEST15.dir/objects.a -Wl,--no-whole-archive  -o TEST15.exe -Wl,--out-implib,libTEST15.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TEST15.dir\linklibs.rsp

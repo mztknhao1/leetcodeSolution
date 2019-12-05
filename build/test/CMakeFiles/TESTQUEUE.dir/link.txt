@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E remove -f CMakeFiles\TESTQUEUE.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\TESTQUEUE.dir/objects.a @CMakeFiles\TESTQUEUE.dir\objects1.rsp
-C:\MinGW\bin\g++.exe  -std=c++11 -g   -Wl,--whole-archive CMakeFiles\TESTQUEUE.dir/objects.a -Wl,--no-whole-archive  -o TESTQUEUE.exe -Wl,--out-implib,libTESTQUEUE.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TESTQUEUE.dir\linklibs.rsp

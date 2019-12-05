@@ -1,2 +1,0 @@
-C:\MinGW\bin\ar.exe qc libSOLUTION.a  CMakeFiles/SOLUTION.dir/DP.cpp.obj CMakeFiles/SOLUTION.dir/Solution.cpp.obj CMakeFiles/SOLUTION.dir/array.cpp.obj CMakeFiles/SOLUTION.dir/linkList.cpp.obj CMakeFiles/SOLUTION.dir/my_sort.cpp.obj CMakeFiles/SOLUTION.dir/queueS.cpp.obj CMakeFiles/SOLUTION.dir/stringS.cpp.obj CMakeFiles/SOLUTION.dir/trackback.cpp.obj CMakeFiles/SOLUTION.dir/tree.cpp.obj CMakeFiles/SOLUTION.dir/utils.cpp.obj
-C:\MinGW\bin\ranlib.exe libSOLUTION.a
