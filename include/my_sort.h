@@ -20,4 +20,11 @@ void sink(vector<int>& nums,int begin, int end);
 //帮助函数
 void swap(vector<int>& nums, int a, int b);
 
+//寻找最近的k个数
+int BFPRT(vector<int>& nums,int left,int right, int k);   //求第k小，返回其下标
+int getPivotIndex(vector<int>& nums, int left, int right);  //寻找nums[left]-nums[right]的中位数，返回索引
+int insertSort(vector<int>& nums, int left, int right);     //插入排序，返回中位数索引
+int partition(vector<int>& nums, int left, int right, int pivotIndex);  //利用中位数的下表进行排序，返回分界的下标
+
+
 #endif

@@ -19,3 +19,17 @@ int twoCitySchedCost_q1029(vector<vector<int>>& costs){
     
     return totalCost;    
 }
+
+
+//这个题就是寻找K临近的点，Top-K问题最有效的方法是BFPRT方法
+//可以考虑实际上可以用最简单的快速排序
+//也可以用k大小的堆排序，尽量多实现几种方法来对比
+vector<vector<int>> kClosest_q973(vector<vector<int>>& points, int K){
+    #define _BFPRT
+    
+    #ifdef _BFPRT
+    
+
+
+    #endif   
+}
