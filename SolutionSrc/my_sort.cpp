@@ -114,3 +114,54 @@ void swap(vector<int>& nums,int a, int b){
     nums[a] = nums[b];
     nums[b] = tmp;
 }
+
+
+int BFPRT(vector<int>& nums,int left,int right, int k){
+    int pivot_index = getPivotIndex(nums,left,right);       //得到中位数的中位数索引
+    int divide_index = partition(nums,left,right,pivot_index);
+    int num = divide_index;
+    if(num==k)
+        return divide_index;
+    else if(num>k)
+        return BFPRT(nums,left,divide_index-1,k);
+    else
+        return BFPRT(nums,divide_index+1,right,k-num);
+}
+
+//插入排序，返回中位数索引
+int insertSort(vector<int>& nums, int left, int right){
+    if(left==right) return left;
+    //插入第j张牌，从牌堆最上面开始比较
+    for(int j=left+1;j<=right;j++){
+        int i=j-1;
+        int numsj = nums[j]; 
+        while(i>=left&&numsj<nums[i]){
+            i--;
+        }
+        nums[i+1] = numsj;
+    }
+    return ((right-left) >> 1) + left;
+}     
+
+//寻找nums[left]-nums[right]的中位数的中位数下标
+int getPivotIndex(vector<int>& nums, int left, int right){
+    if(right-left<5) return insertSort(nums,left,right);
+    int sub_right = left-1;
+    for(int i=left;i+4<=right;i+=5){
+        int index = insertSort(nums,left,left+4);   //找到5个数的中位数
+        swap(nums,++sub_right,index);        //将找到的中位数放到数组左侧
+    }
+    return BFPRT(nums,left,sub_right,((sub_right-left+1)>>1)+1);
+}  
+
+//利用中位数的下表进行排序，返回分界的下标
+int partition(vector<int>& nums, int left, int right, int pivotIndex){
+    swap(nums,pivotIndex,right);        //将基准放在末尾
+    int divide_index = left;            //跟踪划分的分界线
+    for(int i=left;i<right;i++){
+        if(nums[i]<nums[right])
+            swap(nums,divide_index++,i);    //比基准小的都放在左侧
+    }
+    swap(nums,divide_index,right);          //最后把基准调回来
+    return divide_index;
+}  

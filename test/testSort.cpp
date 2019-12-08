@@ -4,9 +4,10 @@
 using std::vector;
 
 int main(){
-    vector<int> nums = {11,17,13,12,4,5}; 
+    vector<int> nums = {11,17,13,4,5}; 
     //insertSort(nums);
-    heepSort(nums);
+    int pivot = insertSort(nums,1,nums.size()-2);
+    // heepSort(nums);
     printVector(nums);
     return 0;
 }
