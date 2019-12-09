@@ -118,7 +118,9 @@ void swap(vector<int>& nums,int a, int b){
 
 int BFPRT(vector<int>& nums,int left,int right, int k){
     int pivot_index = getPivotIndex(nums,left,right);       //得到中位数的中位数索引
+    printVector(nums);
     int divide_index = partition(nums,left,right,pivot_index);
+    printVector(nums);
     int num = divide_index;
     if(num==k)
         return divide_index;
@@ -130,12 +132,13 @@ int BFPRT(vector<int>& nums,int left,int right, int k){
 
 //插入排序，返回中位数索引
 int insertSort(vector<int>& nums, int left, int right){
-    if(left==right) return left;
+    // if(left==right) return left;
     //插入第j张牌，从牌堆最上面开始比较
     for(int j=left+1;j<=right;j++){
         int i=j-1;
         int numsj = nums[j]; 
         while(i>=left&&numsj<nums[i]){
+            nums[i+1] = nums[i]; 
             i--;
         }
         nums[i+1] = numsj;
@@ -148,7 +151,7 @@ int getPivotIndex(vector<int>& nums, int left, int right){
     if(right-left<5) return insertSort(nums,left,right);
     int sub_right = left-1;
     for(int i=left;i+4<=right;i+=5){
-        int index = insertSort(nums,left,left+4);   //找到5个数的中位数
+        int index = insertSort(nums,i,i+4);   //找到5个数的中位数
         swap(nums,++sub_right,index);        //将找到的中位数放到数组左侧
     }
     return BFPRT(nums,left,sub_right,((sub_right-left+1)>>1)+1);
