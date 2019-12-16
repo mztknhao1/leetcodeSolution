@@ -167,3 +167,19 @@ int partition(vector<int>& nums, int left, int right, int pivotIndex){
     swap(nums,divide_index,right);          //最后把基准调回来
     return divide_index;
 }  
+
+
+void sortColor_q75(vector<int>& nums){
+    //三种颜色，使用双指针吧
+    if(nums.size()<=1) return;
+    int left=0,right=nums.size()-1;
+    for(int i=0;i<nums.size();i++){
+        if(left==right) return;
+        if(nums[i]==0){
+            left++;
+        }else if(nums[i]==1){
+            
+        }
+    }
+    
+}
