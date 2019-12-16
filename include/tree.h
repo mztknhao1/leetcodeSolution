@@ -26,13 +26,14 @@ public:
     int minDepth_q111(TreeNode* root);
     void flatten_q114(TreeNode* root);
     vector<string> letterCasePermutation_q784(string S);
+    TreeNode* lowestCommonAncestor_q236(TreeNode* root, TreeNode* p, TreeNode* q);
+    stack<TreeNode*> findPath_q236(TreeNode* root, int val);
 
 private:
     void bfs_q637(queue<TreeNode*>*& currentQ, queue<TreeNode*>*&nextQ, vector<double>& result);
     bool balance(TreeNode* root, int& h);
     bool isBST_98(TreeNode* root, int upper, int lower);
     void dfs_q784(string S,int index, int len, vector<string>& res);
-
 };
 
 #endif

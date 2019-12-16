@@ -323,3 +323,57 @@ void TreeSolution::dfs_q784(string S,int index, int len, vector<string>& res){
        res.push_back(S);
    }
 }
+
+TreeNode* TreeSolution::lowestCommonAncestor_q236(TreeNode* root, TreeNode* p, TreeNode* q){
+    stack<TreeNode*> path1 = findPath_q236(root, p->val);
+    stack<TreeNode*> path2 = findPath_q236(root, q->val);
+    int s1 = path1.size();
+    int s2 = path2.size();
+    while(s1>s2){
+        path1.pop();
+        s1--;
+    }
+    while(s1<s2){
+        path2.pop();
+        s2--;
+    }
+    while(path1.top()->val != path2.top()->val){
+        path1.pop();
+        path2.pop();
+    }
+    return path1.top();
+}
+
+stack<TreeNode*> TreeSolution::findPath_q236(TreeNode* root, int val){
+    stack<TreeNode*> s;
+    s.push(root);
+    TreeNode* curr = s.top();
+    TreeNode* has_visted = NULL;
+    if(curr->val == val){
+        s.push(curr);
+        return s;
+    }
+    while(!s.empty()){
+        while(curr->val!=val && curr->left!=nullptr){
+            s.push(curr->left);
+            curr = s.top();
+            if(curr->val == val){
+                s.push(curr);
+                return s;
+            }
+        }
+        if(curr->right==nullptr || curr == has_visted)
+        {
+            s.pop();
+            curr = s.top()->right;
+        }else{
+            has_visted = s.top();
+            s.push(curr->right);
+            curr = s.top();
+        }
+        if(curr->val == val){
+            s.push(curr);
+            return s;
+        }
+    }
+}
