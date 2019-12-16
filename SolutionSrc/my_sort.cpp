@@ -120,8 +120,7 @@ int BFPRT(vector<int>& nums,int left,int right, int k){
     int pivot_index = getPivotIndex(nums,left,right);       //得到中位数的中位数索引
     printVector(nums);
     int divide_index = partition(nums,left,right,pivot_index);
-    printVector(nums);
-    int num = divide_index;
+    int num = divide_index - left + 1;
     if(num==k)
         return divide_index;
     else if(num>k)
@@ -132,18 +131,18 @@ int BFPRT(vector<int>& nums,int left,int right, int k){
 
 //插入排序，返回中位数索引
 int insertSort(vector<int>& nums, int left, int right){
-    // if(left==right) return left;
     //插入第j张牌，从牌堆最上面开始比较
     for(int j=left+1;j<=right;j++){
         int i=j-1;
         int numsj = nums[j]; 
         while(i>=left&&numsj<nums[i]){
-            nums[i+1] = nums[i]; 
+            nums[i+1] = nums[i];
             i--;
         }
         nums[i+1] = numsj;
     }
-    return ((right-left) >> 1) + left;
+    int mid = (right-left)/2+left;
+    return mid;
 }     
 
 //寻找nums[left]-nums[right]的中位数的中位数下标
@@ -154,10 +153,11 @@ int getPivotIndex(vector<int>& nums, int left, int right){
         int index = insertSort(nums,i,i+4);   //找到5个数的中位数
         swap(nums,++sub_right,index);        //将找到的中位数放到数组左侧
     }
-    return BFPRT(nums,left,sub_right,((sub_right-left+1)>>1)+1);
+    int sub_k = (sub_right-left+1)/2+1;
+    return BFPRT(nums,left,sub_right,sub_k);
 }  
 
-//利用中位数的下表进行排序，返回分界的下标
+//利用中位数的下标进行排序，返回分界的下标
 int partition(vector<int>& nums, int left, int right, int pivotIndex){
     swap(nums,pivotIndex,right);        //将基准放在末尾
     int divide_index = left;            //跟踪划分的分界线
@@ -168,3 +168,19 @@ int partition(vector<int>& nums, int left, int right, int pivotIndex){
     swap(nums,divide_index,right);          //最后把基准调回来
     return divide_index;
 }  
+
+
+void sortColor_q75(vector<int>& nums){
+    //三种颜色，使用双指针吧
+    if(nums.size()<=1) return;
+    int left=0,right=nums.size()-1;
+    for(int i=0;i<nums.size();i++){
+        if(left==right) return;
+        if(nums[i]==0){
+            left++;
+        }else if(nums[i]==1){
+            
+        }
+    }
+    
+}

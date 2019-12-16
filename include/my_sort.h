@@ -26,5 +26,8 @@ int getPivotIndex(vector<int>& nums, int left, int right);  //寻找nums[left]-n
 int insertSort(vector<int>& nums, int left, int right);     //插入排序，返回中位数索引
 int partition(vector<int>& nums, int left, int right, int pivotIndex);  //利用中位数的下表进行排序，返回分界的下标
 
+//原地对代表三种颜色的数组排序
+void sortColor_q75(vector<int>& nums);
+
 
 #endif
