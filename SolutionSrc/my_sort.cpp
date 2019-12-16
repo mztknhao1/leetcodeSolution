@@ -118,6 +118,7 @@ void swap(vector<int>& nums,int a, int b){
 
 int BFPRT(vector<int>& nums,int left,int right, int k){
     int pivot_index = getPivotIndex(nums,left,right);       //得到中位数的中位数索引
+    printVector(nums);
     int divide_index = partition(nums,left,right,pivot_index);
     int num = divide_index - left + 1;
     if(num==k)
@@ -149,7 +150,7 @@ int getPivotIndex(vector<int>& nums, int left, int right){
     if(right-left<5) return insertSort(nums,left,right);
     int sub_right = left-1;
     for(int i=left;i+4<=right;i+=5){
-        int index = insertSort(nums,left,left+4);   //找到5个数的中位数
+        int index = insertSort(nums,i,i+4);   //找到5个数的中位数
         swap(nums,++sub_right,index);        //将找到的中位数放到数组左侧
     }
     int sub_k = (sub_right-left+1)/2+1;
