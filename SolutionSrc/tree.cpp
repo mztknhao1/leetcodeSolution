@@ -346,34 +346,30 @@ TreeNode* TreeSolution::lowestCommonAncestor_q236(TreeNode* root, TreeNode* p, T
 
 stack<TreeNode*> TreeSolution::findPath_q236(TreeNode* root, int val){
     stack<TreeNode*> s;
-    s.push(root);
-    TreeNode* curr = s.top();
-    TreeNode* has_visted = NULL;
+    TreeNode* q = nullptr;
+    TreeNode* curr = root;
     if(curr->val == val){
         s.push(curr);
         return s;
     }
-    while(!s.empty()){
-        while(curr->val!=val && curr->left!=nullptr){
-            s.push(curr->left);
-            curr = s.top();
-            if(curr->val == val){
-                s.push(curr);
-                return s;
+    while(!s.empty() || curr != nullptr){
+        while(curr!=nullptr){
+            s.push(curr);
+            curr = curr->left;
+        }
+        curr = s.top();
+        if(curr->right==nullptr || curr->right==q)
+        {
+            if(curr->val == val) return s;
+            else{
+                q = curr;
+                s.pop();
+                curr = nullptr;
             }
         }
-        if(curr->right==nullptr || curr == has_visted)
-        {
-            s.pop();
-            curr = s.top()->right;
-        }else{
-            has_visted = s.top();
+        else {
             s.push(curr->right);
             curr = s.top();
-        }
-        if(curr->val == val){
-            s.push(curr);
-            return s;
         }
     }
 }

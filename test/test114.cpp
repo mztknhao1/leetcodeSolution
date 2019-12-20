@@ -10,7 +10,7 @@ int main(){
     // cout << root->val;
     TreeNode p(5);
     TreeNode q(1);
-    std::stack<TreeNode*> result = t.findPath_q236(root,5);
+    std::stack<TreeNode*> result = t.findPath_q236(root,1);
     TreeNode* m = t.lowestCommonAncestor_q236(root,&p,&q);
     return 0;
 }
