@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.log": "makefile",
         "cctype": "cpp",
         "clocale": "cpp",
         "cmath": "cpp",
@@ -49,6 +50,11 @@
         "cinttypes": "cpp",
         "utility": "cpp",
         "typeindex": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "memory_resource": "cpp",
+        "optional": "cpp",
+        "set": "cpp",
+        "string": "cpp",
+        "string_view": "cpp"
     }
 }

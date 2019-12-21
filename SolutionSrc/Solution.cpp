@@ -1,5 +1,6 @@
 #include "Solution.h"
 #include "utils.h"
+#include "lib_head.h"
 
 
 void Solution::merge_q88(vector<int>& nums1,int m, vector<int>& nums2, int n){
@@ -494,3 +495,21 @@ bool Solution::checkStraightLine_q1232(vector<vector<int>>& coordinates) {
         }
         return true;
     }
+
+int gcd(int x,int y){
+    return x==0?y:gcd(y%x,x);
+}
+
+bool hasGroupsSizeX_q914(vector<int>& deck){
+    if(deck.size()==0) return false;
+    std::unordered_map<int,int> mp;
+    for(int i:deck){
+        mp[i] += 1;
+    }
+    int g=-1;        
+    for(auto m:mp){
+        if(g==-1) g=m.second;
+        else g=gcd(g,m.second);
+    }
+    return g>=2;
+}

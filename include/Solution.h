@@ -42,4 +42,8 @@ private:
     void mergeAcounts(vector<std::string>& dstAcount,vector<std::string>& srcAcount);
 };
 
+//最大公约数
+int gcd(int x,int y);
+bool hasGroupsSizeX_q914(vector<int>& deck);
+
 #endif
