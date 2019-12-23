@@ -5,6 +5,7 @@ using std::vector;
 
 #ifndef _SOLUTION
 #define _SOLUTION
+using std::string;
 class Solution{
 
 public:
@@ -45,5 +46,9 @@ private:
 //最大公约数
 int gcd(int x,int y);
 bool hasGroupsSizeX_q914(vector<int>& deck);
+
+
+//Hash
+bool wordPattern_q290(string pattern, string str);
 
 #endif

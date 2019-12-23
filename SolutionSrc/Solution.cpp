@@ -1,7 +1,8 @@
 #include "Solution.h"
 #include "utils.h"
 #include "lib_head.h"
-
+#include <sstream>
+#include <hash_map>
 
 void Solution::merge_q88(vector<int>& nums1,int m, vector<int>& nums2, int n){
     if(m == 0) {swap(nums1,nums2); return;}
@@ -512,4 +513,35 @@ bool hasGroupsSizeX_q914(vector<int>& deck){
         else g=gcd(g,m.second);
     }
     return g>=2;
+}
+
+bool wordPattern_q290(string pattern, string str){
+    std::unordered_map<char,string> mp;
+    std::unordered_map<string,int> used;
+    vector<string> s;
+    for(int i=0;i<str.size();i++){
+        string tmp;
+        while(str[i]==' '){
+            if(i>=str.size()) break;
+            i++;
+        }
+        while(str[i]!=' '){
+            if(i>=str.size()) break;
+            tmp += str[i];
+            i++;
+        }
+        s.push_back(tmp);
+    }
+    if(pattern.size()!=s.size()) return false;
+    for(int i=0;i<s.size();i++){
+        if(mp.find(pattern[i])!=mp.end()){
+            if(mp[pattern[i]]!=s[i]) return false;
+        }else{
+            if(used[s[i]]==1) return false;
+            mp[pattern[i]] = s[i];
+            used[s[i]] = 1;
+        }
+    }
+    
+    return true;
 }
