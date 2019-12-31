@@ -3,6 +3,7 @@
 #include "lib_head.h"
 #include <sstream>
 #include <hash_map>
+#include <unordered_set>
 
 void Solution::merge_q88(vector<int>& nums1,int m, vector<int>& nums2, int n){
     if(m == 0) {swap(nums1,nums2); return;}
@@ -501,6 +502,58 @@ int gcd(int x,int y){
     return x==0?y:gcd(y%x,x);
 }
 
+bool Solution::robot_L3(string command, vector<vector<int>>& obstacles, int x, int y) {
+
+    #define _BITOP
+
+    #ifdef _SMALLSIZE
+    if(command.size()==0) return false;
+    oprator o(command[0]);
+    oprator* head = &o;
+    oprator* tail = &o;
+    for(int i=1;i<command.size();i++){
+        oprator* op = new oprator(command[i]);
+        tail->next = op;
+        tail = tail->next;
+    }
+    int now_x=0,now_y=0;
+    while(now_x!=x||now_y!=y){
+        if(meet_obstacles(obstacles, now_x,now_y)) return false;
+        if(head->op_val == 'U') {now_y++;}
+        else if(head->op_val == 'R') {now_x++;}
+        tail->next = head;
+        tail = tail->next;
+        head = head->next;
+    }
+    #endif
+
+    #ifdef _BITOP
+    std::unordered_set<long> s;
+    int xx = 0,yy = 0;
+    s.insert(0);
+    for(auto c : command){
+        if(c == 'U') yy++;
+        else if(c == 'R')xx++;
+        long tmp = (long)xx<<30 | yy;
+        s.insert(((long)xx << 30) | yy);
+    }
+      
+    int circle = min(x/xx,y/yy);
+    if(s.count(((long)(x-circle*xx) << 30) | (y-circle*yy)) == 0) return false;
+    
+    for(auto v: obstacles){
+        if(v.size() != 2) continue;
+        if(v[0] > x || v[1] > y) continue;
+        circle = min(v[0]/xx,v[1]/yy);
+        if(s.count(((long)(v[0]-circle*xx) << 30) | (v[1]-circle * yy))) return false;
+    }
+
+    #endif
+
+
+    return true;
+}
+
 bool hasGroupsSizeX_q914(vector<int>& deck){
     if(deck.size()==0) return false;
     std::unordered_map<int,int> mp;
@@ -545,3 +598,4 @@ bool wordPattern_q290(string pattern, string str){
     
     return true;
 }
+

@@ -37,10 +37,24 @@ public:
 
     bool checkStraightLine_q1232(vector<vector<int>>& coordinates);
 
+    bool robot_L3(string command, vector<vector<int>>& obstacles, int x, int y);
+
 
 private:
     bool compAcounts(vector<std::string>& acount1,vector<std::string>& acount2);
     void mergeAcounts(vector<std::string>& dstAcount,vector<std::string>& srcAcount);
+    struct oprator{
+        char op_val;
+        oprator* next;
+        oprator(char o):op_val(o),next(nullptr){}
+    };
+    inline bool meet_obstacles(vector<vector<int>>& obstacles, int x, int y){
+        if(obstacles.size()==0) return false;
+        for(auto ob : obstacles){
+            if(ob[0] == x && ob[1] == y) return true;
+        }
+        return false;
+    }
 };
 
 //最大公约数
