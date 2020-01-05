@@ -1,5 +1,6 @@
 #include "lib_head.h"
 #include "stringS.h"
+#include <hash_set>
 
 int longestCommonSubsequence_q1143(string text1, string text2)
 {
@@ -86,25 +87,70 @@ int myAtoi_q8(string str)
     return result;
 }
 
- string convert_q6(string s, int numRows) {
-        if(numRows==1) return s;
+string convert_q6(string s, int numRows) {
+    if(numRows==1) return s;
 
-        int currentRow = 0;
-        vector<string> rows(min(numRows,(int)s.size()));
-        
-        bool goingDown = false;
+    int currentRow = 0;
+    vector<string> rows(min(numRows,(int)s.size()));
+    
+    bool goingDown = false;
 
-        for(char c:s){
-            rows[currentRow] += c;
-            if(currentRow==0 || currentRow==numRows-1){
-                goingDown = !goingDown;
-            }
-            currentRow += goingDown?1:-1;
+    for(char c:s){
+        rows[currentRow] += c;
+        if(currentRow==0 || currentRow==numRows-1){
+            goingDown = !goingDown;
         }
-
-        string result;
-        for(string str:rows){
-            result += str;
-        }
-        return result;
+        currentRow += goingDown?1:-1;
     }
+
+    string result;
+    for(string str:rows){
+        result += str;
+    }
+    return result;
+}
+
+
+string longestDupSubString_q1044(string S){
+    int M = 26;
+    string ans = "";
+    int min = 1,max=S.size();
+    int mid = (max-min)/2 + min;
+    while(min<max){
+        string tmp = Robin_Karp_q1044(S,mid);
+        if(tmp!=""){
+            ans = tmp;
+            min = mid+1;
+        }else{
+            max = mid;
+        }
+        mid = (max-min)/2 + min;
+    }
+    return ans;
+}
+
+string Robin_Karp_q1044(string S, int len){
+    int M = 26;
+    using namespace __gnu_cxx;
+    hash_set<long> hs;
+    long pow = 1;
+    for(int i=1;i<len;i++){
+        pow = pow*M;
+    }
+    long tmp = 0;
+    for(int i=0;i<len;i++){
+        tmp = tmp*M + S[i]-'a';
+    }
+    hs.insert(tmp);
+    for(int i=1;i<S.size()-len+1;i++){
+        tmp = (tmp - (S[i-1] - 'a')*pow) * M + S[i+len-1] - 'a';
+        if(hs.find(tmp)!=hs.end()){
+            string st = S.substr(i,len);
+            return st;
+        }
+        else{
+            hs.insert(tmp);
+        }
+    }
+    return "";
+}
