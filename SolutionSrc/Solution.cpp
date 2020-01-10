@@ -599,3 +599,20 @@ bool wordPattern_q290(string pattern, string str){
     return true;
 }
 
+int hammingDistance_q461(int x, int y){
+    int ans = 0;
+    while(x!=0 || y!=0){
+        if(x%2!=y%2) ans++; 
+        x = x/2;
+        y = y/2;
+    }
+    while(x!=0){
+        if(x%2==1) ans++;
+        x = x/2;
+    }
+    while(y!=0){
+        if(y%2==1) ans++;
+        y = y/2;
+    }
+    return ans;
+}

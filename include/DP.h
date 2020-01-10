@@ -15,6 +15,7 @@ class dpSolution{
         bool divisorGame_1025(int N);
         vector<int> sortArrayByParity_q905(vector<int>& A);
         int numDecodings_q91(string s);
+        int countSquares_q1277(vector<vector<int>>& matrix); 
 };
 
 

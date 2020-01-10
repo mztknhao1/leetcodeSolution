@@ -123,3 +123,28 @@ int dpSolution::numDecodings_q91(string s){
     }
     return curr;
 }
+
+int dpSolution::countSquares_q1277(vector<vector<int>>& matrix){
+    int m = matrix.size();
+    int n = matrix[0].size();
+    int dp[m][n] = {0};
+    int i=0,j=0;
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            if(i==0||j==0) dp[i][j] = matrix[i][j];
+            else if(matrix[i][j]==0) dp[i][j] = 0;
+            else{
+                int minn = matrix[i-1][j]>matrix[i][j-1]?matrix[i][j-1]:matrix[i-1][j];
+                minn = minn>matrix[i-1][j-1]?matrix[i-1][j-1]:minn;
+                matrix[i][j] = minn + 1;
+            } 
+        }
+    }
+    int ans=0;
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            ans += dp[i][j];
+        }
+    }
+    return ans;
+}

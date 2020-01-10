@@ -65,4 +65,8 @@ bool hasGroupsSizeX_q914(vector<int>& deck);
 //Hash
 bool wordPattern_q290(string pattern, string str);
 
+
+//整数汉明距离
+int hammingDistance_q461(int x, int y);
+
 #endif
