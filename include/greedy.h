@@ -13,4 +13,6 @@ int getPivotIndex_q973(vector<vector<int>>& points3D, int left, int right);
 int partition_q973(vector<vector<int>>& points3D, int left,int right, int pivotIndex);
 vector<vector<int>> kClosest_q973(vector<vector<int>>& points, int K);
 
+int lastStoneWeight_q1046(vector<int>& stones);
+
 #endif

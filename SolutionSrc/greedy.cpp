@@ -104,3 +104,35 @@ int partition_q973(vector<vector<int>>& points3D, int left,int right, int pivotI
     swap_q973(points3D,divide_index,right);
     return divide_index;
 }
+
+
+int lastStoneWeight_q1046(vector<int>& stones){
+    int len = stones.size();
+    if(len==1) return stones[0];
+    sort(stones.begin(),stones.end(), [](int a,int b){return a>b;});
+    for(int i=0,j=1;j<len;){
+        if(stones[j]==stones[i]){
+            if(j+2==len) return stones[len-1];
+            if(j+1==len) return 0;
+            i = i+2;
+            j = j+2; 
+        }else{
+            int tmp = stones[i] - stones[j];
+            int t=j+1;
+            if(t==len) stones.push_back(tmp);
+            else {
+                while(t<len&&tmp<stones[t]){
+                    t++;
+                }
+                if(t==len) stones.push_back(tmp);
+                else stones.insert(stones.begin()+t,tmp);
+            }
+            stones.insert(stones.begin()+t,tmp);
+            len++;
+            i+=2;
+            j+=2;
+            if(j==len) return stones[len-1];
+        }  
+    }
+    return 0;
+}
