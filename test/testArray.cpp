@@ -6,6 +6,12 @@ int main(){
     ArraySolution aS;
     int result;
 
+    //第1260题测试
+    vector<vector<int>> grid = {{1},{2},{3},{4},{7},{6},{5}};
+    vector<vector<int>> ans_q1260;
+    ans_q1260 = shiftGrid_q1260(grid,23);
+    printMatrix(ans_q1260);
+
     //第16题测试
     vector<int> nums = {-1,2,1,-4};
     result = aS.threeSumClosest_q16(nums,0);

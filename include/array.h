@@ -21,4 +21,6 @@ private:
   
 };
 
+vector<vector<int>> shiftGrid_q1260(vector<vector<int>>& grid,int k);
+
 #endif
