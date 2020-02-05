@@ -36,4 +36,8 @@ private:
     void dfs_q784(string S,int index, int len, vector<string>& res);
 };
 
+vector<int> findMode_q501(TreeNode* root);
+void inorder(TreeNode* root,TreeNode*& pre,vector<int>& res,int& maxTimes,int& currTimes);
+int findBottemLeftValue_q513(TreeNode* root);
+
 #endif

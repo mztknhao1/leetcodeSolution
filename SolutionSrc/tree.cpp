@@ -373,3 +373,78 @@ stack<TreeNode*> TreeSolution::findPath_q236(TreeNode* root, int val){
         }
     }
 }
+
+
+vector<int> findMode_q501(TreeNode* root){
+    vector<int> res;
+    if(!root) return res;
+    int maxTimes=0,currTimes=1;
+    TreeNode* pre=NULL;
+    inorder(root,pre,res,maxTimes,currTimes);
+    return res;
+}
+
+void inorder(TreeNode* root,TreeNode*& pre,vector<int>& res,int& maxTimes,int& currTimes){
+    if(!root) return;
+    inorder(root->left,pre,res,maxTimes,currTimes);
+    if(pre)
+        currTimes = (pre->val == root->val)?currTimes+1:1;
+    if(currTimes>maxTimes){
+        res.push_back(root->val);
+    }
+    else{
+        res.clear();
+        res.push_back(root->val);
+        maxTimes = currTimes;
+    }
+    pre = root;
+    inorder(root->right,pre,res,maxTimes,currTimes);
+}
+
+
+void inOrder(TreeNode* root, TreeNode*& pre, int& curTimes, 
+             int& maxTimes, vector<int>& res){
+    if (!root) return;
+    inOrder(root->left, pre, curTimes, maxTimes, res);
+    if (pre)
+        curTimes = (root->val == pre->val) ? curTimes + 1 : 1;
+    if (curTimes == maxTimes)
+        res.push_back(root->val);
+    else if (curTimes > maxTimes){
+        res.clear();
+        res.push_back(root->val);
+        maxTimes = curTimes;
+    }
+    pre = root;
+    inOrder(root->right, pre, curTimes, maxTimes, res);
+}
+vector<int> findMode(TreeNode* root) {
+    vector<int> res;
+    if (!root) return res;
+    TreeNode* pre = NULL;
+    int curTimes = 1, maxTimes = 0;
+    inOrder(root, pre, curTimes, maxTimes, res);
+    return res;
+}
+
+
+int findBottemLeftValue_q513(TreeNode* root){
+    std::queue<TreeNode*> next;
+    std::queue<TreeNode*> curr;
+    curr.push(root);
+    int res;
+    while(!curr.empty()){
+        res = curr.front()->val;
+        while(!curr.empty()){
+            TreeNode* tmp = curr.front();
+            if(tmp->left) next.push(tmp->left);
+            if(tmp->right) next.push(tmp->right);
+            curr.pop();
+        }
+        if(next.empty()) break;
+        else{
+            swap(curr,next);
+        }
+    }
+    return res;
+}
