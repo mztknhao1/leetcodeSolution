@@ -196,3 +196,26 @@ bool ArraySolution::containDuplicate_q217(vector<int>& nums){
 
 }
 
+vector<vector<int>> shiftGrid_q1260(vector<vector<int>>& grid,int k){
+    int m = grid.size();
+    int n = grid[0].size();
+    k = k%(m*n);
+    vector<vector<int>> ans(grid);
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            int ind = i*n+j+k;
+            if(ind>=(m*n)){
+                ind = ind - m*n;
+                int i_ = ind/n;
+                int j_ = ind%n;
+                ans[i_][j_] = grid[i][j];
+            }else{
+                int i_ = ind/n;
+                int j_ = ind%n;
+                ans[i_][j_] = grid[i][j];
+            }
+        }
+    }
+    return ans;
+}
+
