@@ -23,4 +23,7 @@ private:
 
 vector<vector<int>> shiftGrid_q1260(vector<vector<int>>& grid,int k);
 
+
+int numberOfBoomerangs_q447(vector<vector<int>>& points);
+
 #endif

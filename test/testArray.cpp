@@ -6,6 +6,10 @@ int main(){
     ArraySolution aS;
     int result;
 
+    //第447题测试题
+    vector<vector<int>> points_q447 = {{0,0},{1,0},{2,0}};
+    int res_447 = numberOfBoomerangs_q447(points_q447);
+
     //第1260题测试
     vector<vector<int>> grid = {{1},{2},{3},{4},{7},{6},{5}};
     vector<vector<int>> ans_q1260;
