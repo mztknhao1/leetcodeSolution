@@ -154,3 +154,18 @@ string Robin_Karp_q1044(string S, int len){
     }
     return "";
 }
+
+string defangIPaddr_q1108(string address){
+    string ans;
+    int i=0;
+    while(i<address.size()){
+        if(address[i]=='.'){
+            ans += "[.]";
+            i++;
+        }else{
+            ans += address[i];
+            i++;
+        }
+    }
+    return ans;
+} 

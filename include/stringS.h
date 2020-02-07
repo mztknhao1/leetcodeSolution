@@ -8,5 +8,6 @@ int myAtoi_q8(string str);
 string convert_q6(string s, int numRows);
 string longestDupSubString_q1044(string S);
 string Robin_Karp_q1044(string S, int len);
+string defangIPaddr_q1108(string address);
 
 #endif
