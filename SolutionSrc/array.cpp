@@ -246,3 +246,27 @@ bool cmp_q1337(vector<int>& a,vector<int>& b){
         return (a[0]<b[0]?true:false); 
     }
 }
+
+int numberOfBoomerangs_q447(vector<vector<int>>& points) {
+    int res=0;
+    for(int i=0;i<points.size();i++){
+        int x_i = points[i][0];
+        int y_i = points[i][1];
+        std::unordered_map<int,int> ij_dis;
+        for(int j=0;j<points.size();j++){
+            if(i==j) continue;
+            int x_j = points[j][0];
+            int y_j = points[j][1];
+            int dis = (x_i-x_j)*(x_i-x_j) + (y_i-y_j)*(y_i-y_j);
+            if(ij_dis.find(dis)==ij_dis.end()) ij_dis[dis] = 1;
+            else ij_dis[dis] = ij_dis[dis] + 1;
+        }
+        std::unordered_map<int,int>::iterator it = ij_dis.begin();
+        while(it!=ij_dis.end()){
+            int n = it->second;
+            res += n*(n-1);
+            it++;
+        }
+    }
+    return res;
+}
