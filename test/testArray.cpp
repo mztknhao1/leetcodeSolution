@@ -6,6 +6,10 @@ int main(){
     ArraySolution aS;
     int result;
 
+    //第1337题测试
+    vector<vector<int>> mat = {{1,1,0,0,0},{1,1,1,1,0},{1,0,0,0,0},{1,1,0,0,0},{1,1,1,1,1}};
+    vector<int> result_q1337 = kWeakestRows_q1337(mat,3);
+
     //第1260题测试
     vector<vector<int>> grid = {{1},{2},{3},{4},{7},{6},{5}};
     vector<vector<int>> ans_q1260;

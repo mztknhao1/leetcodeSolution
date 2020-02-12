@@ -219,3 +219,30 @@ vector<vector<int>> shiftGrid_q1260(vector<vector<int>>& grid,int k){
     return ans;
 }
 
+vector<int> kWeakestRows_q1337(vector<vector<int>>& mat, int k) {
+    vector<vector<int>> s;
+    printMatrix(s);
+    for(int i=0;i<mat.size();i++){
+        vector<int> tmp;
+        tmp.push_back(i);
+        int j = 0;
+        while(j<mat[i].size()&&mat[i][j]==1) j++;
+        tmp.push_back(j);
+        s.push_back(tmp);
+    } 
+    sort(s.begin(),s.end(),cmp_q1337);
+    printMatrix(s);
+    vector<int> result;
+    for(int i=0;i<k;i++){
+        result.push_back(s[i][0]);
+    }
+    return result;
+}
+
+bool cmp_q1337(vector<int>& a,vector<int>& b){
+    if(a[1]>b[1]) return true;
+    else if(a[1]<b[1]) return false;
+    else{
+        return (a[0]<b[0]?true:false); 
+    }
+}

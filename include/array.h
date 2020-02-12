@@ -20,7 +20,8 @@ private:
     void reverse(vector<int>& nums, int start);
   
 };
-
+bool cmp_q1337(vector<int>& a,vector<int>& b);
 vector<vector<int>> shiftGrid_q1260(vector<vector<int>>& grid,int k);
+vector<int> kWeakestRows_q1337(vector<vector<int>>& mat, int k);
 
 #endif
