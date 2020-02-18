@@ -448,3 +448,80 @@ int findBottemLeftValue_q513(TreeNode* root){
     }
     return res;
 }
+
+vector<vector<int>> zigzagLevelOrder_q103(TreeNode* root){
+    bool left = true;
+    vector<vector<int>> res;
+    vector<TreeNode*> curr;
+    vector<TreeNode*> next;
+    if(root==nullptr) return res;
+    curr.push_back(root);
+    int currNum = 1, nextNum = 0;
+    while(curr.size()!=0){
+        vector<int> tmp;
+        if(left){
+            int i = 0;
+            while(i<currNum){
+                TreeNode* tmpNode = curr[i];
+                tmp.push_back(tmpNode->val);
+                if(tmpNode->left) {next.push_back(tmpNode->left); nextNum++;}
+                if(tmpNode->right) {next.push_back(tmpNode->right); nextNum++;}
+                i++;
+            }
+        }else{
+            int i = currNum - 1;
+            while(i>=0){
+                TreeNode* tmpNode = curr[i];
+                tmp.push_back(tmpNode->val);
+                if(tmpNode->right) {next.push_back(tmpNode->right); nextNum++;}
+                if(tmpNode->left) {next.push_back(tmpNode->left); nextNum++;}
+                i--;
+            }
+            reverse(next.begin(),next.end());
+        }
+        curr.clear();
+        curr.swap(next);
+        currNum = nextNum;
+        nextNum = 0;
+        res.push_back(tmp);
+        left = !left;
+    }
+    return res;
+}
+
+
+TreeNode* buildTree_q105(vector<int>& preorder, vector<int>& inorder){
+        int pos = 0;
+        return helpfun_q105(preorder,pos,inorder,0,preorder.size()-1);  
+}
+
+TreeNode* helpfun_q105(vector<int>& preorder,int& pos, vector<int>& inorder,int left, int right){
+    if(pos>=preorder.size()) return 0;
+    int i = left;
+    for(;i<=right;++i){
+        if(preorder[pos]==inorder[i]) break;
+    }    
+    TreeNode* root = new TreeNode(preorder[pos]);
+    if(left<=i-1) root->left = helpfun_q105(preorder,++pos,inorder,left,i-1);
+    if(right>=i+1) root->right = helpfun_q105(preorder,++pos,inorder,i+1,right);
+}
+
+TreeNode* buildTree_q106(vector<int>& inorder,vector<int>& postorder){
+    int N = postorder.size();
+    int pos = N-1;
+    return helpfun_q106(inorder,0,N-1,postorder,pos);
+}
+
+
+TreeNode* helpfun_q106(vector<int>& inorder, int left, int right, vector<int>& postorder, int & pos){
+    if(pos<0) return 0;
+    int i = left;
+    for(;i<=right;++i){
+        if(postorder[pos]==inorder[i]) break;
+    }
+    TreeNode* root = new TreeNode(postorder[pos]);
+    if(right>=i+1) root->right = helpfun_q106(inorder,i+1,right,postorder,--pos);
+    if(left<=i-1) root->left = helpfun_q106(inorder, left,i-1,postorder,--pos);
+    return root;
+}
+

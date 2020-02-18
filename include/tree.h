@@ -39,5 +39,12 @@ private:
 vector<int> findMode_q501(TreeNode* root);
 void inorder(TreeNode* root,TreeNode*& pre,vector<int>& res,int& maxTimes,int& currTimes);
 int findBottemLeftValue_q513(TreeNode* root);
+vector<vector<int>> zigzagLevelOrder_q103(TreeNode* root);
+
+TreeNode* buildTree_q105(vector<int>& preorder, vector<int>& inorder);
+TreeNode* helpfun_q105(vector<int>& preorder,int& pos, vector<int>& inorder,int left, int right);
+
+TreeNode* buildTree_q106(vector<int>& inorder,vector<int>& postorder);
+TreeNode* helpfun_q106(vector<int>& inorder, int left, int right, vector<int>& postorder, int & pos);
 
 #endif
