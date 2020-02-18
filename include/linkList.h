@@ -10,4 +10,6 @@ public:
     ListNode* partition_q86(ListNode* head, int x);
 };
 
+TreeNode* sortedListToBST_q109(ListNode* head);
+
 #endif
