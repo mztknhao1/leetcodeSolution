@@ -47,4 +47,7 @@ TreeNode* helpfun_q105(vector<int>& preorder,int& pos, vector<int>& inorder,int 
 TreeNode* buildTree_q106(vector<int>& inorder,vector<int>& postorder);
 TreeNode* helpfun_q106(vector<int>& inorder, int left, int right, vector<int>& postorder, int & pos);
 
+vector<vector<int>> pathSum_q113(TreeNode* root, int sum);
+void helpfun_q113(TreeNode* root, int sum,vector<vector<int>>& pathVec,vector<int> path);
+
 #endif

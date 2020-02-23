@@ -169,3 +169,28 @@ string defangIPaddr_q1108(string address){
     }
     return ans;
 } 
+
+
+int numDistinct_q115(string s, string t){
+    int res = 0;
+    int tNum = t.size();
+    int sNum = s.size();
+    if(tNum>sNum) return 0;
+    if(tNum==sNum && tNum==1 && s[0]==t[0]) return 1;
+    for(int i=0;i<tNum;i++){
+        for(int j=0;j<sNum;j++){
+            if((sNum-i-1)>=tNum){
+                if(s[j]==t[i]){
+                    string tmps;
+                    string tmpt;
+                    tmps.insert(tmps.end(),s.begin()+j+1,s.end());
+                    tmpt.insert(tmpt.end(),t.begin()+i+1,t.end());
+                    res += numDistinct_q115(tmps,tmpt);
+                }
+                else continue;
+            }
+            else break;
+        }
+    }
+    return res;    
+}

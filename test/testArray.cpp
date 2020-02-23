@@ -6,6 +6,10 @@ int main(){
     ArraySolution aS;
     int result;
 
+    //第120题测试
+    vector<vector<int>> triagulate_120 = {{2},{3,4},{6,5,7},{4,1,8,3}};
+    int res_120 = minimumTotal_q120(triagulate_120);
+
     //第1337题测试
     vector<vector<int>> mat = {{1,1,0,0,0},{1,1,1,1,0},{1,0,0,0,0},{1,1,0,0,0},{1,1,1,1,1}};
     vector<int> result_q1337 = kWeakestRows_q1337(mat,3);

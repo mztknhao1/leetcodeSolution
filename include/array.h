@@ -27,4 +27,6 @@ vector<int> kWeakestRows_q1337(vector<vector<int>>& mat, int k);
 
 int numberOfBoomerangs_q447(vector<vector<int>>& points);
 
+int minimumTotal_q120(vector<vector<int>>& triangle);
+
 #endif

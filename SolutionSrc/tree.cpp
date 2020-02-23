@@ -525,3 +525,40 @@ TreeNode* helpfun_q106(vector<int>& inorder, int left, int right, vector<int>& p
     return root;
 }
 
+vector<vector<int>> pathSum_q113(TreeNode* root, int sum){
+    // 递归的方法
+    vector<vector<int>> res;
+    if(root==nullptr) return res;
+    else{
+        sum = sum - root->val;
+        vector<int> path;
+        path.emplace_back(root->val);
+        if(root->left==nullptr && root->right==nullptr){
+            if(sum==0) res.emplace_back(path);
+            return res;
+        }
+        helpfun_q113(root->left,sum,res,path);
+        helpfun_q113(root->right,sum,res,path);
+    }
+    return res;
+}
+
+void helpfun_q113(TreeNode* root,int sum,vector<vector<int>>& pathVec,vector<int> path){
+    if(root==nullptr) return;
+    sum -= root->val;
+    if(root->left==nullptr && root->right==nullptr) {
+        if(sum==0){
+            path.emplace_back(root->val);;
+            pathVec.emplace_back(path); 
+        }
+        return;
+    }
+    else{
+        path.emplace_back(root->val);
+        helpfun_q113(root->left,sum,pathVec,path);
+        helpfun_q113(root->right,sum,pathVec,path);
+    }
+}
+
+
+

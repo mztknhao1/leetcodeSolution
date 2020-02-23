@@ -1,6 +1,5 @@
 #include "array.h"
 #include "utils.h"
-#include <unordered_map>
 
 double ArraySolution::findMedianSortedArrays_q4(vector<int> nums1, vector<int> nums2){
     int m = nums1.size();
@@ -267,6 +266,29 @@ int numberOfBoomerangs_q447(vector<vector<int>>& points) {
             res += n*(n-1);
             it++;
         }
+    }
+    return res;
+}
+
+int minimumTotal_q120(vector<vector<int>>& triangle) {
+    int N = triangle.size();
+    if(N==1) return triangle[0][0];
+    vector<int> minDis_curr(N,0);
+    minDis_curr[0] = triangle[0][0];
+    for(int i=1;i<N;i++){
+        vector<int> minDis_next(N,0);
+        for(int j=0;j<i+1;j++){
+            if(j==0) minDis_next[j] = minDis_curr[0] + triangle[i][j];
+            else if(j==i) minDis_next[j] = minDis_curr[j-1] + triangle[i][j];
+            else{
+                minDis_next[j] = min(minDis_curr[j-1],minDis_curr[j]) + triangle[i][j];
+            }
+        }
+        swap(minDis_curr,minDis_next);
+    }
+    int res = minDis_curr[0];
+    for(auto i:minDis_curr){
+        res = res<=i ? res : i; 
     }
     return res;
 }
