@@ -1,6 +1,9 @@
 #include "bitop.h"
 
 int main(){
+    int res_29 = divide_q29(10,3);
+
+
     string s="aababcaab";
     int maxLetters = 2;
     int minSize = 3;

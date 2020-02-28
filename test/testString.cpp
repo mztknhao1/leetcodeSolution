@@ -1,6 +1,12 @@
 #include "stringS.h"
 
 int main(){
+    // 第22题测试
+    vector<string> s_q22 = generateParenthesis_q22(3);
+
+
+
+
     //  第115题测试
     string s_115 = "rabbbit";
     string t_115 = "rabbit";

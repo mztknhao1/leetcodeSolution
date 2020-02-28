@@ -194,3 +194,48 @@ int numDistinct_q115(string s, string t){
     }
     return res;    
 }
+
+
+vector<string> generateParenthesis_q22(int n){
+    vector<int> path;
+    int left = 0;
+    int right = 0;
+    vector<string> res;
+    stack<int> check;
+    traceback_q22(path, res, left, right, n, check);
+    return  res;
+}
+
+void traceback_q22(vector<int> path,vector<string>& res,int left, int right,int n,stack<int> check){
+    if(left==n&&right==n&&check.empty()){
+        string tmp = decodePath_q22(path);
+        if(std::count(res.begin(),res.end(),tmp)==0) res.push_back(tmp);
+        return;
+    }
+
+    if(left<n){
+        left++;
+        check.push(1);
+        path.push_back(1);
+        traceback_q22(path,res,left,right,n,check);
+    }
+    
+    if(right<n){
+        right++; 
+
+        if(check.top()==1) check.pop();
+        else check.push(2);
+
+        path.push_back(2);
+        traceback_q22(path,res,left,right,n,check);
+    }
+
+}
+
+string decodePath_q22(vector<int>& path){
+    string s;
+    for(auto i:path){
+        s += (i==1?'(':')');
+    }
+    return s;
+}

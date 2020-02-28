@@ -38,3 +38,25 @@ bool check_q1297(string s,int maxLetters){
     }
     return n<=maxLetters;
 }
+
+int divide_q29(int dividend, int divisor){
+    if(dividend==INT32_MIN && divisor==-1) return INT32_MAX;
+    if(dividend==0) return 0;
+    if(divisor==1) return dividend;
+    if(divisor==-1) return -dividend;
+
+    int negetive = ((dividend ^ divisor) < 0);
+    int result = 0;
+
+    unsigned int tmpend = dividend == INT32_MIN?INT32_MIN:abs(dividend);
+    unsigned int tmpor = divisor == INT32_MIN?INT32_MIN:abs(divisor);
+
+    for(int i=31;i>=0;i--){
+        if((tmpend>>i)>=tmpor){
+            result += ((unsigned int)1) << i;
+            tmpend-= tmpor << i;
+        }
+    }
+    if(result == INT32_MIN) return INT32_MIN;
+    else return negetive?-(int)result:(int)result;
+}
