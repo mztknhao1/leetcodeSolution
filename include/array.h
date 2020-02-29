@@ -29,4 +29,9 @@ int numberOfBoomerangs_q447(vector<vector<int>>& points);
 
 int minimumTotal_q120(vector<vector<int>>& triangle);
 
+vector<int> searchRange_q34(vector<int>& nums, int target);
+int findBound_q34(vector<int>& nums,int left,int right,int target);
+
+
+
 #endif

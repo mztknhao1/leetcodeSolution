@@ -292,3 +292,52 @@ int minimumTotal_q120(vector<vector<int>>& triangle) {
     }
     return res;
 }
+
+vector<int> searchRange_q34(vector<int>& nums, int target) {
+    int left = 0,right = nums.size()-1;
+    int mid = (right-left)/2 + left;
+    vector<int> ans = {-1,-1};
+    while(left<right){
+        if(nums[mid]==target){
+            ans[0] = findBound_q34(nums,left,mid,target);
+            ans[1] = findBound_q34(nums,mid,right,target);
+            break;
+        }
+        else if(nums[mid]<target){
+            left = mid+1;
+            mid = (right-left)/2+left;
+        }
+        else if(nums[mid]>target){
+            right = mid-1;
+            mid = (right-left)/2 + left;
+        }
+    }
+    return ans;
+}
+
+int findBound_q34(vector<int>& nums,int left,int right,int target){
+    if(left==right) return left;
+    int ans = -1;
+    int mid = (right-left)/2 + left;
+    while(left<right){
+        if(nums[mid]==target){
+            if(nums[right]==target){
+                ans = findBound_q34(nums,left+1,mid,target);
+            }
+            else if(nums[left]==target){
+                ans = findBound_q34(nums,mid,right-1,target);
+            }
+            else ans = -1;
+            break;
+        }
+        else if(nums[mid]<target){
+            left = mid+1;
+            mid = (right-left)/2+left;
+        }
+        else if(nums[mid]>target){
+            right = mid - 1;
+            mid = (right - left) / 2 + left;
+        }
+    }
+    return ans;
+}

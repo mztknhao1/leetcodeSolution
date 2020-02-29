@@ -6,6 +6,10 @@ int main(){
     ArraySolution aS;
     int result;
 
+    //第30题测试
+    vector<int> nums_q30 = {5,7,7,8,8,10};
+    vector<int> ans_q30 = searchRange_q34(nums_q30,7);
+
     //第120题测试
     vector<vector<int>> triagulate_120 = {{2},{3,4},{6,5,7},{4,1,8,3}};
     int res_120 = minimumTotal_q120(triagulate_120);
