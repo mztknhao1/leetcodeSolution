@@ -34,3 +34,6 @@ add_executable(testDp testDp.cpp ${SOLUTIONSRC})
 add_executable(testTree testTree.cpp ${SOLUTIONSRC})
 add_executable(testLinkList testLinkList.cpp ${SOLUTIONSRC})
 add_executable(testPthread testPthread.cpp)
+
+link_libraries(boost_system)
+add_executable(testMutex testMutex.cpp)

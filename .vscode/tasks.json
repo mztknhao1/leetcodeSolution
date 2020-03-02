@@ -25,7 +25,9 @@
             "args": [
                 "-g",
                 "${file}",
+                "-std=c++11",
                 "-lpthread",
+                "-lboost_system",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
