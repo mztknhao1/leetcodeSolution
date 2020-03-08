@@ -18,6 +18,8 @@ class dpSolution{
         int countSquares_q1277(vector<vector<int>>& matrix); 
 };
 
+int coinChange_q322(vector<int>& coins, int amount);
+
 
 
 #endif

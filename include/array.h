@@ -32,6 +32,9 @@ int minimumTotal_q120(vector<vector<int>>& triangle);
 vector<int> searchRange_q34(vector<int>& nums, int target);
 int findBound_q34(vector<int>& nums,int left,int right,int target);
 
+void merge_m1001(vector<int>& A, int m, vector<int>& B, int n);
+
+vector<vector<int>> findContinuousSequence_m57ii(int target);
 
 
 #endif

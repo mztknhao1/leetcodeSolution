@@ -341,3 +341,50 @@ int findBound_q34(vector<int>& nums,int left,int right,int target){
     }
     return ans;
 }
+
+
+void merge_m1001(vector<int>& A, int m, vector<int>& B, int n){
+    int i=0,j=0;
+    for(int i=0;i<n;i++){
+        while(B[i]>A[j] && j<m) j++;
+        if(j>=m){
+            while(i<n){
+                A[j++] = B[i++];
+            }
+            return;
+        }
+        int tmp = A[j];
+        int tmp2 = A[j+1];
+        // 在j处插入B[i]
+        A[j] = B[i];
+        for(int k=j;k<m;k++){
+            tmp2 = A[k+1];
+            A[k+1] = tmp;
+            tmp = tmp2;
+        }
+        m++;
+    }
+}
+
+
+vector<vector<int>> findContinuousSequence_m57ii(int target){
+    // 使用双指针的办法
+    int start = 1;
+    int end = target;
+    vector<vector<int>> res;
+    while(start!=end){
+        int tmp = (start+end)*(end-start+1)/2;
+        if(tmp==target){
+            vector<int> tmp;
+            int m=start,n=end;
+            while(m<=n) tmp.push_back(m++);
+            res.push_back(tmp);
+        }
+        else if(tmp<target){
+            start++;
+        }else{
+            end--;
+        }
+    }
+    return res;
+}

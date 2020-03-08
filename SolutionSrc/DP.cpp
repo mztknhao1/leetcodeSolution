@@ -147,3 +147,18 @@ int dpSolution::countSquares_q1277(vector<vector<int>>& matrix){
     }
     return ans;
 }
+
+
+int coinChange_q322(vector<int>& coins, int amount){
+    // dp[i]表示金额为i的amount需要最小的coins个数
+    vector<int> dp(amount+1,INT32_MAX);
+    dp[0] = 0;
+    for(int i=1;i<amount+1;i++){
+        int min = INT32_MAX;
+        for(auto c:coins){
+            if(i-c>=0&&dp[i-c]!=INT32_MAX) min = min>dp[i-c]?dp[i-c]:min;
+        }
+        dp[i] = min==INT32_MAX?INT32_MAX:min+1;
+    }
+    return dp[amount]==INT32_MAX?-1:dp[amount];
+}

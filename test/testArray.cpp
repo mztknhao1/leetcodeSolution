@@ -6,6 +6,14 @@ int main(){
     ArraySolution aS;
     int result;
 
+    // 面试题57题
+    vector<vector<int>> res_m57 = findContinuousSequence_m57ii(9);
+
+    // 面试题1001题测试
+    vector<int> A1001 = {1,2,3,0,0,0};
+    vector<int> B1001 = {2,5,6};
+    merge_m1001(A1001,3,B1001,3);
+
     //第30题测试
     vector<int> nums_q30 = {5,7,7,8,8,10};
     vector<int> ans_q30 = searchRange_q34(nums_q30,7);
