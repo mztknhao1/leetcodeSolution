@@ -3,9 +3,12 @@
 #include"lib_head.h"
 
 int main(){
-    string s={"[3,9,20,null,null,15,7]"};
+    string s={"[1,2,3,4,5]"};
     Codec c;
     TreeNode* root=c.deserialize(s);
+
+    // 测试543题
+    int res_543 = diameterOfBinaryTree_q543(root);    
 
 
     // 测试105题/106题

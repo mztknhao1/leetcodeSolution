@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-02-07 12:58:51
+ * @LastEditTime: 2020-03-28 17:45:15
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /leetcodeSolution/include/stringS.h
+ */
 #ifndef __STRINGS
 #define __STRINGS
 
@@ -15,5 +23,9 @@ int numDistinct_q115(string s, string t);
 vector<string> generateParenthesis_q22(int n);
 void traceback_q22(vector<int> path,vector<string>& res,int left, int right,int n,stack<int> check);
 string decodePath_q22(vector<int>& path);
+
+
+int minimumLengthEncoding_q820(vector<string>& words);
+bool isSubString_q820(string a,string b);
 
 #endif

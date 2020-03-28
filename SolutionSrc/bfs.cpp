@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2019-12-16 16:08:50
+ * @LastEditTime: 2020-03-15 17:34:25
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /leetcodeSolution/SolutionSrc/bfs.cpp
+ */
 #include "bfs.h"
 
 char nextGreatestLetter_744(vector<char>& letters, char target){
@@ -35,4 +43,61 @@ int maxDistance_q1162(vector<vector<int>>& grid){
             }
         }
     }     
+}
+
+int maxAreaOfIsland_q695(vector<vector<int>>& grid) {
+    if(grid.size()==0) return 0;
+    int max_area = 0;
+    // 从1出发查看连通的个数，广度优先
+    int m = grid.size();
+    int n = grid[0].size();
+    vector<vector<bool>> g_visited(m,vector<bool>(n,false));
+    queue<vector<int>> q;
+
+    for(int i=0;i<grid.size();i++){
+        for(int j=0;j<grid[0].size();j++){
+            if(g_visited[i][j] == false && grid[i][j]==1){
+                vector<int> pos = {0,0};
+                pos[0] = i;
+                pos[1] = j;
+                int tmp=0;
+                q.push(pos);
+                g_visited[i][j]=true;
+                while(!q.empty()){
+                    vector<int> p = q.front();
+                    int i=p[0],j=p[1];
+                    //上
+                    if(i-1>=0 && grid[i-1][j]==1 && g_visited[i-1][j]==false)
+                     {  p[0]=i-1;p[1]=j;q.push(p);
+                        g_visited[i-1][j]=true;}
+                    //下
+                    if(i+1<m && grid[i+1][j]==1 && g_visited[i+1][j]==false) 
+                    {   
+                        p[0]=i+1;p[1]=j;q.push(p);
+                        g_visited[i+1][j]=true;
+                    }
+                    //左
+                    if(j-1>=0 && grid[i][j-1]==1 && g_visited[i][j-1]==false) 
+                    {
+                        p[0]=i;p[1]=j-1;q.push(p);
+                        g_visited[i][j-1]=true;
+                    }
+                    //右
+                    if(j+1<n && grid[i][j+1]==1 && g_visited[i][j+1]==false) 
+                    {
+                        p[0]=i;p[1]=j+1;q.push(p);
+                        g_visited[i][j+1]=true;}
+                    tmp++;                 
+                    q.pop();
+                }
+                max_area = max_area>tmp?max_area:tmp;
+
+            }
+            else{
+                g_visited[i][j] = true;
+                continue;
+            }
+        }
+    }
+    return max_area;
 }

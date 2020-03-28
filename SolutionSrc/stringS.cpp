@@ -239,3 +239,48 @@ string decodePath_q22(vector<int>& path){
     }
     return s;
 }
+
+int minimumLengthEncoding_q820(vector<string>& words){
+    int res=1;
+    // 暴力法
+    vector<string> uniqueString;
+    uniqueString.push_back(words[0]);
+    res += words[0].size();
+    for(int i=1;i<words.size();i++){
+        string tmp = words[i];
+        std::cout << "tmp = " << tmp << std::endl;
+        bool flag = false;
+        for(int m=0;m<uniqueString.size();m++){
+            string s = uniqueString[m];
+            std::cout << "s=" << s << std::endl;
+            if(s.size()>=tmp.size()){
+                if(isSubString_q820(s,tmp)){
+                    flag=true;
+                    continue;
+                }
+            }else if(s.size()<tmp.size()){
+                if(isSubString_q820(tmp,s)){
+                    flag=true;
+                    res -= s.size();
+                    res += tmp.size();
+                    uniqueString.push_back(s);
+                }
+            }
+        }
+        if(flag==false){
+            uniqueString.push_back(tmp);
+            res += tmp.size();
+            res += 1;
+        } 
+    }
+    return res ;
+}
+
+bool isSubString_q820(string a,string b){
+    int i=a.size(),j=b.size();
+    int k = 0;
+    for(int m = i-j;m<a.size();m++,++k){
+        if(a[m]!=b[k]) return false;
+    }
+    return true;
+}
