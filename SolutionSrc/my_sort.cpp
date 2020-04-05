@@ -8,7 +8,7 @@ void quickSortSub(vector<int>& nums, int begin, int end){
     if((end-begin)<1) return;
     int i=begin,j=end;
     int base = nums[begin];
-        while(i<j){
+    while(i<j){
         //从右边开始移动
         while(j>i){
             //如果右指针指向的数大于base则移动

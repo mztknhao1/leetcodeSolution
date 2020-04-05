@@ -136,3 +136,52 @@ int lastStoneWeight_q1046(vector<int>& stones){
     }
     return 0;
 }
+
+int Dijkstra(vector<vector<int>>& edge,int numVertex,int object){
+    // 将顶点分为两个集合：一个是已知最短距离的集合，一个是未知最短距离的集合
+    // 使用vector<int> book来记录是否已经确定过最短距离
+    vector<int> book(numVertex,INT32_MAX);
+
+
+    // 用numVertex * numVertex大小的二维数组记录两个边之间的距离
+    vector<vector<int>> edges(numVertex,vector<int>(numVertex,INT32_MAX));
+    // 使用输入的edge来初始化
+    for(auto e:edge){
+        int i = e[0];
+        int j = e[1];
+        int d = e[2];
+        if(edges[i][j]>d) edges[i][j]=d;
+        edges[j][i] = edges[i][j];
+    }
+
+    //对所有自己本身赋值为0
+    for(int i=0;i<numVertex;i++){
+        edges[i][i] = 0;
+    }
+
+    // 目前为止只有源节点确定最短路径为0
+    book[0] = 1;
+
+    // dist存储的是到达第0个顶点，其他点所需要的距离
+    vector<int> dist(numVertex,INT32_MAX);
+    for(int i=1;i<numVertex;i++){
+        dist[i] = edges[0][i];
+    }
+
+    // 好吧，看似懂了，其实没懂，还是要去理解一下算法原理
+    // 遍历所有已经确定的节点
+    for(int i=0;i<numVertex;i++){
+        // 从直接就能到达节点i的顶点中，找到最小的那个加入到book中，并把dist更新一下
+        int u;
+        int min = INT32_MAX;
+        // 这个过程就是找已经确定最短距离的点的下一个最短距离点，第一次进来，那就是源节点0，找下一个点
+        for(int j=0;j<numVertex;j++){
+            if(!book[u] && dist[j]<min){
+                min = dist[j];
+                u = j;
+            }
+        }
+        book[u] = 1;
+    }
+
+}

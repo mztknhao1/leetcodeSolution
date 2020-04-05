@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2019-12-08 13:14:45
+ * @LastEditTime: 2020-04-05 08:13:12
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /leetcodeSolution/include/lib_head.h
+ */
 #ifndef _LIB_HEAD
 #define _LIB_HEAD
 
@@ -18,5 +26,6 @@
 #include"utils.h"
 #include"my_sort.h"
 #include"dataStruct.h"
+
 
 #endif
