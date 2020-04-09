@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-02-18 18:09:39
+ * @LastEditTime: 2020-04-09 07:51:45
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /leetcodeSolution/include/array.h
+ */
 #ifndef __ARRAY
 #define __ARRAY
 
@@ -35,6 +43,7 @@ int findBound_q34(vector<int>& nums,int left,int right,int target);
 void merge_m1001(vector<int>& A, int m, vector<int>& B, int n);
 
 vector<vector<int>> findContinuousSequence_m57ii(int target);
+
 
 
 #endif

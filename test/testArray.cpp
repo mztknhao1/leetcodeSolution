@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-02-18 18:09:39
+ * @LastEditTime: 2020-04-09 07:51:35
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /leetcodeSolution/test/testArray.cpp
+ */
 #include"Solution.h"
 #include"utils.h"
 #include"array.h"
@@ -5,6 +13,7 @@
 int main(){
     ArraySolution aS;
     int result;
+
 
     // 面试题57题
     vector<vector<int>> res_m57 = findContinuousSequence_m57ii(9);

@@ -1,8 +1,17 @@
+/*
+ * @Author: your name
+ * @Date: 2020-02-15 11:46:14
+ * @LastEditTime: 2020-04-09 07:50:06
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /leetcodeSolution/test/testTree.cpp
+ */
 #include"utils.h"
 #include"tree.h"
 #include"lib_head.h"
 
 int main(){
+
     string s={"[1,2,3,4,5]"};
     Codec c;
     TreeNode* root=c.deserialize(s);

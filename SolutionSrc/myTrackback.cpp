@@ -1,5 +1,6 @@
-#include "traceback.h"
 
+
+#include "myTraceback.h"
 
 bool findinnums(vector<int>& nums,int num){
     for(int i : nums){
@@ -33,8 +34,6 @@ void traceback_q46(vector<int>& nums, vector<int>& trace, vector<vector<int>>& r
         trace.pop_back();
     }
 }
-
-
 
 //其实也可用动态规划或者深度优先搜索算法的，这个回溯类似于深度优先算法
 vector<vector<int>> combinationSum_q39(vector<int>& candidates, int target){
@@ -84,4 +83,20 @@ void trackback_q17(string& digits, std::unordered_map<char,string>& mp, string& 
         trackback_q17(digits,mp,track,result);
         track.pop_back();
     }
+}
+
+vector<string> generateParenthesis_gP(int n) {
+    vector<string> res;
+    traceback_gP("", res, 0, 0, n);
+    return  res;   
+}
+
+void traceback_gP(string path,vector<string>& res,int left, int right,int n){
+    if(left>n || right>n || right>left) return;
+    if(left==n&&right==n){
+        res.push_back(path);
+        return;
+    }
+    traceback_gP(path+'(',res,left+1,right,n);  
+    traceback_gP(path+')',res,left,right+1,n);
 }
